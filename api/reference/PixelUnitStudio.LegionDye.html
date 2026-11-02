@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LegionDye | Pixel Legion Maker API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LegionDye | Pixel Legion Maker API ">
+      
+      <meta name="description" content="Dyes one part renderer. Redraws the art&#39;s main color group (the catalog option&#39;s dyeRamp, from dark colors) in the dye&#39;s color steps. The hero&#39;s skin color (Skins) likewise redraws the 3 base body skin colors. Shaders/LegionDye.shader does the color change; this component supplies the color pairs to change through a MaterialPropertyBlock. It stays in saved prefabs, so they are repainted the same way.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pixel Legion Maker API">
+            Pixel Legion Maker API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PixelUnitStudio.LegionDye">
+
+
+
+  <h1 id="PixelUnitStudio_LegionDye" data-uid="PixelUnitStudio.LegionDye" class="text-break">
+Class LegionDye  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PixelUnitStudio.html">PixelUnitStudio</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PixelUnitStudio.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Dyes one part renderer. Redraws the art's main color group (the catalog option's dyeRamp, from dark colors) in the dye's color steps.
+The hero's skin color (Skins) likewise redraws the 3 base body skin colors.
+Shaders/LegionDye.shader does the color change; this component supplies the color pairs to change through a MaterialPropertyBlock.
+It stays in saved prefabs, so they are repainted the same way.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LegionDye : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LegionDye</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionDye__ctor_" data-uid="PixelUnitStudio.LegionDye.#ctor*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye__ctor" data-uid="PixelUnitStudio.LegionDye.#ctor">
+  LegionDye()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionDye()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_MaxColors" data-uid="PixelUnitStudio.LegionDye.MaxColors">
+  MaxColors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxColors = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_MaxPairs" data-uid="PixelUnitStudio.LegionDye.MaxPairs">
+  MaxPairs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of color pairs the shader receives: part main colors MaxColors + skin SkinRamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MaxPairs = 12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_Palettes" data-uid="PixelUnitStudio.LegionDye.Palettes">
+  Palettes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Available dyes. Names are kept in save records, so do not rename them.
+Colors are matched to the same tone as the parts (tone in tools/generate_humanoid_rig.py: saturation 78%, slightly warmer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReadOnlyList&lt;LegionDye.Palette&gt; Palettes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_SkinRamp" data-uid="PixelUnitStudio.LegionDye.SkinRamp">
+  SkinRamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The 3 skin colors of the base body (from dark). They appear in both the body and part art (tools/extract_base_style.py).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Color32[] SkinRamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_Skins" data-uid="PixelUnitStudio.LegionDye.Skins">
+  Skins
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Available skin colors. shades has 3 steps like SkinRamp, and the name is kept in save records.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReadOnlyList&lt;LegionDye.Palette&gt; Skins</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_from" data-uid="PixelUnitStudio.LegionDye.from">
+  from
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color32[] from</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_skin" data-uid="PixelUnitStudio.LegionDye.skin">
+  skin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color32[] skin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionDye_to" data-uid="PixelUnitStudio.LegionDye.to">
+  to
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color32[] to</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionDye_Apply_" data-uid="PixelUnitStudio.LegionDye.Apply*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Apply" data-uid="PixelUnitStudio.LegionDye.Apply">
+  Apply()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Apply()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_Custom_" data-uid="PixelUnitStudio.LegionDye.Custom*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Custom_System_String_" data-uid="PixelUnitStudio.LegionDye.Custom(System.String)">
+  Custom(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A 5-step dye with the &quot;#RRGGBB&quot; color as the middle (step 3). The dark side gets a bit more saturation and the light side less, giving the same light-dark range as the base dyes.
+Null if the format is wrong. The name is normalized to uppercase &quot;#RRGGBB&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionDye.Palette Custom(string hex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_Find_" data-uid="PixelUnitStudio.LegionDye.Find*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Find_System_String_" data-uid="PixelUnitStudio.LegionDye.Find(System.String)">
+  Find(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds a dye by name. For &quot;#RRGGBB&quot; it builds a dye with that color as the middle step (Custom). Null if none.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionDye.Palette Find(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_FindSkin_" data-uid="PixelUnitStudio.LegionDye.FindSkin*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_FindSkin_System_String_" data-uid="PixelUnitStudio.LegionDye.FindSkin(System.String)">
+  FindSkin(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionDye.Palette FindSkin(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_HexOf_" data-uid="PixelUnitStudio.LegionDye.HexOf*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_HexOf_UnityEngine_Color_" data-uid="PixelUnitStudio.LegionDye.HexOf(UnityEngine.Color)">
+  HexOf(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uses a color as a Custom dye name (&quot;#RRGGBB&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HexOf(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_Icon_" data-uid="PixelUnitStudio.LegionDye.Icon*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Icon_UnityEngine_Sprite_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_" data-uid="PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)">
+  Icon(Sprite, Color32[], Palette)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dyed copy of a card icon. UI images don't use the dye shader, so pixels are changed directly.
+Returns the original icon if there is no dye, no main color group, or the icon is unreadable. The same icon and dye are made only once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Sprite Icon(Sprite icon, Color32[] ramp, LegionDye.Palette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>icon</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>ramp</code> <span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_Map_" data-uid="PixelUnitStudio.LegionDye.Map*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Map_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_" data-uid="PixelUnitStudio.LegionDye.Map(UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)">
+  Map(Color32[], Palette)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matches the main color group to the dye steps. Centered on the middle (step 3): up to 5 colors map one per step; more are split evenly and paired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] Map(Color32[] ramp, LegionDye.Palette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ramp</code> <span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionDye_Set_" data-uid="PixelUnitStudio.LegionDye.Set*"></a>
+
+  <h3 id="PixelUnitStudio_LegionDye_Set_UnityEngine_GameObject_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_PixelUnitStudio_LegionDye_Palette_" data-uid="PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette,PixelUnitStudio.LegionDye.Palette)">
+  Set(GameObject, Color32[], Palette, Palette)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dyes the target renderer. No dye or no main color group gives the original color; no skin restores the default skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Set(GameObject target, Color32[] ramp, LegionDye.Palette palette, LegionDye.Palette skin = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>ramp</code> <span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+    <dt><code>skin</code> <a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a>.<a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">Palette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pixel Legion Maker
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

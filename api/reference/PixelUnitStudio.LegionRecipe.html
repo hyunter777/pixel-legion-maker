@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LegionRecipe | Pixel Legion Maker API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LegionRecipe | Pixel Legion Maker API ">
+      
+      <meta name="description" content="One hero&#39;s combination written as option names. Used to assemble heroes at game runtime (LegionBuilder.Create / Apply). As text, &amp;quot;slot=option[:dye]&amp;quot; entries are joined by spaces. Example: &amp;quot;Helmet=helmet_mitre Cloth=robe_priest:gold WeaponRight=staff_sun&amp;quot;. Written by name, so it is found correctly even if the catalog is rebuilt and the order changes. Slots not listed are cleared (if they can be) or set to the default. The skin color is written like &amp;quot;Skin=orc&amp;quot; (LegionDye.Skins). If not written, it is the default skin.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pixel Legion Maker API">
+            Pixel Legion Maker API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PixelUnitStudio.LegionRecipe">
+
+
+
+  <h1 id="PixelUnitStudio_LegionRecipe" data-uid="PixelUnitStudio.LegionRecipe" class="text-break">
+Class LegionRecipe  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PixelUnitStudio.html">PixelUnitStudio</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PixelUnitStudio.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>One hero's combination written as option names. Used to assemble heroes at game runtime (LegionBuilder.Create / Apply).
+As text, &quot;slot=option[:dye]&quot; entries are joined by spaces. Example: &quot;Helmet=helmet_mitre Cloth=robe_priest:gold WeaponRight=staff_sun&quot;.
+Written by name, so it is found correctly even if the catalog is rebuilt and the order changes. Slots not listed are cleared (if they can be) or set to the default.
+The skin color is written like &quot;Skin=orc&quot; (LegionDye.Skins). If not written, it is the default skin.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LegionRecipe</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LegionRecipe</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionRecipe__ctor_" data-uid="PixelUnitStudio.LegionRecipe.#ctor*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe__ctor" data-uid="PixelUnitStudio.LegionRecipe.#ctor">
+  LegionRecipe()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionRecipe()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="PixelUnitStudio_LegionRecipe_DyeChance" data-uid="PixelUnitStudio.LegionRecipe.DyeChance">
+  DyeChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Probability that a dyeable part is dyed in a random combination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float DyeChance = 0.4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionRecipe_FillChance" data-uid="PixelUnitStudio.LegionRecipe.FillChance">
+  FillChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Probability of filling a slot in a random combination. Slots not listed get 0.5; slots that cannot be cleared are always filled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReadOnlyDictionary&lt;string, float&gt; FillChance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionRecipe_OffHandRandomSets" data-uid="PixelUnitStudio.LegionRecipe.OffHandRandomSets">
+  OffHandRandomSets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Motion sets a random combination puts in the off hand. The off hand is decoration, so only one-handed weapons and shields (default) and daggers are chosen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly HashSet&lt;string&gt; OffHandRandomSets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionRecipe_SkinChance" data-uid="PixelUnitStudio.LegionRecipe.SkinChance">
+  SkinChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Probability that a random combination picks a non-default skin color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float SkinChance = 0.3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Dyes_" data-uid="PixelUnitStudio.LegionRecipe.Dyes*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Dyes" data-uid="PixelUnitStudio.LegionRecipe.Dyes">
+  Dyes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; Dyes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Options_" data-uid="PixelUnitStudio.LegionRecipe.Options*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Options" data-uid="PixelUnitStudio.LegionRecipe.Options">
+  Options
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Skin_" data-uid="PixelUnitStudio.LegionRecipe.Skin*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Skin" data-uid="PixelUnitStudio.LegionRecipe.Skin">
+  Skin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Skin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionRecipe_DyeFor_" data-uid="PixelUnitStudio.LegionRecipe.DyeFor*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_DyeFor_System_String_" data-uid="PixelUnitStudio.LegionRecipe.DyeFor(System.String)">
+  DyeFor(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DyeFor(string slot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_From_" data-uid="PixelUnitStudio.LegionRecipe.From*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_From_PixelUnitStudio_LegionBuilder_" data-uid="PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionBuilder)">
+  From(LegionBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads the current combination of a hero being assembled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionRecipe From(LegionBuilder builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <a class="xref" href="PixelUnitStudio.LegionBuilder.html">LegionBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_From_" data-uid="PixelUnitStudio.LegionRecipe.From*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_From_PixelUnitStudio_LegionUnit_" data-uid="PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionUnit)">
+  From(LegionUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads the combination of a saved hero prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionRecipe From(LegionUnit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="PixelUnitStudio.LegionUnit.html">LegionUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Missing_" data-uid="PixelUnitStudio.LegionRecipe.Missing*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Missing_PixelUnitStudio_LegionCatalog_" data-uid="PixelUnitStudio.LegionRecipe.Missing(PixelUnitStudio.LegionCatalog)">
+  Missing(LegionCatalog)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns option and dye names (&quot;slot/name&quot;) not in the catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Missing(LegionCatalog catalog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalog</code> <a class="xref" href="PixelUnitStudio.LegionCatalog.html">LegionCatalog</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_OptionFor_" data-uid="PixelUnitStudio.LegionRecipe.OptionFor*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_OptionFor_System_String_" data-uid="PixelUnitStudio.LegionRecipe.OptionFor(System.String)">
+  OptionFor(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OptionFor(string slot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Parse_" data-uid="PixelUnitStudio.LegionRecipe.Parse*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Parse_System_String_" data-uid="PixelUnitStudio.LegionRecipe.Parse(System.String)">
+  Parse(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads &quot;slot=option[:dye] ...&quot; text. FormatException if any piece is malformed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionRecipe Parse(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Random_" data-uid="PixelUnitStudio.LegionRecipe.Random*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Random_PixelUnitStudio_LegionCatalog_System_Random_" data-uid="PixelUnitStudio.LegionRecipe.Random(PixelUnitStudio.LegionCatalog,System.Random)">
+  Random(LegionCatalog, Random)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a random combination from the catalog. The same seed gives the same combination (for the same catalog).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LegionRecipe Random(LegionCatalog catalog, Random random)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalog</code> <a class="xref" href="PixelUnitStudio.LegionCatalog.html">LegionCatalog</a></dt>
+    <dd></dd>
+    <dt><code>random</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_Set_" data-uid="PixelUnitStudio.LegionRecipe.Set*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_Set_System_String_System_String_System_String_" data-uid="PixelUnitStudio.LegionRecipe.Set(System.String,System.String,System.String)">
+  Set(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an option into a slot. If option is empty the slot is cleared. If dye is empty, the original color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionRecipe Set(string slot, string option, string dye = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dye</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionRecipe_ToString_" data-uid="PixelUnitStudio.LegionRecipe.ToString*"></a>
+
+  <h3 id="PixelUnitStudio_LegionRecipe_ToString" data-uid="PixelUnitStudio.LegionRecipe.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pixel Legion Maker
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

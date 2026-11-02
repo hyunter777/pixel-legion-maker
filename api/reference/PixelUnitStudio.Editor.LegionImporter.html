@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LegionImporter | Pixel Legion Maker API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LegionImporter | Pixel Legion Maker API ">
+      
+      <meta name="description" content="Slices the body sheet per rig.json, and builds the mannequin prefab and a preview scene.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pixel Legion Maker API">
+            Pixel Legion Maker API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PixelUnitStudio.Editor.LegionImporter">
+
+
+
+  <h1 id="PixelUnitStudio_Editor_LegionImporter" data-uid="PixelUnitStudio.Editor.LegionImporter" class="text-break">
+Class LegionImporter  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PixelUnitStudio.html">PixelUnitStudio</a>.<a class="xref" href="PixelUnitStudio.Editor.html">Editor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PixelUnitStudio.Editor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Slices the body sheet per rig.json, and builds the mannequin prefab and a preview scene.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LegionImporter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LegionImporter</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="PixelUnitStudio_Editor_LegionImporter_BuildRigPrefab_" data-uid="PixelUnitStudio.Editor.LegionImporter.BuildRigPrefab*"></a>
+
+  <h3 id="PixelUnitStudio_Editor_LegionImporter_BuildRigPrefab_System_String_System_String_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="PixelUnitStudio.Editor.LegionImporter.BuildRigPrefab(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  BuildRigPrefab(string, string, string, string, string, Dictionary&lt;string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Slices a part sheet that follows the cell layout and saves it as a skeleton prefab. The weapon sheet (48×48, handle at the center) is optional.
+slotSheets maps slot name (Cloth, Hair, etc.) → a slot sheet with the same cell layout as the body sheet. Each is attached as a child named after the slot under each bone,
+with sorting value = bone sortBase + slot layer. Empty cells in a slot sheet are skipped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject BuildRigPrefab(string sheetPath, string prefabPath, string rootName, string weaponLeftPath = null, string weaponRightPath = null, Dictionary&lt;string, string&gt; slotSheets = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sheetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>prefabPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>rootName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>weaponLeftPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>weaponRightPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>slotSheets</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_Editor_LegionImporter_ImportWeaponSheet_" data-uid="PixelUnitStudio.Editor.LegionImporter.ImportWeaponSheet*"></a>
+
+  <h3 id="PixelUnitStudio_Editor_LegionImporter_ImportWeaponSheet_System_String_System_String_" data-uid="PixelUnitStudio.Editor.LegionImporter.ImportWeaponSheet(System.String,System.String)">
+  ImportWeaponSheet(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a weapon sheet (square, handle at the center) and returns the sprite and sorting value to attach to the weapon bone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Sprite sprite, int sortingOrder) ImportWeaponSheet(string weaponBone, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weaponBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<span class="xref">Sprite</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-unityengine.sprite,system.int32-.sprite">sprite</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-unityengine.sprite,system.int32-.sortingorder">sortingOrder</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_Editor_LegionImporter_ImportWeaponTurns_" data-uid="PixelUnitStudio.Editor.LegionImporter.ImportWeaponTurns*"></a>
+
+  <h3 id="PixelUnitStudio_Editor_LegionImporter_ImportWeaponTurns_System_String_System_Int32_System_Int32_" data-uid="PixelUnitStudio.Editor.LegionImporter.ImportWeaponTurns(System.String,System.Int32,System.Int32)">
+  ImportWeaponTurns(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cuts pre-rotated weapon art (tools/generate_weapon_turns.py) cell by cell and returns it in angle order (counter-clockwise k×15°). Null if absent.
+The cell size is sheet width ÷ 6, and the center of each cell is the handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Sprite[] ImportWeaponTurns(string path, int turnCount = 24, int columns = 6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>turnCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>columns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_Editor_LegionImporter_Run_" data-uid="PixelUnitStudio.Editor.LegionImporter.Run*"></a>
+
+  <h3 id="PixelUnitStudio_Editor_LegionImporter_Run" data-uid="PixelUnitStudio.Editor.LegionImporter.Run">
+  Run()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_Editor_LegionImporter_SliceSlotSheet_" data-uid="PixelUnitStudio.Editor.LegionImporter.SliceSlotSheet*"></a>
+
+  <h3 id="PixelUnitStudio_Editor_LegionImporter_SliceSlotSheet_System_String_System_String_" data-uid="PixelUnitStudio.Editor.LegionImporter.SliceSlotSheet(System.String,System.String)">
+  SliceSlotSheet(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Slices a slot sheet and returns bone name → (sprite, sorting value). Used by the maker catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, (Sprite sprite, int sortingOrder)&gt; SliceSlotSheet(string slotName, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, (<span class="xref">Sprite</span> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-unityengine.sprite,system.int32-.sprite">sprite</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-unityengine.sprite,system.int32-.sortingorder">sortingOrder</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pixel Legion Maker
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

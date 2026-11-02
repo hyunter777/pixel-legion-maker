@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace PixelUnitStudio | Pixel Legion Maker API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace PixelUnitStudio | Pixel Legion Maker API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pixel Legion Maker API">
+            Pixel Legion Maker API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PixelUnitStudio">
+
+  <h1 id="PixelUnitStudio" data-uid="PixelUnitStudio" class="text-break">Namespace PixelUnitStudio</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionAction.html">LegionAction</a></dt>
+      <dd><p>A custom action: existing motions chained in order under one name (a three-hit combo, a channel-and-release spell).
+Steps are motion names, not states, so one action plays on any hero with that hero's weapon-type version of each motion.
+Played by LegionActionPlayer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionAction.Step.html">LegionAction.Step</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionActionLibrary.html">LegionActionLibrary</a></dt>
+      <dd><p>Custom actions shared by every hero. The edit screen keeps them in LegionActions.asset in the hero save folder,
+and saved hero prefabs reference it through their LegionActionPlayer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionActionPlayer.html">LegionActionPlayer</a></dt>
+      <dd><p>Plays custom actions (LegionAction) on a hero: each step's motion in turn, then back to idle (an action ending in death stays down).
+Saved hero prefabs carry one that references the action library of their save folder; heroes assembled with LegionBuilder get one from Builder.Actions.
+While an action plays, LegionEvents.returnToIdle waits for the action to finish. Hit and cast events still fire for every step.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionBuilder.html">LegionBuilder</a></dt>
+      <dd><p>Assembles one hero from the catalog, applies slot options, and plays motions that fit the back-hand weapon type.
+Used by the edit screen and save/export, and also for assembling heroes at game runtime (Create, LegionRecipe).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.html">LegionCatalog</a></dt>
+      <dd><p>List used by the edit screen to assemble and play heroes. Built by the editor menu Tools &gt; Pixel Legion Maker &gt; Build Catalog.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.Motion.html">LegionCatalog.Motion</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.Option.html">LegionCatalog.Option</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.Piece.html">LegionCatalog.Piece</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.Projectile.html">LegionCatalog.Projectile</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.Slot.html">LegionCatalog.Slot</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionContentPack.html">LegionContentPack</a></dt>
+      <dd><p>A content pack: a folder of parts, weapons, projectiles and heroes that the catalog takes in (LegionCatalogBuilder).
+The base product is one pack (LegionBasePack.asset); an add-on is another pack asset in its own folder, so it holds only art and heroes and needs the base product to work.
+Name add-on art with the type first, as the base product does (axe_frost, helmet_raider), because weapon motions and filters come from the first word.
+Folders are relative to the folder that holds this asset. When packs are added, removed or their art changes, the catalog rebuilds itself in the editor.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionContentPack.Title.html">LegionContentPack.Title</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionDye.html">LegionDye</a></dt>
+      <dd><p>Dyes one part renderer. Redraws the art's main color group (the catalog option's dyeRamp, from dark colors) in the dye's color steps.
+The hero's skin color (Skins) likewise redraws the 3 base body skin colors.
+Shaders/LegionDye.shader does the color change; this component supplies the color pairs to change through a MaterialPropertyBlock.
+It stays in saved prefabs, so they are repainted the same way.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionDye.Palette.html">LegionDye.Palette</a></dt>
+      <dd><p>One dye. shades runs 5 steps from dark to light.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionEditor.html">LegionEditor</a></dt>
+      <dd><p>Edit screen. It does not use the existing maker screen; the whole screen is built in code.
+The left is the slot list (current part art and name), the center is the preview and motions, and the right is the option grid of the chosen slot.
+UI text is in English. An option is applied with one click, and the first cell &quot;None&quot; removes it. Randomize, undo, hero list and save are in the top bar.
+For dyeable parts, a row of dye swatches appears above the options (the first cell is the original color).
+The preview is rendered 1:1 in pixels by a separate camera and shown scaled up by an integer factor.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionEvents.html">LegionEvents</a></dt>
+      <dd><p>Receives events from motion clips. Attached to a hero root with an Animator (saved prefabs, heroes assembled with LegionBuilder).
+hit: the moment an attack lands (the moment a bow, crossbow or gun fires, or a thrown weapon leaves the hand), cast: the moment a cast goes out, end: end of a one-shot motion.
+The argument is the animator state name (attack, attack@spear, etc.).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionPixelCamera.html">LegionPixelCamera</a></dt>
+      <dd><p>Orthographic camera helper that shows pixels crisply regardless of render pipeline (replaces URP's Pixel Perfect Camera).
+Adjusts orthographicSize so the screen scales only by integer multiples of the reference resolution. One art pixel is always an N×N block of screen pixels.
+With upscaleRenderTexture on, it draws into a render texture at art resolution and shows it scaled by an integer factor. Then rotated bones and weapons
+also snap to the pixel grid and the pixel size stays even. The result is the same in Built-in and URP. Sprites must use Point filtering.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionProjectile.html">LegionProjectile</a></dt>
+      <dd><p>Flies one projectile from its start point to the target point, calls Arrived when it lands, then removes it.
+Bows, crossbows, guns and staffs fly the catalog's projectile art (Projectiles/) straight; thrown weapons throw the weapon art itself in an arc.
+A thrown weapon doesn't rotate its art; it spins by swapping pre-rotated art (turns), so pixels don't break. Hit detection is up to the game.
+Usually called from the hit event of an attack motion (LegionEvents).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionRecipe.html">LegionRecipe</a></dt>
+      <dd><p>One hero's combination written as option names. Used to assemble heroes at game runtime (LegionBuilder.Create / Apply).
+As text, &quot;slot=option[:dye]&quot; entries are joined by spaces. Example: &quot;Helmet=helmet_mitre Cloth=robe_priest:gold WeaponRight=staff_sun&quot;.
+Written by name, so it is found correctly even if the catalog is rebuilt and the order changes. Slots not listed are cleared (if they can be) or set to the default.
+The skin color is written like &quot;Skin=orc&quot; (LegionDye.Skins). If not written, it is the default skin.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionStore.html">LegionStore</a></dt>
+      <dd><p>Saves a hero as a prefab and reads the saved list. Saving works only in the Unity Editor.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionTurns.html">LegionTurns</a></dt>
+      <dd><p>Instead of rotating weapon art, swaps in whichever pre-rotated clean art (turns, counter-clockwise k×step°) is closest to the weapon angle.
+Rotating pixel art at an arbitrary angle at runtime breaks outlines and drops or overlaps pixels (tools/generate_weapon_turns.py).
+Attached to a renderer that is a child of the weapon bone. The motion decides the bone rotation as is, and this renderer cancels that rotation and changes only the art's direction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionUnit.html">LegionUnit</a></dt>
+      <dd><p>Record attached to the root of a saved hero prefab. Keeps the option name and dye chosen per slot so it can be loaded again.
+Stored by name, so it is found correctly even if the catalog is rebuilt and the order changes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.LegionUnit.Choice.html">LegionUnit.Choice</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="PixelUnitStudio.PixelUnitStudioInfo.html">PixelUnitStudioInfo</a></dt>
+      <dd><p>Product info. Kept in line with the version in the store package file name and the documentation.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pixel Legion Maker
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

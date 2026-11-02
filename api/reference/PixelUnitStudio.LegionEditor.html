@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LegionEditor | Pixel Legion Maker API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LegionEditor | Pixel Legion Maker API ">
+      
+      <meta name="description" content="Edit screen. It does not use the existing maker screen; the whole screen is built in code. The left is the slot list (current part art and name), the center is the preview and motions, and the right is the option grid of the chosen slot. UI text is in English. An option is applied with one click, and the first cell &amp;quot;None&amp;quot; removes it. Randomize, undo, hero list and save are in the top bar. For dyeable parts, a row of dye swatches appears above the options (the first cell is the original color). The preview is rendered 1:1 in pixels by a separate camera and shown scaled up by an integer factor.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pixel Legion Maker API">
+            Pixel Legion Maker API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="PixelUnitStudio.LegionEditor">
+
+
+
+  <h1 id="PixelUnitStudio_LegionEditor" data-uid="PixelUnitStudio.LegionEditor" class="text-break">
+Class LegionEditor  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="PixelUnitStudio.html">PixelUnitStudio</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>PixelUnitStudio.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Edit screen. It does not use the existing maker screen; the whole screen is built in code.
+The left is the slot list (current part art and name), the center is the preview and motions, and the right is the option grid of the chosen slot.
+UI text is in English. An option is applied with one click, and the first cell &quot;None&quot; removes it. Randomize, undo, hero list and save are in the top bar.
+For dyeable parts, a row of dye swatches appears above the options (the first cell is the original color).
+The preview is rendered 1:1 in pixels by a separate camera and shown scaled up by an integer factor.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LegionEditor : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LegionEditor</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionEditor__ctor_" data-uid="PixelUnitStudio.LegionEditor.#ctor*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor__ctor" data-uid="PixelUnitStudio.LegionEditor.#ctor">
+  LegionEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionEditor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="PixelUnitStudio_LegionEditor_catalog" data-uid="PixelUnitStudio.LegionEditor.catalog">
+  catalog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionCatalog catalog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionCatalog.html">LegionCatalog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="PixelUnitStudio_LegionEditor_unitFolder" data-uid="PixelUnitStudio.LegionEditor.unitFolder">
+  unitFolder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string unitFolder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionEditor_ActionLibrary_" data-uid="PixelUnitStudio.LegionEditor.ActionLibrary*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_ActionLibrary" data-uid="PixelUnitStudio.LegionEditor.ActionLibrary">
+  ActionLibrary
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Action library of the save folder. Created on the first saved action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionActionLibrary ActionLibrary { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionActionLibrary.html">LegionActionLibrary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_ActionsOpen_" data-uid="PixelUnitStudio.LegionEditor.ActionsOpen*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_ActionsOpen" data-uid="PixelUnitStudio.LegionEditor.ActionsOpen">
+  ActionsOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ActionsOpen { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Builder_" data-uid="PixelUnitStudio.LegionEditor.Builder*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Builder" data-uid="PixelUnitStudio.LegionEditor.Builder">
+  Builder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionBuilder Builder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionBuilder.html">LegionBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Dirty_" data-uid="PixelUnitStudio.LegionEditor.Dirty*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Dirty" data-uid="PixelUnitStudio.LegionEditor.Dirty">
+  Dirty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Dirty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Draft_" data-uid="PixelUnitStudio.LegionEditor.Draft*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Draft" data-uid="PixelUnitStudio.LegionEditor.Draft">
+  Draft
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Action being built in the Actions panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LegionAction Draft { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PixelUnitStudio.LegionAction.html">LegionAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_LibraryOpen_" data-uid="PixelUnitStudio.LegionEditor.LibraryOpen*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_LibraryOpen" data-uid="PixelUnitStudio.LegionEditor.LibraryOpen">
+  LibraryOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LibraryOpen { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_LoadedCode_" data-uid="PixelUnitStudio.LegionEditor.LoadedCode*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_LoadedCode" data-uid="PixelUnitStudio.LegionEditor.LoadedCode">
+  LoadedCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LoadedCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SelectedSlot_" data-uid="PixelUnitStudio.LegionEditor.SelectedSlot*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SelectedSlot" data-uid="PixelUnitStudio.LegionEditor.SelectedSlot">
+  SelectedSlot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SelectedSlot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="PixelUnitStudio_LegionEditor_AddStep_" data-uid="PixelUnitStudio.LegionEditor.AddStep*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_AddStep_System_String_" data-uid="PixelUnitStudio.LegionEditor.AddStep(System.String)">
+  AddStep(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a motion as the draft's last step. The same motion twice in a row counts up the repeat instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddStep(string motion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>motion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Choose_" data-uid="PixelUnitStudio.LegionEditor.Choose*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Choose_System_String_System_Int32_" data-uid="PixelUnitStudio.LegionEditor.Choose(System.String,System.Int32)">
+  Choose(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a slot option (-1 clears it). Records an undo step.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Choose(string slotName, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_ClearDraft_" data-uid="PixelUnitStudio.LegionEditor.ClearDraft*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_ClearDraft" data-uid="PixelUnitStudio.LegionEditor.ClearDraft">
+  ClearDraft()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new, empty action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearDraft()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_CopyRecipe_" data-uid="PixelUnitStudio.LegionEditor.CopyRecipe*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_CopyRecipe" data-uid="PixelUnitStudio.LegionEditor.CopyRecipe">
+  CopyRecipe()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the current combination to the clipboard as text (LegionRecipe) and returns that text. Read it in game code with LegionRecipe.Parse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CopyRecipe()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_CycleBackdrop_" data-uid="PixelUnitStudio.LegionEditor.CycleBackdrop*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_CycleBackdrop" data-uid="PixelUnitStudio.LegionEditor.CycleBackdrop">
+  CycleBackdrop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CycleBackdrop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Delete_" data-uid="PixelUnitStudio.LegionEditor.Delete*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Delete_System_String_" data-uid="PixelUnitStudio.LegionEditor.Delete(System.String)">
+  Delete(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a saved hero. If it is the currently open hero, it remains as an unsaved new hero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(string code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_DeleteAction_" data-uid="PixelUnitStudio.LegionEditor.DeleteAction*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_DeleteAction_System_String_" data-uid="PixelUnitStudio.LegionEditor.DeleteAction(System.String)">
+  DeleteAction(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteAction(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Dye_" data-uid="PixelUnitStudio.LegionEditor.Dye*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Dye_System_String_System_String_" data-uid="PixelUnitStudio.LegionEditor.Dye(System.String,System.String)">
+  Dye(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dyes a slot (null restores the original color). Records an undo step.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dye(string slotName, string paletteName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>paletteName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_EditAction_" data-uid="PixelUnitStudio.LegionEditor.EditAction*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_EditAction_PixelUnitStudio_LegionAction_" data-uid="PixelUnitStudio.LegionEditor.EditAction(PixelUnitStudio.LegionAction)">
+  EditAction(LegionAction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads any action (such as one from a content pack) into the draft. Saving puts it in the save folder's library.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditAction(LegionAction action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="PixelUnitStudio.LegionAction.html">LegionAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_EditAction_" data-uid="PixelUnitStudio.LegionEditor.EditAction*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_EditAction_System_String_" data-uid="PixelUnitStudio.LegionEditor.EditAction(System.String)">
+  EditAction(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a saved action into the draft to change it. Saving it under the same name replaces it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditAction(string actionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Export_" data-uid="PixelUnitStudio.LegionEditor.Export*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Export" data-uid="PixelUnitStudio.LegionEditor.Export">
+  Export()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the current hero, then exports a frame sheet using the motions of its back-hand weapon type and returns the PNG path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Export()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Flip_" data-uid="PixelUnitStudio.LegionEditor.Flip*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Flip" data-uid="PixelUnitStudio.LegionEditor.Flip">
+  Flip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Load_" data-uid="PixelUnitStudio.LegionEditor.Load*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Load_PixelUnitStudio_LegionUnit_" data-uid="PixelUnitStudio.LegionEditor.Load(PixelUnitStudio.LegionUnit)">
+  Load(LegionUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(LegionUnit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="PixelUnitStudio.LegionUnit.html">LegionUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_MotionTitle_" data-uid="PixelUnitStudio.LegionEditor.MotionTitle*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_MotionTitle_System_String_" data-uid="PixelUnitStudio.LegionEditor.MotionTitle(System.String)">
+  MotionTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MotionTitle(string motion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>motion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_NewHero_" data-uid="PixelUnitStudio.LegionEditor.NewHero*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_NewHero" data-uid="PixelUnitStudio.LegionEditor.NewHero">
+  NewHero()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NewHero()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_OpenActions_" data-uid="PixelUnitStudio.LegionEditor.OpenActions*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_OpenActions" data-uid="PixelUnitStudio.LegionEditor.OpenActions">
+  OpenActions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenActions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_OpenLibrary_" data-uid="PixelUnitStudio.LegionEditor.OpenLibrary*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_OpenLibrary" data-uid="PixelUnitStudio.LegionEditor.OpenLibrary">
+  OpenLibrary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenLibrary()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_OptionTitle_" data-uid="PixelUnitStudio.LegionEditor.OptionTitle*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_OptionTitle_System_String_" data-uid="PixelUnitStudio.LegionEditor.OptionTitle(System.String)">
+  OptionTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Card name of an option. Options with no name given show the file name tidied (axe_frost → Axe frost).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string OptionTitle(string option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>option</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_PackActions_" data-uid="PixelUnitStudio.LegionEditor.PackActions*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_PackActions" data-uid="PixelUnitStudio.LegionEditor.PackActions">
+  PackActions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Actions of the content packs' hero folders, as (pack title, actions). Played and copied from the edit screen; they are not changed here.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;(string title, List&lt;LegionAction&gt; actions)&gt; PackActions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.title">title</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PixelUnitStudio.LegionAction.html">LegionAction</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.actions">actions</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_PasteRecipe_" data-uid="PixelUnitStudio.LegionEditor.PasteRecipe*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_PasteRecipe_System_String_" data-uid="PixelUnitStudio.LegionEditor.PasteRecipe(System.String)">
+  PasteRecipe(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a combination written as text (can be undone). False if unreadable. Names not in the catalog are shown in the notice and skipped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PasteRecipe(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Play_" data-uid="PixelUnitStudio.LegionEditor.Play*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Play_PixelUnitStudio_LegionCatalog_Motion_" data-uid="PixelUnitStudio.LegionEditor.Play(PixelUnitStudio.LegionCatalog.Motion)">
+  Play(Motion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play(LegionCatalog.Motion motion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>motion</code> <a class="xref" href="PixelUnitStudio.LegionCatalog.html">LegionCatalog</a>.<a class="xref" href="PixelUnitStudio.LegionCatalog.Motion.html">Motion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_PlayAction_" data-uid="PixelUnitStudio.LegionEditor.PlayAction*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_PlayAction_PixelUnitStudio_LegionAction_" data-uid="PixelUnitStudio.LegionEditor.PlayAction(PixelUnitStudio.LegionAction)">
+  PlayAction(LegionAction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays an action on the preview hero with its weapon type (the draft if none is given).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayAction(LegionAction action = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="PixelUnitStudio.LegionAction.html">LegionAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Randomize_" data-uid="PixelUnitStudio.LegionEditor.Randomize*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Randomize" data-uid="PixelUnitStudio.LegionEditor.Randomize">
+  Randomize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shuffles all slots at once. Slots that can be cleared are sometimes cleared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Randomize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_RemoveStep_" data-uid="PixelUnitStudio.LegionEditor.RemoveStep*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_RemoveStep_System_Int32_" data-uid="PixelUnitStudio.LegionEditor.RemoveStep(System.Int32)">
+  RemoveStep(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveStep(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Save_" data-uid="PixelUnitStudio.LegionEditor.Save*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Save" data-uid="PixelUnitStudio.LegionEditor.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Save()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SaveAction_" data-uid="PixelUnitStudio.LegionEditor.SaveAction*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SaveAction" data-uid="PixelUnitStudio.LegionEditor.SaveAction">
+  SaveAction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the draft into the folder's action library and returns the saved name. An empty name gets &quot;Action N&quot;; the same name replaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveAction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Seek_" data-uid="PixelUnitStudio.LegionEditor.Seek*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Seek_System_Single_" data-uid="PixelUnitStudio.LegionEditor.Seek(System.Single)">
+  Seek(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves to a point (0 to 1) of the motion and pauses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Seek(float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SelectSlot_" data-uid="PixelUnitStudio.LegionEditor.SelectSlot*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SelectSlot_System_String_" data-uid="PixelUnitStudio.LegionEditor.SelectSlot(System.String)">
+  SelectSlot(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectSlot(string slotName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SetPaused_" data-uid="PixelUnitStudio.LegionEditor.SetPaused*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SetPaused_System_Boolean_" data-uid="PixelUnitStudio.LegionEditor.SetPaused(System.Boolean)">
+  SetPaused(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPaused(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SetRepeat_" data-uid="PixelUnitStudio.LegionEditor.SetRepeat*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SetRepeat_System_Int32_System_Int32_" data-uid="PixelUnitStudio.LegionEditor.SetRepeat(System.Int32,System.Int32)">
+  SetRepeat(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRepeat(int index, int repeat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>repeat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SetSkin_" data-uid="PixelUnitStudio.LegionEditor.SetSkin*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SetSkin_System_String_" data-uid="PixelUnitStudio.LegionEditor.SetSkin(System.String)">
+  SetSkin(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the skin color (null for the default skin). Records an undo step.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSkin(string skinName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skinName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SetZoom_" data-uid="PixelUnitStudio.LegionEditor.SetZoom*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SetZoom_System_Int32_" data-uid="PixelUnitStudio.LegionEditor.SetZoom(System.Int32)">
+  SetZoom(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZoom(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_SlotTitle_" data-uid="PixelUnitStudio.LegionEditor.SlotTitle*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_SlotTitle_System_String_" data-uid="PixelUnitStudio.LegionEditor.SlotTitle(System.String)">
+  SlotTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SlotTitle(string slot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_Undo_" data-uid="PixelUnitStudio.LegionEditor.Undo*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_Undo" data-uid="PixelUnitStudio.LegionEditor.Undo">
+  Undo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Undo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="PixelUnitStudio_LegionEditor_WeaponKind_" data-uid="PixelUnitStudio.LegionEditor.WeaponKind*"></a>
+
+  <h3 id="PixelUnitStudio_LegionEditor_WeaponKind_System_String_" data-uid="PixelUnitStudio.LegionEditor.WeaponKind(System.String)">
+  WeaponKind(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WeaponKind(string option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>option</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pixel Legion Maker
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,504 @@
+{
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
+  "source_base_path": "D:/workspace_ai/1104.pixel-unit-studio/.work/docs-repo/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.LegionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.LegionAnimation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor.LegionAnimation",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.Editor.LegionAnimation.yml\" sourcestartlinenumber=\"1\">Builds AnimationClips and an Animator from legion_anims.json, and exports the motions as 64×64 1:1 pixel frame sheets.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.LegionCatalogBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.LegionCatalogBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor.LegionCatalogBuilder",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.Editor.LegionCatalogBuilder.yml\" sourcestartlinenumber=\"1\">Builds the catalog (slots, options, icons, turn art, motion sets) from the art of every content pack in the project (LegionContentPack). The edit screen and save/export use this catalog.\nIt used to be an installer that grafted a hero mode into the existing maker scene, but the edit screen now has all of that, so the maker integration was removed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.LegionEditorScene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.LegionEditorScene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor.LegionEditorScene",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.Editor.LegionEditorScene.yml\" sourcestartlinenumber=\"1\">Builds the edit screen scene. The screen is drawn in code by LegionEditor at play time, so the scene holds only the camera, event system and editor object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.LegionImporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.LegionImporter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor.LegionImporter",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.Editor.LegionImporter.yml\" sourcestartlinenumber=\"1\">Slices the body sheet per rig.json, and builds the mannequin prefab and a preview scene.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.LegionPacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.LegionPacks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor.LegionPacks",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.Editor.LegionPacks.yml\" sourcestartlinenumber=\"1\">Finds the content packs in the project (LegionContentPack) and resolves their folders.\nThe base product is one pack; add-ons are more packs in their own folders, read after it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionAction.Step.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionAction.Step.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionAction.Step",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionAction",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionAction.yml\" sourcestartlinenumber=\"1\">A custom action: existing motions chained in order under one name (a three-hit combo, a channel-and-release spell).\nSteps are motion names, not states, so one action plays on any hero with that hero's weapon-type version of each motion.\nPlayed by LegionActionPlayer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionActionLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionActionLibrary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionActionLibrary",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionActionLibrary.yml\" sourcestartlinenumber=\"1\">Custom actions shared by every hero. The edit screen keeps them in LegionActions.asset in the hero save folder,\nand saved hero prefabs reference it through their LegionActionPlayer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionActionPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionActionPlayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionActionPlayer",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionActionPlayer.yml\" sourcestartlinenumber=\"1\">Plays custom actions (LegionAction) on a hero: each step's motion in turn, then back to idle (an action ending in death stays down).\nSaved hero prefabs carry one that references the action library of their save folder; heroes assembled with LegionBuilder get one from Builder.Actions.\nWhile an action plays, LegionEvents.returnToIdle waits for the action to finish. Hit and cast events still fire for every step.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionBuilder",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionBuilder.yml\" sourcestartlinenumber=\"1\">Assembles one hero from the catalog, applies slot options, and plays motions that fit the back-hand weapon type.\nUsed by the edit screen and save/export, and also for assembling heroes at game runtime (Create, LegionRecipe).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.Motion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.Motion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog.Motion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.Option.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.Option.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog.Option",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.Piece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.Piece.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog.Piece",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.Projectile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.Projectile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog.Projectile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.Slot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.Slot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog.Slot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionCatalog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionCatalog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionCatalog",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionCatalog.yml\" sourcestartlinenumber=\"1\">List used by the edit screen to assemble and play heroes. Built by the editor menu Tools &gt; Pixel Legion Maker &gt; Build Catalog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionContentPack.Title.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionContentPack.Title.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionContentPack.Title",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionContentPack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionContentPack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionContentPack",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionContentPack.yml\" sourcestartlinenumber=\"1\">A content pack: a folder of parts, weapons, projectiles and heroes that the catalog takes in (LegionCatalogBuilder).\nThe base product is one pack (LegionBasePack.asset); an add-on is another pack asset in its own folder, so it holds only art and heroes and needs the base product to work.\nName add-on art with the type first, as the base product does (axe_frost, helmet_raider), because weapon motions and filters come from the first word.\nFolders are relative to the folder that holds this asset. When packs are added, removed or their art changes, the catalog rebuilds itself in the editor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionDye.Palette.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionDye.Palette.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionDye.Palette",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionDye.Palette.yml\" sourcestartlinenumber=\"1\">One dye. shades runs 5 steps from dark to light.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionDye.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionDye.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionDye",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionDye.yml\" sourcestartlinenumber=\"1\">Dyes one part renderer. Redraws the art's main color group (the catalog option's dyeRamp, from dark colors) in the dye's color steps.\nThe hero's skin color (Skins) likewise redraws the 3 base body skin colors.\nShaders/LegionDye.shader does the color change; this component supplies the color pairs to change through a MaterialPropertyBlock.\nIt stays in saved prefabs, so they are repainted the same way.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionEditor",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionEditor.yml\" sourcestartlinenumber=\"1\">Edit screen. It does not use the existing maker screen; the whole screen is built in code.\nThe left is the slot list (current part art and name), the center is the preview and motions, and the right is the option grid of the chosen slot.\nUI text is in English. An option is applied with one click, and the first cell &quot;None&quot; removes it. Randomize, undo, hero list and save are in the top bar.\nFor dyeable parts, a row of dye swatches appears above the options (the first cell is the original color).\nThe preview is rendered 1:1 in pixels by a separate camera and shown scaled up by an integer factor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionEvents",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionEvents.yml\" sourcestartlinenumber=\"1\">Receives events from motion clips. Attached to a hero root with an Animator (saved prefabs, heroes assembled with LegionBuilder).\nhit: the moment an attack lands (the moment a bow, crossbow or gun fires, or a thrown weapon leaves the hand), cast: the moment a cast goes out, end: end of a one-shot motion.\nThe argument is the animator state name (attack, attack<xref href=\"spear\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@spear\" sourcefile=\"../api-metadata/PixelUnitStudio.LegionEvents.yml\" sourcestartlinenumber=\"3\"></xref>, etc.).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionPixelCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionPixelCamera.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionPixelCamera",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionPixelCamera.yml\" sourcestartlinenumber=\"1\">Orthographic camera helper that shows pixels crisply regardless of render pipeline (replaces URP's Pixel Perfect Camera).\nAdjusts orthographicSize so the screen scales only by integer multiples of the reference resolution. One art pixel is always an N×N block of screen pixels.\nWith upscaleRenderTexture on, it draws into a render texture at art resolution and shows it scaled by an integer factor. Then rotated bones and weapons\nalso snap to the pixel grid and the pixel size stays even. The result is the same in Built-in and URP. Sprites must use Point filtering.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionProjectile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionProjectile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionProjectile",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionProjectile.yml\" sourcestartlinenumber=\"1\">Flies one projectile from its start point to the target point, calls Arrived when it lands, then removes it.\nBows, crossbows, guns and staffs fly the catalog's projectile art (Projectiles/) straight; thrown weapons throw the weapon art itself in an arc.\nA thrown weapon doesn't rotate its art; it spins by swapping pre-rotated art (turns), so pixels don't break. Hit detection is up to the game.\nUsually called from the hit event of an attack motion (LegionEvents).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionRecipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionRecipe.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionRecipe",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionRecipe.yml\" sourcestartlinenumber=\"1\">One hero's combination written as option names. Used to assemble heroes at game runtime (LegionBuilder.Create / Apply).\nAs text, &quot;slot=option[:dye]&quot; entries are joined by spaces. Example: &quot;Helmet=helmet_mitre Cloth=robe_priest:gold WeaponRight=staff_sun&quot;.\nWritten by name, so it is found correctly even if the catalog is rebuilt and the order changes. Slots not listed are cleared (if they can be) or set to the default.\nThe skin color is written like &quot;Skin=orc&quot; (LegionDye.Skins). If not written, it is the default skin.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionStore",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionStore.yml\" sourcestartlinenumber=\"1\">Saves a hero as a prefab and reads the saved list. Saving works only in the Unity Editor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionTurns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionTurns.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionTurns",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionTurns.yml\" sourcestartlinenumber=\"1\">Instead of rotating weapon art, swaps in whichever pre-rotated clean art (turns, counter-clockwise k×step°) is closest to the weapon angle.\nRotating pixel art at an arbitrary angle at runtime breaks outlines and drops or overlaps pixels (tools/generate_weapon_turns.py).\nAttached to a renderer that is a child of the weapon bone. The motion decides the bone rotation as is, and this renderer cancels that rotation and changes only the art's direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionUnit.Choice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionUnit.Choice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionUnit.Choice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.LegionUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.LegionUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.LegionUnit",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.LegionUnit.yml\" sourcestartlinenumber=\"1\">Record attached to the root of a saved hero prefab. Keeps the option name and dye chosen per slot so it can be loaded again.\nStored by name, so it is found correctly even if the catalog is rebuilt and the order changes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.PixelUnitStudioInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.PixelUnitStudioInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio.PixelUnitStudioInfo",
+      "Summary": "<p sourcefile=\"../api-metadata/PixelUnitStudio.PixelUnitStudioInfo.yml\" sourcestartlinenumber=\"1\">Product info. Kept in line with the version in the store package file name and the documentation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../api-metadata/PixelUnitStudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/PixelUnitStudio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PixelUnitStudio",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../api-metadata/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/toc.html"
+        },
+        ".json": {
+          "relative_path": "reference/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
