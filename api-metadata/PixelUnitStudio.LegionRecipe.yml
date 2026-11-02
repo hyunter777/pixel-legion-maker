@@ -1,0 +1,1117 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionRecipe
+  commentId: T:PixelUnitStudio.LegionRecipe
+  id: LegionRecipe
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionRecipe.#ctor
+  - PixelUnitStudio.LegionRecipe.DyeChance
+  - PixelUnitStudio.LegionRecipe.DyeFor(System.String)
+  - PixelUnitStudio.LegionRecipe.Dyes
+  - PixelUnitStudio.LegionRecipe.FillChance
+  - PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionBuilder)
+  - PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionUnit)
+  - PixelUnitStudio.LegionRecipe.Missing(PixelUnitStudio.LegionCatalog)
+  - PixelUnitStudio.LegionRecipe.OffHandRandomSets
+  - PixelUnitStudio.LegionRecipe.OptionFor(System.String)
+  - PixelUnitStudio.LegionRecipe.Options
+  - PixelUnitStudio.LegionRecipe.Parse(System.String)
+  - PixelUnitStudio.LegionRecipe.Random(PixelUnitStudio.LegionCatalog,System.Random)
+  - PixelUnitStudio.LegionRecipe.Set(System.String,System.String,System.String)
+  - PixelUnitStudio.LegionRecipe.Skin
+  - PixelUnitStudio.LegionRecipe.SkinChance
+  - PixelUnitStudio.LegionRecipe.ToString
+  langs:
+  - csharp
+  - vb
+  name: LegionRecipe
+  nameWithType: LegionRecipe
+  fullName: PixelUnitStudio.LegionRecipe
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "One hero\\'s combination written as option names. Used to assemble heroes at game runtime (LegionBuilder.Create
+    / Apply).\n            As text, \"slot=option[:dye]\" entries are joined by spaces. Example: \"Helmet=helmet_mitre Cloth=robe_priest:gold
+    WeaponRight=staff_sun\".\n            Written by name, so it is found correctly even if the catalog is rebuilt and the
+    order changes. Slots not listed are cleared (if they can be) or set to the default.\n            The skin color is written
+    like \"Skin=orc\" (LegionDye.Skins). If not written, it is the default skin."
+  example: []
+  syntax:
+    content: public sealed class LegionRecipe
+    content.vb: Public NotInheritable Class LegionRecipe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: PixelUnitStudio.LegionRecipe.FillChance
+  commentId: F:PixelUnitStudio.LegionRecipe.FillChance
+  id: FillChance
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: FillChance
+  nameWithType: LegionRecipe.FillChance
+  fullName: PixelUnitStudio.LegionRecipe.FillChance
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Probability of filling a slot in a random combination. Slots not listed get 0.5; slots that cannot be cleared are
+    always filled.
+  example: []
+  syntax:
+    content: public static readonly IReadOnlyDictionary<string, float> FillChance
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Single}
+    content.vb: Public Shared ReadOnly FillChance As IReadOnlyDictionary(Of String, Single)
+- uid: PixelUnitStudio.LegionRecipe.OffHandRandomSets
+  commentId: F:PixelUnitStudio.LegionRecipe.OffHandRandomSets
+  id: OffHandRandomSets
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: OffHandRandomSets
+  nameWithType: LegionRecipe.OffHandRandomSets
+  fullName: PixelUnitStudio.LegionRecipe.OffHandRandomSets
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Motion sets a random combination puts in the off hand. The off hand is decoration, so only one-handed weapons and
+    shields (default) and daggers are chosen.
+  example: []
+  syntax:
+    content: public static readonly HashSet<string> OffHandRandomSets
+    return:
+      type: System.Collections.Generic.HashSet{System.String}
+    content.vb: Public Shared ReadOnly OffHandRandomSets As HashSet(Of String)
+- uid: PixelUnitStudio.LegionRecipe.DyeChance
+  commentId: F:PixelUnitStudio.LegionRecipe.DyeChance
+  id: DyeChance
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: DyeChance
+  nameWithType: LegionRecipe.DyeChance
+  fullName: PixelUnitStudio.LegionRecipe.DyeChance
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Probability that a dyeable part is dyed in a random combination.
+  example: []
+  syntax:
+    content: public const float DyeChance = 0.4
+    return:
+      type: System.Single
+    content.vb: Public Const DyeChance As Single = 0.4
+- uid: PixelUnitStudio.LegionRecipe.SkinChance
+  commentId: F:PixelUnitStudio.LegionRecipe.SkinChance
+  id: SkinChance
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: SkinChance
+  nameWithType: LegionRecipe.SkinChance
+  fullName: PixelUnitStudio.LegionRecipe.SkinChance
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Probability that a random combination picks a non-default skin color.
+  example: []
+  syntax:
+    content: public const float SkinChance = 0.3
+    return:
+      type: System.Single
+    content.vb: Public Const SkinChance As Single = 0.3
+- uid: PixelUnitStudio.LegionRecipe.OptionFor(System.String)
+  commentId: M:PixelUnitStudio.LegionRecipe.OptionFor(System.String)
+  id: OptionFor(System.String)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: OptionFor(string)
+  nameWithType: LegionRecipe.OptionFor(string)
+  fullName: PixelUnitStudio.LegionRecipe.OptionFor(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string OptionFor(string slot)
+    parameters:
+    - id: slot
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function OptionFor(slot As String) As String
+  overload: PixelUnitStudio.LegionRecipe.OptionFor*
+  nameWithType.vb: LegionRecipe.OptionFor(String)
+  fullName.vb: PixelUnitStudio.LegionRecipe.OptionFor(String)
+  name.vb: OptionFor(String)
+- uid: PixelUnitStudio.LegionRecipe.DyeFor(System.String)
+  commentId: M:PixelUnitStudio.LegionRecipe.DyeFor(System.String)
+  id: DyeFor(System.String)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: DyeFor(string)
+  nameWithType: LegionRecipe.DyeFor(string)
+  fullName: PixelUnitStudio.LegionRecipe.DyeFor(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string DyeFor(string slot)
+    parameters:
+    - id: slot
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function DyeFor(slot As String) As String
+  overload: PixelUnitStudio.LegionRecipe.DyeFor*
+  nameWithType.vb: LegionRecipe.DyeFor(String)
+  fullName.vb: PixelUnitStudio.LegionRecipe.DyeFor(String)
+  name.vb: DyeFor(String)
+- uid: PixelUnitStudio.LegionRecipe.Set(System.String,System.String,System.String)
+  commentId: M:PixelUnitStudio.LegionRecipe.Set(System.String,System.String,System.String)
+  id: Set(System.String,System.String,System.String)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Set(string, string, string)
+  nameWithType: LegionRecipe.Set(string, string, string)
+  fullName: PixelUnitStudio.LegionRecipe.Set(string, string, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Writes an option into a slot. If option is empty the slot is cleared. If dye is empty, the original color.
+  example: []
+  syntax:
+    content: public LegionRecipe Set(string slot, string option, string dye = null)
+    parameters:
+    - id: slot
+      type: System.String
+    - id: option
+      type: System.String
+    - id: dye
+      type: System.String
+    return:
+      type: PixelUnitStudio.LegionRecipe
+    content.vb: Public Function [Set](slot As String, [option] As String, dye As String = Nothing) As LegionRecipe
+  overload: PixelUnitStudio.LegionRecipe.Set*
+  nameWithType.vb: LegionRecipe.Set(String, String, String)
+  fullName.vb: PixelUnitStudio.LegionRecipe.Set(String, String, String)
+  name.vb: Set(String, String, String)
+- uid: PixelUnitStudio.LegionRecipe.Parse(System.String)
+  commentId: M:PixelUnitStudio.LegionRecipe.Parse(System.String)
+  id: Parse(System.String)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Parse(string)
+  nameWithType: LegionRecipe.Parse(string)
+  fullName: PixelUnitStudio.LegionRecipe.Parse(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Reads "slot=option[:dye] ..." text. FormatException if any piece is malformed.
+  example: []
+  syntax:
+    content: public static LegionRecipe Parse(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: PixelUnitStudio.LegionRecipe
+    content.vb: Public Shared Function Parse(text As String) As LegionRecipe
+  overload: PixelUnitStudio.LegionRecipe.Parse*
+  nameWithType.vb: LegionRecipe.Parse(String)
+  fullName.vb: PixelUnitStudio.LegionRecipe.Parse(String)
+  name.vb: Parse(String)
+- uid: PixelUnitStudio.LegionRecipe.ToString
+  commentId: M:PixelUnitStudio.LegionRecipe.ToString
+  id: ToString
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LegionRecipe.ToString()
+  fullName: PixelUnitStudio.LegionRecipe.ToString()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: PixelUnitStudio.LegionRecipe.ToString*
+- uid: PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionUnit)
+  commentId: M:PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionUnit)
+  id: From(PixelUnitStudio.LegionUnit)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: From(LegionUnit)
+  nameWithType: LegionRecipe.From(LegionUnit)
+  fullName: PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionUnit)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Reads the combination of a saved hero prefab.
+  example: []
+  syntax:
+    content: public static LegionRecipe From(LegionUnit unit)
+    parameters:
+    - id: unit
+      type: PixelUnitStudio.LegionUnit
+    return:
+      type: PixelUnitStudio.LegionRecipe
+    content.vb: Public Shared Function From(unit As LegionUnit) As LegionRecipe
+  overload: PixelUnitStudio.LegionRecipe.From*
+- uid: PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionBuilder)
+  commentId: M:PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionBuilder)
+  id: From(PixelUnitStudio.LegionBuilder)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: From(LegionBuilder)
+  nameWithType: LegionRecipe.From(LegionBuilder)
+  fullName: PixelUnitStudio.LegionRecipe.From(PixelUnitStudio.LegionBuilder)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Reads the current combination of a hero being assembled.
+  example: []
+  syntax:
+    content: public static LegionRecipe From(LegionBuilder builder)
+    parameters:
+    - id: builder
+      type: PixelUnitStudio.LegionBuilder
+    return:
+      type: PixelUnitStudio.LegionRecipe
+    content.vb: Public Shared Function From(builder As LegionBuilder) As LegionRecipe
+  overload: PixelUnitStudio.LegionRecipe.From*
+- uid: PixelUnitStudio.LegionRecipe.Random(PixelUnitStudio.LegionCatalog,System.Random)
+  commentId: M:PixelUnitStudio.LegionRecipe.Random(PixelUnitStudio.LegionCatalog,System.Random)
+  id: Random(PixelUnitStudio.LegionCatalog,System.Random)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Random(LegionCatalog, Random)
+  nameWithType: LegionRecipe.Random(LegionCatalog, Random)
+  fullName: PixelUnitStudio.LegionRecipe.Random(PixelUnitStudio.LegionCatalog, System.Random)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Builds a random combination from the catalog. The same seed gives the same combination (for the same catalog).
+  example: []
+  syntax:
+    content: public static LegionRecipe Random(LegionCatalog catalog, Random random)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    - id: random
+      type: System.Random
+    return:
+      type: PixelUnitStudio.LegionRecipe
+    content.vb: Public Shared Function Random(catalog As LegionCatalog, random As Random) As LegionRecipe
+  overload: PixelUnitStudio.LegionRecipe.Random*
+- uid: PixelUnitStudio.LegionRecipe.Missing(PixelUnitStudio.LegionCatalog)
+  commentId: M:PixelUnitStudio.LegionRecipe.Missing(PixelUnitStudio.LegionCatalog)
+  id: Missing(PixelUnitStudio.LegionCatalog)
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Missing(LegionCatalog)
+  nameWithType: LegionRecipe.Missing(LegionCatalog)
+  fullName: PixelUnitStudio.LegionRecipe.Missing(PixelUnitStudio.LegionCatalog)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Returns option and dye names ("slot/name") not in the catalog.
+  example: []
+  syntax:
+    content: public List<string> Missing(LegionCatalog catalog)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function Missing(catalog As LegionCatalog) As List(Of String)
+  overload: PixelUnitStudio.LegionRecipe.Missing*
+- uid: PixelUnitStudio.LegionRecipe.#ctor
+  commentId: M:PixelUnitStudio.LegionRecipe.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: LegionRecipe()
+  nameWithType: LegionRecipe.LegionRecipe()
+  fullName: PixelUnitStudio.LegionRecipe.LegionRecipe()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionRecipe()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionRecipe.#ctor*
+  nameWithType.vb: LegionRecipe.New()
+  fullName.vb: PixelUnitStudio.LegionRecipe.New()
+  name.vb: New()
+- uid: PixelUnitStudio.LegionRecipe.Skin
+  commentId: P:PixelUnitStudio.LegionRecipe.Skin
+  id: Skin
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Skin
+  nameWithType: LegionRecipe.Skin
+  fullName: PixelUnitStudio.LegionRecipe.Skin
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string Skin { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Skin As String
+  overload: PixelUnitStudio.LegionRecipe.Skin*
+- uid: PixelUnitStudio.LegionRecipe.Options
+  commentId: P:PixelUnitStudio.LegionRecipe.Options
+  id: Options
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: LegionRecipe.Options
+  fullName: PixelUnitStudio.LegionRecipe.Options
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public IReadOnlyDictionary<string, string> Options { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property Options As IReadOnlyDictionary(Of String, String)
+  overload: PixelUnitStudio.LegionRecipe.Options*
+- uid: PixelUnitStudio.LegionRecipe.Dyes
+  commentId: P:PixelUnitStudio.LegionRecipe.Dyes
+  id: Dyes
+  parent: PixelUnitStudio.LegionRecipe
+  langs:
+  - csharp
+  - vb
+  name: Dyes
+  nameWithType: LegionRecipe.Dyes
+  fullName: PixelUnitStudio.LegionRecipe.Dyes
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public IReadOnlyDictionary<string, string> Dyes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property Dyes As IReadOnlyDictionary(Of String, String)
+  overload: PixelUnitStudio.LegionRecipe.Dyes*
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Single}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, float>
+  nameWithType: IReadOnlyDictionary<string, float>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, float>
+  nameWithType.vb: IReadOnlyDictionary(Of String, Single)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Single)
+  name.vb: IReadOnlyDictionary(Of String, Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.HashSet{System.String}
+  commentId: T:System.Collections.Generic.HashSet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<string>
+  nameWithType: HashSet<string>
+  fullName: System.Collections.Generic.HashSet<string>
+  nameWithType.vb: HashSet(Of String)
+  fullName.vb: System.Collections.Generic.HashSet(Of String)
+  name.vb: HashSet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: PixelUnitStudio.LegionRecipe.OptionFor*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.OptionFor
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_OptionFor_System_String_
+  name: OptionFor
+  nameWithType: LegionRecipe.OptionFor
+  fullName: PixelUnitStudio.LegionRecipe.OptionFor
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio.LegionRecipe.DyeFor*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.DyeFor
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_DyeFor_System_String_
+  name: DyeFor
+  nameWithType: LegionRecipe.DyeFor
+  fullName: PixelUnitStudio.LegionRecipe.DyeFor
+- uid: PixelUnitStudio.LegionRecipe.Set*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Set
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Set_System_String_System_String_System_String_
+  name: Set
+  nameWithType: LegionRecipe.Set
+  fullName: PixelUnitStudio.LegionRecipe.Set
+- uid: PixelUnitStudio.LegionRecipe
+  commentId: T:PixelUnitStudio.LegionRecipe
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html
+  name: LegionRecipe
+  nameWithType: LegionRecipe
+  fullName: PixelUnitStudio.LegionRecipe
+- uid: PixelUnitStudio.LegionRecipe.Parse*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Parse
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Parse_System_String_
+  name: Parse
+  nameWithType: LegionRecipe.Parse
+  fullName: PixelUnitStudio.LegionRecipe.Parse
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: PixelUnitStudio.LegionRecipe.ToString*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.ToString
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_ToString
+  name: ToString
+  nameWithType: LegionRecipe.ToString
+  fullName: PixelUnitStudio.LegionRecipe.ToString
+- uid: PixelUnitStudio.LegionRecipe.From*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.From
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_From_PixelUnitStudio_LegionUnit_
+  name: From
+  nameWithType: LegionRecipe.From
+  fullName: PixelUnitStudio.LegionRecipe.From
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio.LegionBuilder
+  commentId: T:PixelUnitStudio.LegionBuilder
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionBuilder.html
+  name: LegionBuilder
+  nameWithType: LegionBuilder
+  fullName: PixelUnitStudio.LegionBuilder
+- uid: PixelUnitStudio.LegionRecipe.Random*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Random
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Random_PixelUnitStudio_LegionCatalog_System_Random_
+  name: Random
+  nameWithType: LegionRecipe.Random
+  fullName: PixelUnitStudio.LegionRecipe.Random
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.random
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: PixelUnitStudio.LegionRecipe.Missing*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Missing
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Missing_PixelUnitStudio_LegionCatalog_
+  name: Missing
+  nameWithType: LegionRecipe.Missing
+  fullName: PixelUnitStudio.LegionRecipe.Missing
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: PixelUnitStudio.LegionRecipe.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe__ctor
+  name: LegionRecipe
+  nameWithType: LegionRecipe.LegionRecipe
+  fullName: PixelUnitStudio.LegionRecipe.LegionRecipe
+  nameWithType.vb: LegionRecipe.New
+  fullName.vb: PixelUnitStudio.LegionRecipe.New
+  name.vb: New
+- uid: PixelUnitStudio.LegionRecipe.Skin*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Skin
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Skin
+  name: Skin
+  nameWithType: LegionRecipe.Skin
+  fullName: PixelUnitStudio.LegionRecipe.Skin
+- uid: PixelUnitStudio.LegionRecipe.Options*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Options
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Options
+  name: Options
+  nameWithType: LegionRecipe.Options
+  fullName: PixelUnitStudio.LegionRecipe.Options
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: PixelUnitStudio.LegionRecipe.Dyes*
+  commentId: Overload:PixelUnitStudio.LegionRecipe.Dyes
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html#PixelUnitStudio_LegionRecipe_Dyes
+  name: Dyes
+  nameWithType: LegionRecipe.Dyes
+  fullName: PixelUnitStudio.LegionRecipe.Dyes

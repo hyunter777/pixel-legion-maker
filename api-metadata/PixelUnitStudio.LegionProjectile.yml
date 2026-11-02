@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionProjectile
+  commentId: T:PixelUnitStudio.LegionProjectile
+  id: LegionProjectile
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionProjectile.#ctor
+  - PixelUnitStudio.LegionProjectile.Arrived
+  - PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionBuilder,UnityEngine.Vector3,System.Single)
+  - PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  - PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionUnit,UnityEngine.Vector3,System.Single)
+  - PixelUnitStudio.LegionProjectile.Shoots(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option)
+  - PixelUnitStudio.LegionProjectile.arc
+  - PixelUnitStudio.LegionProjectile.from
+  - PixelUnitStudio.LegionProjectile.speed
+  - PixelUnitStudio.LegionProjectile.spin
+  - PixelUnitStudio.LegionProjectile.to
+  - PixelUnitStudio.LegionProjectile.turns
+  langs:
+  - csharp
+  - vb
+  name: LegionProjectile
+  nameWithType: LegionProjectile
+  fullName: PixelUnitStudio.LegionProjectile
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Flies one projectile from its start point to the target point, calls Arrived when it lands, then removes it.\n
+    \           Bows, crossbows, guns and staffs fly the catalog's projectile art (Projectiles/) straight; thrown weapons
+    throw the weapon art itself in an arc.\n            A thrown weapon doesn't rotate its art; it spins by swapping pre-rotated
+    art (turns), so pixels don't break. Hit detection is up to the game.\n            Usually called from the hit event of
+    an attack motion (LegionEvents)."
+  example: []
+  syntax:
+    content: 'public sealed class LegionProjectile : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionProjectile Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionProjectile.from
+  commentId: F:PixelUnitStudio.LegionProjectile.from
+  id: from
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: from
+  nameWithType: LegionProjectile.from
+  fullName: PixelUnitStudio.LegionProjectile.from
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Vector3 from
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public from As Vector3
+- uid: PixelUnitStudio.LegionProjectile.to
+  commentId: F:PixelUnitStudio.LegionProjectile.to
+  id: to
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: to
+  nameWithType: LegionProjectile.to
+  fullName: PixelUnitStudio.LegionProjectile.to
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Vector3 to
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public [to] As Vector3
+- uid: PixelUnitStudio.LegionProjectile.speed
+  commentId: F:PixelUnitStudio.LegionProjectile.speed
+  id: speed
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: LegionProjectile.speed
+  fullName: PixelUnitStudio.LegionProjectile.speed
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+- uid: PixelUnitStudio.LegionProjectile.arc
+  commentId: F:PixelUnitStudio.LegionProjectile.arc
+  id: arc
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: arc
+  nameWithType: LegionProjectile.arc
+  fullName: PixelUnitStudio.LegionProjectile.arc
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public float arc
+    return:
+      type: System.Single
+    content.vb: Public arc As Single
+- uid: PixelUnitStudio.LegionProjectile.turns
+  commentId: F:PixelUnitStudio.LegionProjectile.turns
+  id: turns
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: turns
+  nameWithType: LegionProjectile.turns
+  fullName: PixelUnitStudio.LegionProjectile.turns
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Sprite[] turns
+    return:
+      type: UnityEngine.Sprite[]
+    content.vb: Public turns As Sprite()
+- uid: PixelUnitStudio.LegionProjectile.spin
+  commentId: F:PixelUnitStudio.LegionProjectile.spin
+  id: spin
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: spin
+  nameWithType: LegionProjectile.spin
+  fullName: PixelUnitStudio.LegionProjectile.spin
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public float spin
+    return:
+      type: System.Single
+    content.vb: Public spin As Single
+- uid: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  commentId: M:PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  id: Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: Launch(LegionCatalog, Option, Vector3, Vector3, float, int, int)
+  nameWithType: LegionProjectile.Launch(LegionCatalog, LegionCatalog.Option, Vector3, Vector3, float, int, int)
+  fullName: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog, PixelUnitStudio.LegionCatalog.Option, UnityEngine.Vector3,
+    UnityEngine.Vector3, float, int, int)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Flies the projectile fired by weapon (the back-hand weapon option) from from to to. Null for weapons without a
+    projectile (swords, etc.).
+  example: []
+  syntax:
+    content: public static LegionProjectile Launch(LegionCatalog catalog, LegionCatalog.Option weapon, Vector3 from, Vector3
+      to, float speed = 10, int sortingLayer = 0, int sortingOrder = 200)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    - id: weapon
+      type: PixelUnitStudio.LegionCatalog.Option
+    - id: from
+      type: UnityEngine.Vector3
+    - id: to
+      type: UnityEngine.Vector3
+    - id: speed
+      type: System.Single
+    - id: sortingLayer
+      type: System.Int32
+    - id: sortingOrder
+      type: System.Int32
+    return:
+      type: PixelUnitStudio.LegionProjectile
+    content.vb: Public Shared Function Launch(catalog As LegionCatalog, weapon As LegionCatalog.Option, from As Vector3, [to]
+      As Vector3, speed As Single = 10, sortingLayer As Integer = 0, sortingOrder As Integer = 200) As LegionProjectile
+  overload: PixelUnitStudio.LegionProjectile.Launch*
+  nameWithType.vb: LegionProjectile.Launch(LegionCatalog, LegionCatalog.Option, Vector3, Vector3, Single, Integer, Integer)
+  fullName.vb: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog, PixelUnitStudio.LegionCatalog.Option,
+    UnityEngine.Vector3, UnityEngine.Vector3, Single, Integer, Integer)
+  name.vb: Launch(LegionCatalog, Option, Vector3, Vector3, Single, Integer, Integer)
+- uid: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionBuilder,UnityEngine.Vector3,System.Single)
+  commentId: M:PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionBuilder,UnityEngine.Vector3,System.Single)
+  id: Launch(PixelUnitStudio.LegionBuilder,UnityEngine.Vector3,System.Single)
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: Launch(LegionBuilder, Vector3, float)
+  nameWithType: LegionProjectile.Launch(LegionBuilder, Vector3, float)
+  fullName: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionBuilder, UnityEngine.Vector3, float)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Fires from the back-hand weapon of an assembled hero (LegionBuilder) to to.
+  example: []
+  syntax:
+    content: public static LegionProjectile Launch(LegionBuilder hero, Vector3 to, float speed = 10)
+    parameters:
+    - id: hero
+      type: PixelUnitStudio.LegionBuilder
+    - id: to
+      type: UnityEngine.Vector3
+    - id: speed
+      type: System.Single
+    return:
+      type: PixelUnitStudio.LegionProjectile
+    content.vb: Public Shared Function Launch(hero As LegionBuilder, [to] As Vector3, speed As Single = 10) As LegionProjectile
+  overload: PixelUnitStudio.LegionProjectile.Launch*
+  nameWithType.vb: LegionProjectile.Launch(LegionBuilder, Vector3, Single)
+  fullName.vb: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionBuilder, UnityEngine.Vector3, Single)
+  name.vb: Launch(LegionBuilder, Vector3, Single)
+- uid: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionUnit,UnityEngine.Vector3,System.Single)
+  commentId: M:PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionUnit,UnityEngine.Vector3,System.Single)
+  id: Launch(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionUnit,UnityEngine.Vector3,System.Single)
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: Launch(LegionCatalog, LegionUnit, Vector3, float)
+  nameWithType: LegionProjectile.Launch(LegionCatalog, LegionUnit, Vector3, float)
+  fullName: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog, PixelUnitStudio.LegionUnit, UnityEngine.Vector3,
+    float)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Fires from the back-hand weapon of a saved hero prefab (LegionUnit) to to. The weapon option is looked up by name
+    in catalog.
+  example: []
+  syntax:
+    content: public static LegionProjectile Launch(LegionCatalog catalog, LegionUnit unit, Vector3 to, float speed = 10)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    - id: unit
+      type: PixelUnitStudio.LegionUnit
+    - id: to
+      type: UnityEngine.Vector3
+    - id: speed
+      type: System.Single
+    return:
+      type: PixelUnitStudio.LegionProjectile
+    content.vb: Public Shared Function Launch(catalog As LegionCatalog, unit As LegionUnit, [to] As Vector3, speed As Single
+      = 10) As LegionProjectile
+  overload: PixelUnitStudio.LegionProjectile.Launch*
+  nameWithType.vb: LegionProjectile.Launch(LegionCatalog, LegionUnit, Vector3, Single)
+  fullName.vb: PixelUnitStudio.LegionProjectile.Launch(PixelUnitStudio.LegionCatalog, PixelUnitStudio.LegionUnit, UnityEngine.Vector3,
+    Single)
+  name.vb: Launch(LegionCatalog, LegionUnit, Vector3, Single)
+- uid: PixelUnitStudio.LegionProjectile.Shoots(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option)
+  commentId: M:PixelUnitStudio.LegionProjectile.Shoots(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option)
+  id: Shoots(PixelUnitStudio.LegionCatalog,PixelUnitStudio.LegionCatalog.Option)
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: Shoots(LegionCatalog, Option)
+  nameWithType: LegionProjectile.Shoots(LegionCatalog, LegionCatalog.Option)
+  fullName: PixelUnitStudio.LegionProjectile.Shoots(PixelUnitStudio.LegionCatalog, PixelUnitStudio.LegionCatalog.Option)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Whether weapon is one that fires a projectile (bow, crossbow, gun, staff, thrown).
+  example: []
+  syntax:
+    content: public static bool Shoots(LegionCatalog catalog, LegionCatalog.Option weapon)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    - id: weapon
+      type: PixelUnitStudio.LegionCatalog.Option
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Shoots(catalog As LegionCatalog, weapon As LegionCatalog.Option) As Boolean
+  overload: PixelUnitStudio.LegionProjectile.Shoots*
+- uid: PixelUnitStudio.LegionProjectile.#ctor
+  commentId: M:PixelUnitStudio.LegionProjectile.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: LegionProjectile()
+  nameWithType: LegionProjectile.LegionProjectile()
+  fullName: PixelUnitStudio.LegionProjectile.LegionProjectile()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionProjectile()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionProjectile.#ctor*
+  nameWithType.vb: LegionProjectile.New()
+  fullName.vb: PixelUnitStudio.LegionProjectile.New()
+  name.vb: New()
+- uid: PixelUnitStudio.LegionProjectile.Arrived
+  commentId: E:PixelUnitStudio.LegionProjectile.Arrived
+  id: Arrived
+  parent: PixelUnitStudio.LegionProjectile
+  langs:
+  - csharp
+  - vb
+  name: Arrived
+  nameWithType: LegionProjectile.Arrived
+  fullName: PixelUnitStudio.LegionProjectile.Arrived
+  type: Event
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: When it reaches the target point. The projectile is removed after this.
+  example: []
+  syntax:
+    content: public event Action<LegionProjectile> Arrived
+    return:
+      type: System.Action{PixelUnitStudio.LegionProjectile}
+    content.vb: Public Event Arrived As Action(Of LegionProjectile)
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Sprite[]
+  isExternal: true
+  name: Sprite[]
+  nameWithType: Sprite[]
+  fullName: UnityEngine.Sprite[]
+  nameWithType.vb: Sprite()
+  fullName.vb: UnityEngine.Sprite()
+  name.vb: Sprite()
+  spec.csharp:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: (
+  - name: )
+- uid: PixelUnitStudio.LegionProjectile.Launch*
+  commentId: Overload:PixelUnitStudio.LegionProjectile.Launch
+  isExternal: true
+  href: PixelUnitStudio.LegionProjectile.html#PixelUnitStudio_LegionProjectile_Launch_PixelUnitStudio_LegionCatalog_PixelUnitStudio_LegionCatalog_Option_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Int32_System_Int32_
+  name: Launch
+  nameWithType: LegionProjectile.Launch
+  fullName: PixelUnitStudio.LegionProjectile.Launch
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+- uid: PixelUnitStudio.LegionCatalog.Option
+  commentId: T:PixelUnitStudio.LegionCatalog.Option
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Option
+  nameWithType: LegionCatalog.Option
+  fullName: PixelUnitStudio.LegionCatalog.Option
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Option
+    name: Option
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Option.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Option
+    name: Option
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Option.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: PixelUnitStudio.LegionProjectile
+  commentId: T:PixelUnitStudio.LegionProjectile
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionProjectile.html
+  name: LegionProjectile
+  nameWithType: LegionProjectile
+  fullName: PixelUnitStudio.LegionProjectile
+- uid: PixelUnitStudio.LegionBuilder
+  commentId: T:PixelUnitStudio.LegionBuilder
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionBuilder.html
+  name: LegionBuilder
+  nameWithType: LegionBuilder
+  fullName: PixelUnitStudio.LegionBuilder
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio.LegionProjectile.Shoots*
+  commentId: Overload:PixelUnitStudio.LegionProjectile.Shoots
+  isExternal: true
+  href: PixelUnitStudio.LegionProjectile.html#PixelUnitStudio_LegionProjectile_Shoots_PixelUnitStudio_LegionCatalog_PixelUnitStudio_LegionCatalog_Option_
+  name: Shoots
+  nameWithType: LegionProjectile.Shoots
+  fullName: PixelUnitStudio.LegionProjectile.Shoots
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PixelUnitStudio.LegionProjectile.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionProjectile.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionProjectile.html#PixelUnitStudio_LegionProjectile__ctor
+  name: LegionProjectile
+  nameWithType: LegionProjectile.LegionProjectile
+  fullName: PixelUnitStudio.LegionProjectile.LegionProjectile
+  nameWithType.vb: LegionProjectile.New
+  fullName.vb: PixelUnitStudio.LegionProjectile.New
+  name.vb: New
+- uid: System.Action{PixelUnitStudio.LegionProjectile}
+  commentId: T:System.Action{PixelUnitStudio.LegionProjectile}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<LegionProjectile>
+  nameWithType: Action<LegionProjectile>
+  fullName: System.Action<PixelUnitStudio.LegionProjectile>
+  nameWithType.vb: Action(Of LegionProjectile)
+  fullName.vb: System.Action(Of PixelUnitStudio.LegionProjectile)
+  name.vb: Action(Of LegionProjectile)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: PixelUnitStudio.LegionProjectile
+    name: LegionProjectile
+    isExternal: true
+    href: PixelUnitStudio.LegionProjectile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionProjectile
+    name: LegionProjectile
+    isExternal: true
+    href: PixelUnitStudio.LegionProjectile.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )

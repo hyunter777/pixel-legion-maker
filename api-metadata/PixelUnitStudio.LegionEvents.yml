@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionEvents
+  commentId: T:PixelUnitStudio.LegionEvents
+  id: LegionEvents
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionEvents.#ctor
+  - PixelUnitStudio.LegionEvents.Cast
+  - PixelUnitStudio.LegionEvents.End
+  - PixelUnitStudio.LegionEvents.Fired
+  - PixelUnitStudio.LegionEvents.FunctionOf(System.String)
+  - PixelUnitStudio.LegionEvents.Hit
+  - PixelUnitStudio.LegionEvents.WeaponBone
+  - PixelUnitStudio.LegionEvents.onCast
+  - PixelUnitStudio.LegionEvents.onEnd
+  - PixelUnitStudio.LegionEvents.onHit
+  - PixelUnitStudio.LegionEvents.returnToIdle
+  langs:
+  - csharp
+  - vb
+  name: LegionEvents
+  nameWithType: LegionEvents
+  fullName: PixelUnitStudio.LegionEvents
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Receives events from motion clips. Attached to a hero root with an Animator (saved prefabs, heroes assembled with
+    LegionBuilder).\n            hit: the moment an attack lands (the moment a bow, crossbow or gun fires, or a thrown weapon
+    leaves the hand), cast: the moment a cast goes out, end: end of a one-shot motion.\n            The argument is the animator
+    state name (attack, attack@spear, etc.)."
+  example: []
+  syntax:
+    content: 'public sealed class LegionEvents : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionEvents Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionEvents.Hit
+  commentId: F:PixelUnitStudio.LegionEvents.Hit
+  id: Hit
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: Hit
+  nameWithType: LegionEvents.Hit
+  fullName: PixelUnitStudio.LegionEvents.Hit
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const string Hit = "hit"
+    return:
+      type: System.String
+    content.vb: Public Const Hit As String = "hit"
+- uid: PixelUnitStudio.LegionEvents.Cast
+  commentId: F:PixelUnitStudio.LegionEvents.Cast
+  id: Cast
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: Cast
+  nameWithType: LegionEvents.Cast
+  fullName: PixelUnitStudio.LegionEvents.Cast
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const string Cast = "cast"
+    return:
+      type: System.String
+    content.vb: Public Const Cast As String = "cast"
+- uid: PixelUnitStudio.LegionEvents.End
+  commentId: F:PixelUnitStudio.LegionEvents.End
+  id: End
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: LegionEvents.End
+  fullName: PixelUnitStudio.LegionEvents.End
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const string End = "end"
+    return:
+      type: System.String
+    content.vb: Public Const End As String = "end"
+- uid: PixelUnitStudio.LegionEvents.returnToIdle
+  commentId: F:PixelUnitStudio.LegionEvents.returnToIdle
+  id: returnToIdle
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: returnToIdle
+  nameWithType: LegionEvents.returnToIdle
+  fullName: PixelUnitStudio.LegionEvents.returnToIdle
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public bool returnToIdle
+    return:
+      type: System.Boolean
+    content.vb: Public returnToIdle As Boolean
+- uid: PixelUnitStudio.LegionEvents.onHit
+  commentId: F:PixelUnitStudio.LegionEvents.onHit
+  id: onHit
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: onHit
+  nameWithType: LegionEvents.onHit
+  fullName: PixelUnitStudio.LegionEvents.onHit
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public UnityEvent onHit
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onHit As UnityEvent
+- uid: PixelUnitStudio.LegionEvents.onCast
+  commentId: F:PixelUnitStudio.LegionEvents.onCast
+  id: onCast
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: onCast
+  nameWithType: LegionEvents.onCast
+  fullName: PixelUnitStudio.LegionEvents.onCast
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public UnityEvent onCast
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onCast As UnityEvent
+- uid: PixelUnitStudio.LegionEvents.onEnd
+  commentId: F:PixelUnitStudio.LegionEvents.onEnd
+  id: onEnd
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: onEnd
+  nameWithType: LegionEvents.onEnd
+  fullName: PixelUnitStudio.LegionEvents.onEnd
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public UnityEvent onEnd
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onEnd As UnityEvent
+- uid: PixelUnitStudio.LegionEvents.FunctionOf(System.String)
+  commentId: M:PixelUnitStudio.LegionEvents.FunctionOf(System.String)
+  id: FunctionOf(System.String)
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: FunctionOf(string)
+  nameWithType: LegionEvents.FunctionOf(string)
+  fullName: PixelUnitStudio.LegionEvents.FunctionOf(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Function name called by clip events (LegionAnimation puts it in the clip).
+  example: []
+  syntax:
+    content: public static string FunctionOf(string eventName)
+    parameters:
+    - id: eventName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function FunctionOf(eventName As String) As String
+  overload: PixelUnitStudio.LegionEvents.FunctionOf*
+  nameWithType.vb: LegionEvents.FunctionOf(String)
+  fullName.vb: PixelUnitStudio.LegionEvents.FunctionOf(String)
+  name.vb: FunctionOf(String)
+- uid: PixelUnitStudio.LegionEvents.#ctor
+  commentId: M:PixelUnitStudio.LegionEvents.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: LegionEvents()
+  nameWithType: LegionEvents.LegionEvents()
+  fullName: PixelUnitStudio.LegionEvents.LegionEvents()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionEvents()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionEvents.#ctor*
+  nameWithType.vb: LegionEvents.New()
+  fullName.vb: PixelUnitStudio.LegionEvents.New()
+  name.vb: New()
+- uid: PixelUnitStudio.LegionEvents.WeaponBone
+  commentId: P:PixelUnitStudio.LegionEvents.WeaponBone
+  id: WeaponBone
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: WeaponBone
+  nameWithType: LegionEvents.WeaponBone
+  fullName: PixelUnitStudio.LegionEvents.WeaponBone
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Back-hand weapon bone. Used as the position where projectiles spawn (LegionProjectile).
+  example: []
+  syntax:
+    content: public Transform WeaponBone { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property WeaponBone As Transform
+  overload: PixelUnitStudio.LegionEvents.WeaponBone*
+- uid: PixelUnitStudio.LegionEvents.Fired
+  commentId: E:PixelUnitStudio.LegionEvents.Fired
+  id: Fired
+  parent: PixelUnitStudio.LegionEvents
+  langs:
+  - csharp
+  - vb
+  name: Fired
+  nameWithType: LegionEvents.Fired
+  fullName: PixelUnitStudio.LegionEvents.Fired
+  type: Event
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Event name (hit, cast, end) and state name.
+  example: []
+  syntax:
+    content: public event Action<string, string> Fired
+    return:
+      type: System.Action{System.String,System.String}
+    content.vb: Public Event Fired As Action(Of String, String)
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Events.UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: PixelUnitStudio.LegionEvents.FunctionOf*
+  commentId: Overload:PixelUnitStudio.LegionEvents.FunctionOf
+  isExternal: true
+  href: PixelUnitStudio.LegionEvents.html#PixelUnitStudio_LegionEvents_FunctionOf_System_String_
+  name: FunctionOf
+  nameWithType: LegionEvents.FunctionOf
+  fullName: PixelUnitStudio.LegionEvents.FunctionOf
+- uid: PixelUnitStudio.LegionEvents.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionEvents.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionEvents.html#PixelUnitStudio_LegionEvents__ctor
+  name: LegionEvents
+  nameWithType: LegionEvents.LegionEvents
+  fullName: PixelUnitStudio.LegionEvents.LegionEvents
+  nameWithType.vb: LegionEvents.New
+  fullName.vb: PixelUnitStudio.LegionEvents.New
+  name.vb: New
+- uid: PixelUnitStudio.LegionEvents.WeaponBone*
+  commentId: Overload:PixelUnitStudio.LegionEvents.WeaponBone
+  isExternal: true
+  href: PixelUnitStudio.LegionEvents.html#PixelUnitStudio_LegionEvents_WeaponBone
+  name: WeaponBone
+  nameWithType: LegionEvents.WeaponBone
+  fullName: PixelUnitStudio.LegionEvents.WeaponBone
+- uid: UnityEngine.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: System.Action{System.String,System.String}
+  commentId: T:System.Action{System.String,System.String}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<string, string>
+  nameWithType: Action<string, string>
+  fullName: System.Action<string, string>
+  nameWithType.vb: Action(Of String, String)
+  fullName.vb: System.Action(Of String, String)
+  name.vb: Action(Of String, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: )

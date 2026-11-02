@@ -1,0 +1,14 @@
+{
+  "product": "Pixel Legion Maker",
+  "docfx_version": "2.81.0",
+  "assemblies": [
+    "PixelUnitStudio.Runtime",
+    "PixelUnitStudio.Editor"
+  ],
+  "visibility": "public and protected API",
+  "source_sha256": "8c70036a84274c9348e78856c74b252d422c0d5ab483584bf8024b0cf20a6248",
+  "source_files_published": false,
+  "source_links_published": false,
+  "metadata_files": 33,
+  "documented_uids": 327
+}

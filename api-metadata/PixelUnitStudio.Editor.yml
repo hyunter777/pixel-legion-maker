@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.Editor
+  commentId: N:PixelUnitStudio.Editor
+  id: PixelUnitStudio.Editor
+  children:
+  - PixelUnitStudio.Editor.LegionAnimation
+  - PixelUnitStudio.Editor.LegionCatalogBuilder
+  - PixelUnitStudio.Editor.LegionEditorScene
+  - PixelUnitStudio.Editor.LegionImporter
+  - PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: PixelUnitStudio.Editor
+  nameWithType: PixelUnitStudio.Editor
+  fullName: PixelUnitStudio.Editor
+  type: Namespace
+  assemblies:
+  - PixelUnitStudio.Editor
+references:
+- uid: PixelUnitStudio.Editor.LegionAnimation
+  commentId: T:PixelUnitStudio.Editor.LegionAnimation
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionAnimation.html
+  name: LegionAnimation
+  nameWithType: LegionAnimation
+  fullName: PixelUnitStudio.Editor.LegionAnimation
+- uid: PixelUnitStudio.Editor.LegionCatalogBuilder
+  commentId: T:PixelUnitStudio.Editor.LegionCatalogBuilder
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionCatalogBuilder.html
+  name: LegionCatalogBuilder
+  nameWithType: LegionCatalogBuilder
+  fullName: PixelUnitStudio.Editor.LegionCatalogBuilder
+- uid: PixelUnitStudio.Editor.LegionEditorScene
+  commentId: T:PixelUnitStudio.Editor.LegionEditorScene
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionEditorScene.html
+  name: LegionEditorScene
+  nameWithType: LegionEditorScene
+  fullName: PixelUnitStudio.Editor.LegionEditorScene
+- uid: PixelUnitStudio.Editor.LegionImporter
+  commentId: T:PixelUnitStudio.Editor.LegionImporter
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionImporter.html
+  name: LegionImporter
+  nameWithType: LegionImporter
+  fullName: PixelUnitStudio.Editor.LegionImporter
+- uid: PixelUnitStudio.Editor.LegionPacks
+  commentId: T:PixelUnitStudio.Editor.LegionPacks
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html
+  name: LegionPacks
+  nameWithType: LegionPacks
+  fullName: PixelUnitStudio.Editor.LegionPacks

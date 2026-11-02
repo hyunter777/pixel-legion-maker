@@ -1,0 +1,101 @@
+### YamlMime:TableOfContent
+items:
+- uid: PixelUnitStudio
+  name: PixelUnitStudio
+  type: Namespace
+  items:
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    type: Class
+  - uid: PixelUnitStudio.LegionAction.Step
+    name: LegionAction.Step
+    type: Class
+  - uid: PixelUnitStudio.LegionActionLibrary
+    name: LegionActionLibrary
+    type: Class
+  - uid: PixelUnitStudio.LegionActionPlayer
+    name: LegionActionPlayer
+    type: Class
+  - uid: PixelUnitStudio.LegionBuilder
+    name: LegionBuilder
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: LegionCatalog.Motion
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog.Option
+    name: LegionCatalog.Option
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog.Piece
+    name: LegionCatalog.Piece
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog.Projectile
+    name: LegionCatalog.Projectile
+    type: Class
+  - uid: PixelUnitStudio.LegionCatalog.Slot
+    name: LegionCatalog.Slot
+    type: Class
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    type: Class
+  - uid: PixelUnitStudio.LegionContentPack.Title
+    name: LegionContentPack.Title
+    type: Class
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    type: Class
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: LegionDye.Palette
+    type: Class
+  - uid: PixelUnitStudio.LegionEditor
+    name: LegionEditor
+    type: Class
+  - uid: PixelUnitStudio.LegionEvents
+    name: LegionEvents
+    type: Class
+  - uid: PixelUnitStudio.LegionPixelCamera
+    name: LegionPixelCamera
+    type: Class
+  - uid: PixelUnitStudio.LegionProjectile
+    name: LegionProjectile
+    type: Class
+  - uid: PixelUnitStudio.LegionRecipe
+    name: LegionRecipe
+    type: Class
+  - uid: PixelUnitStudio.LegionStore
+    name: LegionStore
+    type: Class
+  - uid: PixelUnitStudio.LegionTurns
+    name: LegionTurns
+    type: Class
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    type: Class
+  - uid: PixelUnitStudio.LegionUnit.Choice
+    name: LegionUnit.Choice
+    type: Class
+  - uid: PixelUnitStudio.PixelUnitStudioInfo
+    name: PixelUnitStudioInfo
+    type: Class
+- uid: PixelUnitStudio.Editor
+  name: PixelUnitStudio.Editor
+  type: Namespace
+  items:
+  - uid: PixelUnitStudio.Editor.LegionAnimation
+    name: LegionAnimation
+    type: Class
+  - uid: PixelUnitStudio.Editor.LegionCatalogBuilder
+    name: LegionCatalogBuilder
+    type: Class
+  - uid: PixelUnitStudio.Editor.LegionEditorScene
+    name: LegionEditorScene
+    type: Class
+  - uid: PixelUnitStudio.Editor.LegionImporter
+    name: LegionImporter
+    type: Class
+  - uid: PixelUnitStudio.Editor.LegionPacks
+    name: LegionPacks
+    type: Class
+memberLayout: SamePage

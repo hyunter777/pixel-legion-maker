@@ -1,0 +1,650 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionAction
+  commentId: T:PixelUnitStudio.LegionAction
+  id: LegionAction
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionAction.#ctor
+  - PixelUnitStudio.LegionAction.Clone
+  - PixelUnitStudio.LegionAction.MaxRepeat
+  - PixelUnitStudio.LegionAction.MaxSteps
+  - PixelUnitStudio.LegionAction.Summary(System.Func{System.String,System.String})
+  - PixelUnitStudio.LegionAction.name
+  - PixelUnitStudio.LegionAction.steps
+  langs:
+  - csharp
+  - vb
+  name: LegionAction
+  nameWithType: LegionAction
+  fullName: PixelUnitStudio.LegionAction
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "A custom action: existing motions chained in order under one name (a three-hit combo, a channel-and-release spell).\n
+    \           Steps are motion names, not states, so one action plays on any hero with that hero's weapon-type version of
+    each motion.\n            Played by LegionActionPlayer."
+  example: []
+  syntax:
+    content: public sealed class LegionAction
+    content.vb: Public NotInheritable Class LegionAction
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: PixelUnitStudio.LegionAction.MaxSteps
+  commentId: F:PixelUnitStudio.LegionAction.MaxSteps
+  id: MaxSteps
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: MaxSteps
+  nameWithType: LegionAction.MaxSteps
+  fullName: PixelUnitStudio.LegionAction.MaxSteps
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const int MaxSteps = 12
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxSteps As Integer = 12
+- uid: PixelUnitStudio.LegionAction.MaxRepeat
+  commentId: F:PixelUnitStudio.LegionAction.MaxRepeat
+  id: MaxRepeat
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: MaxRepeat
+  nameWithType: LegionAction.MaxRepeat
+  fullName: PixelUnitStudio.LegionAction.MaxRepeat
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const int MaxRepeat = 9
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxRepeat As Integer = 9
+- uid: PixelUnitStudio.LegionAction.name
+  commentId: F:PixelUnitStudio.LegionAction.name
+  id: name
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: LegionAction.name
+  fullName: PixelUnitStudio.LegionAction.name
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+- uid: PixelUnitStudio.LegionAction.steps
+  commentId: F:PixelUnitStudio.LegionAction.steps
+  id: steps
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: steps
+  nameWithType: LegionAction.steps
+  fullName: PixelUnitStudio.LegionAction.steps
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionAction.Step> steps
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionAction.Step}
+    content.vb: Public steps As List(Of LegionAction.Step)
+- uid: PixelUnitStudio.LegionAction.Clone
+  commentId: M:PixelUnitStudio.LegionAction.Clone
+  id: Clone
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: LegionAction.Clone()
+  fullName: PixelUnitStudio.LegionAction.Clone()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionAction Clone()
+    return:
+      type: PixelUnitStudio.LegionAction
+    content.vb: Public Function Clone() As LegionAction
+  overload: PixelUnitStudio.LegionAction.Clone*
+- uid: PixelUnitStudio.LegionAction.Summary(System.Func{System.String,System.String})
+  commentId: M:PixelUnitStudio.LegionAction.Summary(System.Func{System.String,System.String})
+  id: Summary(System.Func{System.String,System.String})
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: Summary(Func<string, string>)
+  nameWithType: LegionAction.Summary(Func<string, string>)
+  fullName: PixelUnitStudio.LegionAction.Summary(System.Func<string, string>)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Short text such as "attack ×3 → cast".
+  example: []
+  syntax:
+    content: public string Summary(Func<string, string> title = null)
+    parameters:
+    - id: title
+      type: System.Func{System.String,System.String}
+    return:
+      type: System.String
+    content.vb: Public Function Summary(title As Func(Of String, String) = Nothing) As String
+  overload: PixelUnitStudio.LegionAction.Summary*
+  nameWithType.vb: LegionAction.Summary(Func(Of String, String))
+  fullName.vb: PixelUnitStudio.LegionAction.Summary(System.Func(Of String, String))
+  name.vb: Summary(Func(Of String, String))
+- uid: PixelUnitStudio.LegionAction.#ctor
+  commentId: M:PixelUnitStudio.LegionAction.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionAction
+  langs:
+  - csharp
+  - vb
+  name: LegionAction()
+  nameWithType: LegionAction.LegionAction()
+  fullName: PixelUnitStudio.LegionAction.LegionAction()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionAction()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionAction.#ctor*
+  nameWithType.vb: LegionAction.New()
+  fullName.vb: PixelUnitStudio.LegionAction.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionAction.Step}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionAction.Step}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionAction.Step>
+  nameWithType: List<LegionAction.Step>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionAction.Step>
+  nameWithType.vb: List(Of LegionAction.Step)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionAction.Step)
+  name.vb: List(Of LegionAction.Step)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: .
+  - uid: PixelUnitStudio.LegionAction.Step
+    name: Step
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.Step.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: .
+  - uid: PixelUnitStudio.LegionAction.Step
+    name: Step
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.Step.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.LegionAction.Clone*
+  commentId: Overload:PixelUnitStudio.LegionAction.Clone
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html#PixelUnitStudio_LegionAction_Clone
+  name: Clone
+  nameWithType: LegionAction.Clone
+  fullName: PixelUnitStudio.LegionAction.Clone
+- uid: PixelUnitStudio.LegionAction
+  commentId: T:PixelUnitStudio.LegionAction
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html
+  name: LegionAction
+  nameWithType: LegionAction
+  fullName: PixelUnitStudio.LegionAction
+- uid: PixelUnitStudio.LegionAction.Summary*
+  commentId: Overload:PixelUnitStudio.LegionAction.Summary
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html#PixelUnitStudio_LegionAction_Summary_System_Func_System_String_System_String__
+  name: Summary
+  nameWithType: LegionAction.Summary
+  fullName: PixelUnitStudio.LegionAction.Summary
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: PixelUnitStudio.LegionAction.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionAction.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html#PixelUnitStudio_LegionAction__ctor
+  name: LegionAction
+  nameWithType: LegionAction.LegionAction
+  fullName: PixelUnitStudio.LegionAction.LegionAction
+  nameWithType.vb: LegionAction.New
+  fullName.vb: PixelUnitStudio.LegionAction.New
+  name.vb: New

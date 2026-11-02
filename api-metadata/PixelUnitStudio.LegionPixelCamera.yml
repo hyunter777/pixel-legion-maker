@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionPixelCamera
+  commentId: T:PixelUnitStudio.LegionPixelCamera
+  id: LegionPixelCamera
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionPixelCamera.#ctor
+  - PixelUnitStudio.LegionPixelCamera.Scale
+  - PixelUnitStudio.LegionPixelCamera.pixelsPerUnit
+  - PixelUnitStudio.LegionPixelCamera.referenceResolution
+  - PixelUnitStudio.LegionPixelCamera.upscaleRenderTexture
+  langs:
+  - csharp
+  - vb
+  name: LegionPixelCamera
+  nameWithType: LegionPixelCamera
+  fullName: PixelUnitStudio.LegionPixelCamera
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Orthographic camera helper that shows pixels crisply regardless of render pipeline (replaces URP's Pixel Perfect
+    Camera).\n            Adjusts orthographicSize so the screen scales only by integer multiples of the reference resolution.
+    One art pixel is always an N×N block of screen pixels.\n            With upscaleRenderTexture on, it draws into a render
+    texture at art resolution and shows it scaled by an integer factor. Then rotated bones and weapons\n            also snap
+    to the pixel grid and the pixel size stays even. The result is the same in Built-in and URP. Sprites must use Point filtering."
+  example: []
+  syntax:
+    content: 'public sealed class LegionPixelCamera : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionPixelCamera Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionPixelCamera.pixelsPerUnit
+  commentId: F:PixelUnitStudio.LegionPixelCamera.pixelsPerUnit
+  id: pixelsPerUnit
+  parent: PixelUnitStudio.LegionPixelCamera
+  langs:
+  - csharp
+  - vb
+  name: pixelsPerUnit
+  nameWithType: LegionPixelCamera.pixelsPerUnit
+  fullName: PixelUnitStudio.LegionPixelCamera.pixelsPerUnit
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public int pixelsPerUnit
+    return:
+      type: System.Int32
+    content.vb: Public pixelsPerUnit As Integer
+- uid: PixelUnitStudio.LegionPixelCamera.referenceResolution
+  commentId: F:PixelUnitStudio.LegionPixelCamera.referenceResolution
+  id: referenceResolution
+  parent: PixelUnitStudio.LegionPixelCamera
+  langs:
+  - csharp
+  - vb
+  name: referenceResolution
+  nameWithType: LegionPixelCamera.referenceResolution
+  fullName: PixelUnitStudio.LegionPixelCamera.referenceResolution
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Vector2Int referenceResolution
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public referenceResolution As Vector2Int
+- uid: PixelUnitStudio.LegionPixelCamera.upscaleRenderTexture
+  commentId: F:PixelUnitStudio.LegionPixelCamera.upscaleRenderTexture
+  id: upscaleRenderTexture
+  parent: PixelUnitStudio.LegionPixelCamera
+  langs:
+  - csharp
+  - vb
+  name: upscaleRenderTexture
+  nameWithType: LegionPixelCamera.upscaleRenderTexture
+  fullName: PixelUnitStudio.LegionPixelCamera.upscaleRenderTexture
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public bool upscaleRenderTexture
+    return:
+      type: System.Boolean
+    content.vb: Public upscaleRenderTexture As Boolean
+- uid: PixelUnitStudio.LegionPixelCamera.#ctor
+  commentId: M:PixelUnitStudio.LegionPixelCamera.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionPixelCamera
+  langs:
+  - csharp
+  - vb
+  name: LegionPixelCamera()
+  nameWithType: LegionPixelCamera.LegionPixelCamera()
+  fullName: PixelUnitStudio.LegionPixelCamera.LegionPixelCamera()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionPixelCamera()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionPixelCamera.#ctor*
+  nameWithType.vb: LegionPixelCamera.New()
+  fullName.vb: PixelUnitStudio.LegionPixelCamera.New()
+  name.vb: New()
+- uid: PixelUnitStudio.LegionPixelCamera.Scale
+  commentId: P:PixelUnitStudio.LegionPixelCamera.Scale
+  id: Scale
+  parent: PixelUnitStudio.LegionPixelCamera
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: LegionPixelCamera.Scale
+  fullName: PixelUnitStudio.LegionPixelCamera.Scale
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Number of screen pixels one art pixel covers on the current screen.
+  example: []
+  syntax:
+    content: public int Scale { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Scale As Integer
+  overload: PixelUnitStudio.LegionPixelCamera.Scale*
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2Int
+  commentId: '!:UnityEngine.Vector2Int'
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PixelUnitStudio.LegionPixelCamera.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionPixelCamera.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionPixelCamera.html#PixelUnitStudio_LegionPixelCamera__ctor
+  name: LegionPixelCamera
+  nameWithType: LegionPixelCamera.LegionPixelCamera
+  fullName: PixelUnitStudio.LegionPixelCamera.LegionPixelCamera
+  nameWithType.vb: LegionPixelCamera.New
+  fullName.vb: PixelUnitStudio.LegionPixelCamera.New
+  name.vb: New
+- uid: PixelUnitStudio.LegionPixelCamera.Scale*
+  commentId: Overload:PixelUnitStudio.LegionPixelCamera.Scale
+  isExternal: true
+  href: PixelUnitStudio.LegionPixelCamera.html#PixelUnitStudio_LegionPixelCamera_Scale
+  name: Scale
+  nameWithType: LegionPixelCamera.Scale
+  fullName: PixelUnitStudio.LegionPixelCamera.Scale

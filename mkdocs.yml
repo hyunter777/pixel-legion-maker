@@ -1,0 +1,75 @@
+site_name: Pixel Legion Maker
+site_description: English guide and API reference for Pixel Legion Maker, a 2D pixel hero builder for Unity 6.
+site_url: https://hyunter777.github.io/pixel-legion-maker/
+repo_url: https://github.com/hyunter777/pixel-legion-maker
+edit_uri: ''
+copyright: Copyright © FlyCat
+docs_dir: docs/en
+site_dir: site
+theme:
+  name: material
+  language: en
+  font: false
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+extra_css:
+  - assets/styles.css
+plugins:
+  - search:
+      lang: en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+nav:
+  - Start here:
+      - Welcome: index.md
+      - Quick start: quick-start.md
+  - Build heroes:
+      - The hero editor: hero-editor.md
+      - Custom actions: custom-actions.md
+  - Use them in your game:
+      - Heroes in code: using-heroes.md
+      - Runtime recipes: recipes.md
+      - Frame sheets and camera: sheets-and-camera.md
+  - Extend:
+      - Your own parts and weapons: custom-art.md
+      - Content packs: content-packs.md
+  - Reference and support:
+      - Slots, dyes and content: reference.md
+      - API reference: reference/api.md
+      - FAQ: faq.md
+      - Release notes: changelog.md
+      - Support and licenses: support-license.md
+validation:
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: warn
+  nav:
+    not_found: warn
+    omitted_files: warn

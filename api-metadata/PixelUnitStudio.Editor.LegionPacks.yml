@@ -1,0 +1,691 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.Editor.LegionPacks
+  commentId: T:PixelUnitStudio.Editor.LegionPacks
+  id: LegionPacks
+  parent: PixelUnitStudio.Editor
+  children:
+  - PixelUnitStudio.Editor.LegionPacks.All
+  - PixelUnitStudio.Editor.LegionPacks.Fingerprint(System.Collections.Generic.List{PixelUnitStudio.LegionContentPack})
+  - PixelUnitStudio.Editor.LegionPacks.Folder(PixelUnitStudio.LegionContentPack,System.String)
+  - PixelUnitStudio.Editor.LegionPacks.HeroFolders
+  - PixelUnitStudio.Editor.LegionPacks.IconsFolder(PixelUnitStudio.LegionContentPack)
+  - PixelUnitStudio.Editor.LegionPacks.Root(PixelUnitStudio.LegionContentPack)
+  langs:
+  - csharp
+  - vb
+  name: LegionPacks
+  nameWithType: LegionPacks
+  fullName: PixelUnitStudio.Editor.LegionPacks
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: "Finds the content packs in the project (LegionContentPack) and resolves their folders.\n            The base product
+    is one pack; add-ons are more packs in their own folders, read after it."
+  example: []
+  syntax:
+    content: public static class LegionPacks
+    content.vb: Public Module LegionPacks
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: PixelUnitStudio.Editor.LegionPacks.All
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.All
+  id: All
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: All()
+  nameWithType: LegionPacks.All()
+  fullName: PixelUnitStudio.Editor.LegionPacks.All()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Every pack in the project, in reading order (order, then title, then path).
+  example: []
+  syntax:
+    content: public static List<LegionContentPack> All()
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionContentPack}
+    content.vb: Public Shared Function All() As List(Of LegionContentPack)
+  overload: PixelUnitStudio.Editor.LegionPacks.All*
+- uid: PixelUnitStudio.Editor.LegionPacks.Root(PixelUnitStudio.LegionContentPack)
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.Root(PixelUnitStudio.LegionContentPack)
+  id: Root(PixelUnitStudio.LegionContentPack)
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: Root(LegionContentPack)
+  nameWithType: LegionPacks.Root(LegionContentPack)
+  fullName: PixelUnitStudio.Editor.LegionPacks.Root(PixelUnitStudio.LegionContentPack)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Folder that holds the pack asset (Assets/...).
+  example: []
+  syntax:
+    content: public static string Root(LegionContentPack pack)
+    parameters:
+    - id: pack
+      type: PixelUnitStudio.LegionContentPack
+    return:
+      type: System.String
+    content.vb: Public Shared Function Root(pack As LegionContentPack) As String
+  overload: PixelUnitStudio.Editor.LegionPacks.Root*
+- uid: PixelUnitStudio.Editor.LegionPacks.Folder(PixelUnitStudio.LegionContentPack,System.String)
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.Folder(PixelUnitStudio.LegionContentPack,System.String)
+  id: Folder(PixelUnitStudio.LegionContentPack,System.String)
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: Folder(LegionContentPack, string)
+  nameWithType: LegionPacks.Folder(LegionContentPack, string)
+  fullName: PixelUnitStudio.Editor.LegionPacks.Folder(PixelUnitStudio.LegionContentPack, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: A pack folder (relative to the pack's root) as an Assets/ path. Empty if the folder is not set.
+  example: []
+  syntax:
+    content: public static string Folder(LegionContentPack pack, string relative)
+    parameters:
+    - id: pack
+      type: PixelUnitStudio.LegionContentPack
+    - id: relative
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Folder(pack As LegionContentPack, relative As String) As String
+  overload: PixelUnitStudio.Editor.LegionPacks.Folder*
+  nameWithType.vb: LegionPacks.Folder(LegionContentPack, String)
+  fullName.vb: PixelUnitStudio.Editor.LegionPacks.Folder(PixelUnitStudio.LegionContentPack, String)
+  name.vb: Folder(LegionContentPack, String)
+- uid: PixelUnitStudio.Editor.LegionPacks.IconsFolder(PixelUnitStudio.LegionContentPack)
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.IconsFolder(PixelUnitStudio.LegionContentPack)
+  id: IconsFolder(PixelUnitStudio.LegionContentPack)
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: IconsFolder(LegionContentPack)
+  nameWithType: LegionPacks.IconsFolder(LegionContentPack)
+  fullName: PixelUnitStudio.Editor.LegionPacks.IconsFolder(PixelUnitStudio.LegionContentPack)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  syntax:
+    content: public static string IconsFolder(LegionContentPack pack)
+    parameters:
+    - id: pack
+      type: PixelUnitStudio.LegionContentPack
+    return:
+      type: System.String
+    content.vb: Public Shared Function IconsFolder(pack As LegionContentPack) As String
+  overload: PixelUnitStudio.Editor.LegionPacks.IconsFolder*
+- uid: PixelUnitStudio.Editor.LegionPacks.HeroFolders
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.HeroFolders
+  id: HeroFolders
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: HeroFolders()
+  nameWithType: LegionPacks.HeroFolders()
+  fullName: PixelUnitStudio.Editor.LegionPacks.HeroFolders()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Hero folders of the packs, for the edit screen's hero list (LegionEditor.PackHeroFolders).
+  example: []
+  syntax:
+    content: public static List<(string title, string folder)> HeroFolders()
+    return:
+      type: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+    content.vb: Public Shared Function HeroFolders() As List(Of (title As String, folder As String))
+  overload: PixelUnitStudio.Editor.LegionPacks.HeroFolders*
+- uid: PixelUnitStudio.Editor.LegionPacks.Fingerprint(System.Collections.Generic.List{PixelUnitStudio.LegionContentPack})
+  commentId: M:PixelUnitStudio.Editor.LegionPacks.Fingerprint(System.Collections.Generic.List{PixelUnitStudio.LegionContentPack})
+  id: Fingerprint(System.Collections.Generic.List{PixelUnitStudio.LegionContentPack})
+  parent: PixelUnitStudio.Editor.LegionPacks
+  langs:
+  - csharp
+  - vb
+  name: Fingerprint(List<LegionContentPack>)
+  nameWithType: LegionPacks.Fingerprint(List<LegionContentPack>)
+  fullName: PixelUnitStudio.Editor.LegionPacks.Fingerprint(System.Collections.Generic.List<PixelUnitStudio.LegionContentPack>)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: "Short text that changes when a pack is added, removed or reordered, or when its source art is added, removed or
+    resized.\n            The catalog keeps the value it was built with (LegionCatalog.packsFingerprint). Import settings
+    and generated icons do not count."
+  example: []
+  syntax:
+    content: public static string Fingerprint(List<LegionContentPack> packs)
+    parameters:
+    - id: packs
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionContentPack}
+    return:
+      type: System.String
+    content.vb: Public Shared Function Fingerprint(packs As List(Of LegionContentPack)) As String
+  overload: PixelUnitStudio.Editor.LegionPacks.Fingerprint*
+  nameWithType.vb: LegionPacks.Fingerprint(List(Of LegionContentPack))
+  fullName.vb: PixelUnitStudio.Editor.LegionPacks.Fingerprint(System.Collections.Generic.List(Of PixelUnitStudio.LegionContentPack))
+  name.vb: Fingerprint(List(Of LegionContentPack))
+references:
+- uid: PixelUnitStudio.Editor
+  commentId: N:PixelUnitStudio.Editor
+  isExternal: true
+  name: PixelUnitStudio.Editor
+  nameWithType: PixelUnitStudio.Editor
+  fullName: PixelUnitStudio.Editor
+  spec.csharp:
+  - uid: PixelUnitStudio
+    name: PixelUnitStudio
+    isExternal: true
+  - name: .
+  - uid: PixelUnitStudio.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: PixelUnitStudio
+    name: PixelUnitStudio
+    isExternal: true
+  - name: .
+  - uid: PixelUnitStudio.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PixelUnitStudio.Editor.LegionPacks.All*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.All
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_All
+  name: All
+  nameWithType: LegionPacks.All
+  fullName: PixelUnitStudio.Editor.LegionPacks.All
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionContentPack}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionContentPack}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionContentPack>
+  nameWithType: List<LegionContentPack>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionContentPack>
+  nameWithType.vb: List(Of LegionContentPack)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionContentPack)
+  name.vb: List(Of LegionContentPack)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.Editor.LegionPacks.Root*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.Root
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_Root_PixelUnitStudio_LegionContentPack_
+  name: Root
+  nameWithType: LegionPacks.Root
+  fullName: PixelUnitStudio.Editor.LegionPacks.Root
+- uid: PixelUnitStudio.LegionContentPack
+  commentId: T:PixelUnitStudio.LegionContentPack
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionContentPack.html
+  name: LegionContentPack
+  nameWithType: LegionContentPack
+  fullName: PixelUnitStudio.LegionContentPack
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: PixelUnitStudio.Editor.LegionPacks.Folder*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.Folder
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_Folder_PixelUnitStudio_LegionContentPack_System_String_
+  name: Folder
+  nameWithType: LegionPacks.Folder
+  fullName: PixelUnitStudio.Editor.LegionPacks.Folder
+- uid: PixelUnitStudio.Editor.LegionPacks.IconsFolder*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.IconsFolder
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_IconsFolder_PixelUnitStudio_LegionContentPack_
+  name: IconsFolder
+  nameWithType: LegionPacks.IconsFolder
+  fullName: PixelUnitStudio.Editor.LegionPacks.IconsFolder
+- uid: PixelUnitStudio.Editor.LegionPacks.HeroFolders*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.HeroFolders
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_HeroFolders
+  name: HeroFolders
+  nameWithType: LegionPacks.HeroFolders
+  fullName: PixelUnitStudio.Editor.LegionPacks.HeroFolders
+- uid: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  commentId: T:System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<(string title, string folder)>
+  nameWithType: List<(string title, string folder)>
+  fullName: System.Collections.Generic.List<(string title, string folder)>
+  nameWithType.vb: List(Of (title As String, folder As String))
+  fullName.vb: System.Collections.Generic.List(Of (title As String, folder As String))
+  name.vb: List(Of (title As String, folder As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: PixelUnitStudio.Editor.LegionPacks.Fingerprint*
+  commentId: Overload:PixelUnitStudio.Editor.LegionPacks.Fingerprint
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionPacks.html#PixelUnitStudio_Editor_LegionPacks_Fingerprint_System_Collections_Generic_List_PixelUnitStudio_LegionContentPack__
+  name: Fingerprint
+  nameWithType: LegionPacks.Fingerprint
+  fullName: PixelUnitStudio.Editor.LegionPacks.Fingerprint

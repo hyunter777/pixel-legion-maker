@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionTurns
+  commentId: T:PixelUnitStudio.LegionTurns
+  id: LegionTurns
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionTurns.#ctor
+  - PixelUnitStudio.LegionTurns.Apply
+  - PixelUnitStudio.LegionTurns.ApplyAll(UnityEngine.GameObject)
+  - PixelUnitStudio.LegionTurns.hold
+  - PixelUnitStudio.LegionTurns.keepAngle
+  - PixelUnitStudio.LegionTurns.lift
+  - PixelUnitStudio.LegionTurns.turns
+  langs:
+  - csharp
+  - vb
+  name: LegionTurns
+  nameWithType: LegionTurns
+  fullName: PixelUnitStudio.LegionTurns
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Instead of rotating weapon art, swaps in whichever pre-rotated clean art (turns, counter-clockwise k×step°) is
+    closest to the weapon angle.\n            Rotating pixel art at an arbitrary angle at runtime breaks outlines and drops
+    or overlaps pixels (tools/generate_weapon_turns.py).\n            Attached to a renderer that is a child of the weapon
+    bone. The motion decides the bone rotation as is, and this renderer cancels that rotation and changes only the art's direction."
+  example: []
+  syntax:
+    content: 'public sealed class LegionTurns : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionTurns Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionTurns.turns
+  commentId: F:PixelUnitStudio.LegionTurns.turns
+  id: turns
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: turns
+  nameWithType: LegionTurns.turns
+  fullName: PixelUnitStudio.LegionTurns.turns
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Sprite[] turns
+    return:
+      type: UnityEngine.Sprite[]
+    content.vb: Public turns As Sprite()
+- uid: PixelUnitStudio.LegionTurns.hold
+  commentId: F:PixelUnitStudio.LegionTurns.hold
+  id: hold
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: hold
+  nameWithType: LegionTurns.hold
+  fullName: PixelUnitStudio.LegionTurns.hold
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Held angle (degrees, 0 = horizontal forward, + is forward-down). With keepAngle it is an angle relative to the
+    rig root, otherwise it is added to the bone angle.
+  example: []
+  syntax:
+    content: public float hold
+    return:
+      type: System.Single
+    content.vb: Public hold As Single
+- uid: PixelUnitStudio.LegionTurns.keepAngle
+  commentId: F:PixelUnitStudio.LegionTurns.keepAngle
+  id: keepAngle
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: keepAngle
+  nameWithType: LegionTurns.keepAngle
+  fullName: PixelUnitStudio.LegionTurns.keepAngle
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Fixes the art direction to hold even when the arm (bone) turns. Used for non-attacking off-hand attachments.
+  example: []
+  syntax:
+    content: public bool keepAngle
+    return:
+      type: System.Boolean
+    content.vb: Public keepAngle As Boolean
+- uid: PixelUnitStudio.LegionTurns.lift
+  commentId: F:PixelUnitStudio.LegionTurns.lift
+  id: lift
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: lift
+  nameWithType: LegionTurns.lift
+  fullName: PixelUnitStudio.LegionTurns.lift
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Distance (px) lifted upward on screen when keepAngle is on.
+  example: []
+  syntax:
+    content: public float lift
+    return:
+      type: System.Single
+    content.vb: Public lift As Single
+- uid: PixelUnitStudio.LegionTurns.Apply
+  commentId: M:PixelUnitStudio.LegionTurns.Apply
+  id: Apply
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: Apply()
+  nameWithType: LegionTurns.Apply()
+  fullName: PixelUnitStudio.LegionTurns.Apply()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Switches to the art matching the current bone angle. Also call it after sampling the animation directly (sheet
+    export, etc.).
+  example: []
+  syntax:
+    content: public void Apply()
+    content.vb: Public Sub Apply()
+  overload: PixelUnitStudio.LegionTurns.Apply*
+- uid: PixelUnitStudio.LegionTurns.ApplyAll(UnityEngine.GameObject)
+  commentId: M:PixelUnitStudio.LegionTurns.ApplyAll(UnityEngine.GameObject)
+  id: ApplyAll(UnityEngine.GameObject)
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: ApplyAll(GameObject)
+  nameWithType: LegionTurns.ApplyAll(GameObject)
+  fullName: PixelUnitStudio.LegionTurns.ApplyAll(UnityEngine.GameObject)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Fits every LegionTurns under root to the current pose.
+  example: []
+  syntax:
+    content: public static void ApplyAll(GameObject root)
+    parameters:
+    - id: root
+      type: UnityEngine.GameObject
+    content.vb: Public Shared Sub ApplyAll(root As GameObject)
+  overload: PixelUnitStudio.LegionTurns.ApplyAll*
+- uid: PixelUnitStudio.LegionTurns.#ctor
+  commentId: M:PixelUnitStudio.LegionTurns.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionTurns
+  langs:
+  - csharp
+  - vb
+  name: LegionTurns()
+  nameWithType: LegionTurns.LegionTurns()
+  fullName: PixelUnitStudio.LegionTurns.LegionTurns()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionTurns()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionTurns.#ctor*
+  nameWithType.vb: LegionTurns.New()
+  fullName.vb: PixelUnitStudio.LegionTurns.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Sprite[]
+  isExternal: true
+  name: Sprite[]
+  nameWithType: Sprite[]
+  fullName: UnityEngine.Sprite[]
+  nameWithType.vb: Sprite()
+  fullName.vb: UnityEngine.Sprite()
+  name.vb: Sprite()
+  spec.csharp:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PixelUnitStudio.LegionTurns.Apply*
+  commentId: Overload:PixelUnitStudio.LegionTurns.Apply
+  isExternal: true
+  href: PixelUnitStudio.LegionTurns.html#PixelUnitStudio_LegionTurns_Apply
+  name: Apply
+  nameWithType: LegionTurns.Apply
+  fullName: PixelUnitStudio.LegionTurns.Apply
+- uid: PixelUnitStudio.LegionTurns.ApplyAll*
+  commentId: Overload:PixelUnitStudio.LegionTurns.ApplyAll
+  isExternal: true
+  href: PixelUnitStudio.LegionTurns.html#PixelUnitStudio_LegionTurns_ApplyAll_UnityEngine_GameObject_
+  name: ApplyAll
+  nameWithType: LegionTurns.ApplyAll
+  fullName: PixelUnitStudio.LegionTurns.ApplyAll
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: PixelUnitStudio.LegionTurns.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionTurns.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionTurns.html#PixelUnitStudio_LegionTurns__ctor
+  name: LegionTurns
+  nameWithType: LegionTurns.LegionTurns
+  fullName: PixelUnitStudio.LegionTurns.LegionTurns
+  nameWithType.vb: LegionTurns.New
+  fullName.vb: PixelUnitStudio.LegionTurns.New
+  name.vb: New

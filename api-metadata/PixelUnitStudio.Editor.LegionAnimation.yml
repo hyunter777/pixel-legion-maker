@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.Editor.LegionAnimation
+  commentId: T:PixelUnitStudio.Editor.LegionAnimation
+  id: LegionAnimation
+  parent: PixelUnitStudio.Editor
+  children:
+  - PixelUnitStudio.Editor.LegionAnimation.BuildClips
+  - PixelUnitStudio.Editor.LegionAnimation.ControllerPath
+  - PixelUnitStudio.Editor.LegionAnimation.ExportHero(PixelUnitStudio.LegionUnit,System.String)
+  - PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes
+  - PixelUnitStudio.Editor.LegionAnimation.ExportSheet(UnityEngine.GameObject,System.String,System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)
+  langs:
+  - csharp
+  - vb
+  name: LegionAnimation
+  nameWithType: LegionAnimation
+  fullName: PixelUnitStudio.Editor.LegionAnimation
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Builds AnimationClips and an Animator from legion_anims.json, and exports the motions as 64×64 1:1 pixel frame
+    sheets.
+  example: []
+  syntax:
+    content: public static class LegionAnimation
+    content.vb: Public Module LegionAnimation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: PixelUnitStudio.Editor.LegionAnimation.ControllerPath
+  commentId: F:PixelUnitStudio.Editor.LegionAnimation.ControllerPath
+  id: ControllerPath
+  parent: PixelUnitStudio.Editor.LegionAnimation
+  langs:
+  - csharp
+  - vb
+  name: ControllerPath
+  nameWithType: LegionAnimation.ControllerPath
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ControllerPath
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  syntax:
+    content: public const string ControllerPath = "Assets/PixelUnitStudio/Generated/Animations/Legion.controller"
+    return:
+      type: System.String
+    content.vb: Public Const ControllerPath As String = "Assets/PixelUnitStudio/Generated/Animations/Legion.controller"
+- uid: PixelUnitStudio.Editor.LegionAnimation.BuildClips
+  commentId: M:PixelUnitStudio.Editor.LegionAnimation.BuildClips
+  id: BuildClips
+  parent: PixelUnitStudio.Editor.LegionAnimation
+  langs:
+  - csharp
+  - vb
+  name: BuildClips()
+  nameWithType: LegionAnimation.BuildClips()
+  fullName: PixelUnitStudio.Editor.LegionAnimation.BuildClips()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  syntax:
+    content: public static void BuildClips()
+    content.vb: Public Shared Sub BuildClips()
+  overload: PixelUnitStudio.Editor.LegionAnimation.BuildClips*
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportSheet(UnityEngine.GameObject,System.String,System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)
+  commentId: M:PixelUnitStudio.Editor.LegionAnimation.ExportSheet(UnityEngine.GameObject,System.String,System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)
+  id: ExportSheet(UnityEngine.GameObject,System.String,System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)
+  parent: PixelUnitStudio.Editor.LegionAnimation
+  langs:
+  - csharp
+  - vb
+  name: ExportSheet(GameObject, string, Dictionary<string, int>, string)
+  nameWithType: LegionAnimation.ExportSheet(GameObject, string, Dictionary<string, int>, string)
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportSheet(UnityEngine.GameObject, string, System.Collections.Generic.Dictionary<string,
+    int>, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: "Renders every motion of the rig prefab frame by frame and saves them as a sheet, one motion per row.\n            Given
+    a motionSet (spear, heavy, bow, etc.) it exports that weapon type's motions; left empty it exports the default (sword,
+    axe, blunt) motions.\n            Frames are 64×64 by default (origin: horizontal center, ground 2px from the bottom);
+    if big or long weapons have pixels outside that,\n            all frames are widened to fit (in steps of 8px horizontally
+    and vertically). The origin is at the same spot in every frame, and size and origin are written to the .json."
+  example: []
+  syntax:
+    content: public static string ExportSheet(GameObject prefab, string outputPng, Dictionary<string, int> sortOverrides =
+      null, string motionSet = null)
+    parameters:
+    - id: prefab
+      type: UnityEngine.GameObject
+    - id: outputPng
+      type: System.String
+    - id: sortOverrides
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    - id: motionSet
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ExportSheet(prefab As GameObject, outputPng As String, sortOverrides As Dictionary(Of
+      String, Integer) = Nothing, motionSet As String = Nothing) As String
+  overload: PixelUnitStudio.Editor.LegionAnimation.ExportSheet*
+  nameWithType.vb: LegionAnimation.ExportSheet(GameObject, String, Dictionary(Of String, Integer), String)
+  fullName.vb: PixelUnitStudio.Editor.LegionAnimation.ExportSheet(UnityEngine.GameObject, String, System.Collections.Generic.Dictionary(Of
+    String, Integer), String)
+  name.vb: ExportSheet(GameObject, String, Dictionary(Of String, Integer), String)
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportHero(PixelUnitStudio.LegionUnit,System.String)
+  commentId: M:PixelUnitStudio.Editor.LegionAnimation.ExportHero(PixelUnitStudio.LegionUnit,System.String)
+  id: ExportHero(PixelUnitStudio.LegionUnit,System.String)
+  parent: PixelUnitStudio.Editor.LegionAnimation
+  langs:
+  - csharp
+  - vb
+  name: ExportHero(LegionUnit, string)
+  nameWithType: LegionAnimation.ExportHero(LegionUnit, string)
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportHero(PixelUnitStudio.LegionUnit, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Exports a saved hero using the motions of its back-hand weapon type. Looks up the motion set of the weapon option
+    in the catalog.
+  example: []
+  syntax:
+    content: public static string ExportHero(LegionUnit unit, string outputPng)
+    parameters:
+    - id: unit
+      type: PixelUnitStudio.LegionUnit
+    - id: outputPng
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ExportHero(unit As LegionUnit, outputPng As String) As String
+  overload: PixelUnitStudio.Editor.LegionAnimation.ExportHero*
+  nameWithType.vb: LegionAnimation.ExportHero(LegionUnit, String)
+  fullName.vb: PixelUnitStudio.Editor.LegionAnimation.ExportHero(PixelUnitStudio.LegionUnit, String)
+  name.vb: ExportHero(LegionUnit, String)
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes
+  commentId: M:PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes
+  id: ExportSavedHeroes
+  parent: PixelUnitStudio.Editor.LegionAnimation
+  langs:
+  - csharp
+  - vb
+  name: ExportSavedHeroes()
+  nameWithType: LegionAnimation.ExportSavedHeroes()
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Editor
+  namespace: PixelUnitStudio.Editor
+  summary: Exports every hero in the save folder to Exports/Heroes/&lt;code&gt;.png(.json). Returns the exported paths.
+  example: []
+  syntax:
+    content: public static List<string> ExportSavedHeroes()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function ExportSavedHeroes() As List(Of String)
+  overload: PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes*
+references:
+- uid: PixelUnitStudio.Editor
+  commentId: N:PixelUnitStudio.Editor
+  isExternal: true
+  name: PixelUnitStudio.Editor
+  nameWithType: PixelUnitStudio.Editor
+  fullName: PixelUnitStudio.Editor
+  spec.csharp:
+  - uid: PixelUnitStudio
+    name: PixelUnitStudio
+    isExternal: true
+  - name: .
+  - uid: PixelUnitStudio.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: PixelUnitStudio
+    name: PixelUnitStudio
+    isExternal: true
+  - name: .
+  - uid: PixelUnitStudio.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio.Editor.LegionAnimation.BuildClips*
+  commentId: Overload:PixelUnitStudio.Editor.LegionAnimation.BuildClips
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionAnimation.html#PixelUnitStudio_Editor_LegionAnimation_BuildClips
+  name: BuildClips
+  nameWithType: LegionAnimation.BuildClips
+  fullName: PixelUnitStudio.Editor.LegionAnimation.BuildClips
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportSheet*
+  commentId: Overload:PixelUnitStudio.Editor.LegionAnimation.ExportSheet
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionAnimation.html#PixelUnitStudio_Editor_LegionAnimation_ExportSheet_UnityEngine_GameObject_System_String_System_Collections_Generic_Dictionary_System_String_System_Int32__System_String_
+  name: ExportSheet
+  nameWithType: LegionAnimation.ExportSheet
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportSheet
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportHero*
+  commentId: Overload:PixelUnitStudio.Editor.LegionAnimation.ExportHero
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionAnimation.html#PixelUnitStudio_Editor_LegionAnimation_ExportHero_PixelUnitStudio_LegionUnit_System_String_
+  name: ExportHero
+  nameWithType: LegionAnimation.ExportHero
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportHero
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes*
+  commentId: Overload:PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes
+  isExternal: true
+  href: PixelUnitStudio.Editor.LegionAnimation.html#PixelUnitStudio_Editor_LegionAnimation_ExportSavedHeroes
+  name: ExportSavedHeroes
+  nameWithType: LegionAnimation.ExportSavedHeroes
+  fullName: PixelUnitStudio.Editor.LegionAnimation.ExportSavedHeroes
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )

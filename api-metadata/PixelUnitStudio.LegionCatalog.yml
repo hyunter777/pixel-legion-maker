@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  id: LegionCatalog
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionCatalog.#ctor
+  - PixelUnitStudio.LegionCatalog.controller
+  - PixelUnitStudio.LegionCatalog.dyeMaterial
+  - PixelUnitStudio.LegionCatalog.motions
+  - PixelUnitStudio.LegionCatalog.packs
+  - PixelUnitStudio.LegionCatalog.packsFingerprint
+  - PixelUnitStudio.LegionCatalog.projectiles
+  - PixelUnitStudio.LegionCatalog.rigPrefab
+  - PixelUnitStudio.LegionCatalog.slots
+  langs:
+  - csharp
+  - vb
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: List used by the edit screen to assemble and play heroes. Built by the editor menu Tools &gt; Pixel Legion Maker
+    &gt; Build Catalog.
+  example: []
+  syntax:
+    content: 'public sealed class LegionCatalog : ScriptableObject'
+    content.vb: Public NotInheritable Class LegionCatalog Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionCatalog.rigPrefab
+  commentId: F:PixelUnitStudio.LegionCatalog.rigPrefab
+  id: rigPrefab
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: rigPrefab
+  nameWithType: LegionCatalog.rigPrefab
+  fullName: PixelUnitStudio.LegionCatalog.rigPrefab
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public GameObject rigPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public rigPrefab As GameObject
+- uid: PixelUnitStudio.LegionCatalog.controller
+  commentId: F:PixelUnitStudio.LegionCatalog.controller
+  id: controller
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: controller
+  nameWithType: LegionCatalog.controller
+  fullName: PixelUnitStudio.LegionCatalog.controller
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public RuntimeAnimatorController controller
+    return:
+      type: UnityEngine.RuntimeAnimatorController
+    content.vb: Public controller As RuntimeAnimatorController
+- uid: PixelUnitStudio.LegionCatalog.dyeMaterial
+  commentId: F:PixelUnitStudio.LegionCatalog.dyeMaterial
+  id: dyeMaterial
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: dyeMaterial
+  nameWithType: LegionCatalog.dyeMaterial
+  fullName: PixelUnitStudio.LegionCatalog.dyeMaterial
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Material dyeMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public dyeMaterial As Material
+- uid: PixelUnitStudio.LegionCatalog.slots
+  commentId: F:PixelUnitStudio.LegionCatalog.slots
+  id: slots
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: slots
+  nameWithType: LegionCatalog.slots
+  fullName: PixelUnitStudio.LegionCatalog.slots
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionCatalog.Slot> slots
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Slot}
+    content.vb: Public slots As List(Of LegionCatalog.Slot)
+- uid: PixelUnitStudio.LegionCatalog.motions
+  commentId: F:PixelUnitStudio.LegionCatalog.motions
+  id: motions
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: motions
+  nameWithType: LegionCatalog.motions
+  fullName: PixelUnitStudio.LegionCatalog.motions
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionCatalog.Motion> motions
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Motion}
+    content.vb: Public motions As List(Of LegionCatalog.Motion)
+- uid: PixelUnitStudio.LegionCatalog.projectiles
+  commentId: F:PixelUnitStudio.LegionCatalog.projectiles
+  id: projectiles
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: projectiles
+  nameWithType: LegionCatalog.projectiles
+  fullName: PixelUnitStudio.LegionCatalog.projectiles
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionCatalog.Projectile> projectiles
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Projectile}
+    content.vb: Public projectiles As List(Of LegionCatalog.Projectile)
+- uid: PixelUnitStudio.LegionCatalog.packs
+  commentId: F:PixelUnitStudio.LegionCatalog.packs
+  id: packs
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: packs
+  nameWithType: LegionCatalog.packs
+  fullName: PixelUnitStudio.LegionCatalog.packs
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<string> packs
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public packs As List(Of String)
+- uid: PixelUnitStudio.LegionCatalog.packsFingerprint
+  commentId: F:PixelUnitStudio.LegionCatalog.packsFingerprint
+  id: packsFingerprint
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: packsFingerprint
+  nameWithType: LegionCatalog.packsFingerprint
+  fullName: PixelUnitStudio.LegionCatalog.packsFingerprint
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string packsFingerprint
+    return:
+      type: System.String
+    content.vb: Public packsFingerprint As String
+- uid: PixelUnitStudio.LegionCatalog.#ctor
+  commentId: M:PixelUnitStudio.LegionCatalog.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionCatalog
+  langs:
+  - csharp
+  - vb
+  name: LegionCatalog()
+  nameWithType: LegionCatalog.LegionCatalog()
+  fullName: PixelUnitStudio.LegionCatalog.LegionCatalog()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionCatalog()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionCatalog.#ctor*
+  nameWithType.vb: LegionCatalog.New()
+  fullName.vb: PixelUnitStudio.LegionCatalog.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.RuntimeAnimatorController
+  commentId: '!:UnityEngine.RuntimeAnimatorController'
+  isExternal: true
+  name: RuntimeAnimatorController
+  nameWithType: RuntimeAnimatorController
+  fullName: UnityEngine.RuntimeAnimatorController
+- uid: UnityEngine.Material
+  commentId: '!:UnityEngine.Material'
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Slot}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Slot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionCatalog.Slot>
+  nameWithType: List<LegionCatalog.Slot>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionCatalog.Slot>
+  nameWithType.vb: List(Of LegionCatalog.Slot)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionCatalog.Slot)
+  name.vb: List(Of LegionCatalog.Slot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Slot
+    name: Slot
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Slot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Slot
+    name: Slot
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Slot.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Motion}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Motion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionCatalog.Motion>
+  nameWithType: List<LegionCatalog.Motion>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionCatalog.Motion>
+  nameWithType.vb: List(Of LegionCatalog.Motion)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionCatalog.Motion)
+  name.vb: List(Of LegionCatalog.Motion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+  - name: )
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Projectile}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionCatalog.Projectile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionCatalog.Projectile>
+  nameWithType: List<LegionCatalog.Projectile>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionCatalog.Projectile>
+  nameWithType.vb: List(Of LegionCatalog.Projectile)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionCatalog.Projectile)
+  name.vb: List(Of LegionCatalog.Projectile)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Projectile
+    name: Projectile
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Projectile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Projectile
+    name: Projectile
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Projectile.html
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio.LegionCatalog.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionCatalog.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html#PixelUnitStudio_LegionCatalog__ctor
+  name: LegionCatalog
+  nameWithType: LegionCatalog.LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog.LegionCatalog
+  nameWithType.vb: LegionCatalog.New
+  fullName.vb: PixelUnitStudio.LegionCatalog.New
+  name.vb: New

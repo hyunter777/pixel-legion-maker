@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionDye
+  commentId: T:PixelUnitStudio.LegionDye
+  id: LegionDye
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionDye.#ctor
+  - PixelUnitStudio.LegionDye.Apply
+  - PixelUnitStudio.LegionDye.Custom(System.String)
+  - PixelUnitStudio.LegionDye.Find(System.String)
+  - PixelUnitStudio.LegionDye.FindSkin(System.String)
+  - PixelUnitStudio.LegionDye.HexOf(UnityEngine.Color)
+  - PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  - PixelUnitStudio.LegionDye.Map(UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  - PixelUnitStudio.LegionDye.MaxColors
+  - PixelUnitStudio.LegionDye.MaxPairs
+  - PixelUnitStudio.LegionDye.Palettes
+  - PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette,PixelUnitStudio.LegionDye.Palette)
+  - PixelUnitStudio.LegionDye.SkinRamp
+  - PixelUnitStudio.LegionDye.Skins
+  - PixelUnitStudio.LegionDye.from
+  - PixelUnitStudio.LegionDye.skin
+  - PixelUnitStudio.LegionDye.to
+  langs:
+  - csharp
+  - vb
+  name: LegionDye
+  nameWithType: LegionDye
+  fullName: PixelUnitStudio.LegionDye
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Dyes one part renderer. Redraws the art's main color group (the catalog option's dyeRamp, from dark colors) in
+    the dye's color steps.\n            The hero's skin color (Skins) likewise redraws the 3 base body skin colors.\n            Shaders/LegionDye.shader
+    does the color change; this component supplies the color pairs to change through a MaterialPropertyBlock.\n            It
+    stays in saved prefabs, so they are repainted the same way."
+  example: []
+  syntax:
+    content: 'public sealed class LegionDye : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionDye Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionDye.MaxColors
+  commentId: F:PixelUnitStudio.LegionDye.MaxColors
+  id: MaxColors
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: MaxColors
+  nameWithType: LegionDye.MaxColors
+  fullName: PixelUnitStudio.LegionDye.MaxColors
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const int MaxColors = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxColors As Integer = 8
+- uid: PixelUnitStudio.LegionDye.MaxPairs
+  commentId: F:PixelUnitStudio.LegionDye.MaxPairs
+  id: MaxPairs
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: MaxPairs
+  nameWithType: LegionDye.MaxPairs
+  fullName: PixelUnitStudio.LegionDye.MaxPairs
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: 'Number of color pairs the shader receives: part main colors MaxColors + skin SkinRamp.'
+  example: []
+  syntax:
+    content: public const int MaxPairs = 12
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxPairs As Integer = 12
+- uid: PixelUnitStudio.LegionDye.Palettes
+  commentId: F:PixelUnitStudio.LegionDye.Palettes
+  id: Palettes
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Palettes
+  nameWithType: LegionDye.Palettes
+  fullName: PixelUnitStudio.LegionDye.Palettes
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Available dyes. Names are kept in save records, so do not rename them.\n            Colors are matched to the
+    same tone as the parts (tone in tools/generate_humanoid_rig.py: saturation 78%, slightly warmer)."
+  example: []
+  syntax:
+    content: public static readonly IReadOnlyList<LegionDye.Palette> Palettes
+    return:
+      type: System.Collections.Generic.IReadOnlyList{PixelUnitStudio.LegionDye.Palette}
+    content.vb: Public Shared ReadOnly Palettes As IReadOnlyList(Of LegionDye.Palette)
+- uid: PixelUnitStudio.LegionDye.SkinRamp
+  commentId: F:PixelUnitStudio.LegionDye.SkinRamp
+  id: SkinRamp
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: SkinRamp
+  nameWithType: LegionDye.SkinRamp
+  fullName: PixelUnitStudio.LegionDye.SkinRamp
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: The 3 skin colors of the base body (from dark). They appear in both the body and part art (tools/extract_base_style.py).
+  example: []
+  syntax:
+    content: public static readonly Color32[] SkinRamp
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public Shared ReadOnly SkinRamp As Color32()
+- uid: PixelUnitStudio.LegionDye.Skins
+  commentId: F:PixelUnitStudio.LegionDye.Skins
+  id: Skins
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Skins
+  nameWithType: LegionDye.Skins
+  fullName: PixelUnitStudio.LegionDye.Skins
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Available skin colors. shades has 3 steps like SkinRamp, and the name is kept in save records.
+  example: []
+  syntax:
+    content: public static readonly IReadOnlyList<LegionDye.Palette> Skins
+    return:
+      type: System.Collections.Generic.IReadOnlyList{PixelUnitStudio.LegionDye.Palette}
+    content.vb: Public Shared ReadOnly Skins As IReadOnlyList(Of LegionDye.Palette)
+- uid: PixelUnitStudio.LegionDye.from
+  commentId: F:PixelUnitStudio.LegionDye.from
+  id: from
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: from
+  nameWithType: LegionDye.from
+  fullName: PixelUnitStudio.LegionDye.from
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Color32[] from
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public from As Color32()
+- uid: PixelUnitStudio.LegionDye.to
+  commentId: F:PixelUnitStudio.LegionDye.to
+  id: to
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: to
+  nameWithType: LegionDye.to
+  fullName: PixelUnitStudio.LegionDye.to
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Color32[] to
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public [to] As Color32()
+- uid: PixelUnitStudio.LegionDye.skin
+  commentId: F:PixelUnitStudio.LegionDye.skin
+  id: skin
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: skin
+  nameWithType: LegionDye.skin
+  fullName: PixelUnitStudio.LegionDye.skin
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public Color32[] skin
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public skin As Color32()
+- uid: PixelUnitStudio.LegionDye.Find(System.String)
+  commentId: M:PixelUnitStudio.LegionDye.Find(System.String)
+  id: Find(System.String)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Find(string)
+  nameWithType: LegionDye.Find(string)
+  fullName: PixelUnitStudio.LegionDye.Find(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Finds a dye by name. For "#RRGGBB" it builds a dye with that color as the middle step (Custom). Null if none.
+  example: []
+  syntax:
+    content: public static LegionDye.Palette Find(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: PixelUnitStudio.LegionDye.Palette
+    content.vb: Public Shared Function Find(name As String) As LegionDye.Palette
+  overload: PixelUnitStudio.LegionDye.Find*
+  nameWithType.vb: LegionDye.Find(String)
+  fullName.vb: PixelUnitStudio.LegionDye.Find(String)
+  name.vb: Find(String)
+- uid: PixelUnitStudio.LegionDye.Custom(System.String)
+  commentId: M:PixelUnitStudio.LegionDye.Custom(System.String)
+  id: Custom(System.String)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Custom(string)
+  nameWithType: LegionDye.Custom(string)
+  fullName: PixelUnitStudio.LegionDye.Custom(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "A 5-step dye with the \"#RRGGBB\" color as the middle (step 3). The dark side gets a bit more saturation and the
+    light side less, giving the same light-dark range as the base dyes.\n            Null if the format is wrong. The name
+    is normalized to uppercase \"#RRGGBB\"."
+  example: []
+  syntax:
+    content: public static LegionDye.Palette Custom(string hex)
+    parameters:
+    - id: hex
+      type: System.String
+    return:
+      type: PixelUnitStudio.LegionDye.Palette
+    content.vb: Public Shared Function Custom(hex As String) As LegionDye.Palette
+  overload: PixelUnitStudio.LegionDye.Custom*
+  nameWithType.vb: LegionDye.Custom(String)
+  fullName.vb: PixelUnitStudio.LegionDye.Custom(String)
+  name.vb: Custom(String)
+- uid: PixelUnitStudio.LegionDye.HexOf(UnityEngine.Color)
+  commentId: M:PixelUnitStudio.LegionDye.HexOf(UnityEngine.Color)
+  id: HexOf(UnityEngine.Color)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: HexOf(Color)
+  nameWithType: LegionDye.HexOf(Color)
+  fullName: PixelUnitStudio.LegionDye.HexOf(UnityEngine.Color)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Uses a color as a Custom dye name ("#RRGGBB").
+  example: []
+  syntax:
+    content: public static string HexOf(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    return:
+      type: System.String
+    content.vb: Public Shared Function HexOf(color As Color) As String
+  overload: PixelUnitStudio.LegionDye.HexOf*
+- uid: PixelUnitStudio.LegionDye.FindSkin(System.String)
+  commentId: M:PixelUnitStudio.LegionDye.FindSkin(System.String)
+  id: FindSkin(System.String)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: FindSkin(string)
+  nameWithType: LegionDye.FindSkin(string)
+  fullName: PixelUnitStudio.LegionDye.FindSkin(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public static LegionDye.Palette FindSkin(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: PixelUnitStudio.LegionDye.Palette
+    content.vb: Public Shared Function FindSkin(name As String) As LegionDye.Palette
+  overload: PixelUnitStudio.LegionDye.FindSkin*
+  nameWithType.vb: LegionDye.FindSkin(String)
+  fullName.vb: PixelUnitStudio.LegionDye.FindSkin(String)
+  name.vb: FindSkin(String)
+- uid: PixelUnitStudio.LegionDye.Apply
+  commentId: M:PixelUnitStudio.LegionDye.Apply
+  id: Apply
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Apply()
+  nameWithType: LegionDye.Apply()
+  fullName: PixelUnitStudio.LegionDye.Apply()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void Apply()
+    content.vb: Public Sub Apply()
+  overload: PixelUnitStudio.LegionDye.Apply*
+- uid: PixelUnitStudio.LegionDye.Map(UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  commentId: M:PixelUnitStudio.LegionDye.Map(UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  id: Map(UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Map(Color32[], Palette)
+  nameWithType: LegionDye.Map(Color32[], LegionDye.Palette)
+  fullName: PixelUnitStudio.LegionDye.Map(UnityEngine.Color32[], PixelUnitStudio.LegionDye.Palette)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: 'Matches the main color group to the dye steps. Centered on the middle (step 3): up to 5 colors map one per step;
+    more are split evenly and paired.'
+  example: []
+  syntax:
+    content: public static Color32[] Map(Color32[] ramp, LegionDye.Palette palette)
+    parameters:
+    - id: ramp
+      type: UnityEngine.Color32[]
+    - id: palette
+      type: PixelUnitStudio.LegionDye.Palette
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public Shared Function Map(ramp As Color32(), palette As LegionDye.Palette) As Color32()
+  overload: PixelUnitStudio.LegionDye.Map*
+  nameWithType.vb: LegionDye.Map(Color32(), LegionDye.Palette)
+  fullName.vb: PixelUnitStudio.LegionDye.Map(UnityEngine.Color32(), PixelUnitStudio.LegionDye.Palette)
+  name.vb: Map(Color32(), Palette)
+- uid: PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  commentId: M:PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  id: Icon(UnityEngine.Sprite,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Icon(Sprite, Color32[], Palette)
+  nameWithType: LegionDye.Icon(Sprite, Color32[], LegionDye.Palette)
+  fullName: PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite, UnityEngine.Color32[], PixelUnitStudio.LegionDye.Palette)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Dyed copy of a card icon. UI images don't use the dye shader, so pixels are changed directly.\n            Returns
+    the original icon if there is no dye, no main color group, or the icon is unreadable. The same icon and dye are made only
+    once."
+  example: []
+  syntax:
+    content: public static Sprite Icon(Sprite icon, Color32[] ramp, LegionDye.Palette palette)
+    parameters:
+    - id: icon
+      type: UnityEngine.Sprite
+    - id: ramp
+      type: UnityEngine.Color32[]
+    - id: palette
+      type: PixelUnitStudio.LegionDye.Palette
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Shared Function Icon(icon As Sprite, ramp As Color32(), palette As LegionDye.Palette) As Sprite
+  overload: PixelUnitStudio.LegionDye.Icon*
+  nameWithType.vb: LegionDye.Icon(Sprite, Color32(), LegionDye.Palette)
+  fullName.vb: PixelUnitStudio.LegionDye.Icon(UnityEngine.Sprite, UnityEngine.Color32(), PixelUnitStudio.LegionDye.Palette)
+  name.vb: Icon(Sprite, Color32(), Palette)
+- uid: PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette,PixelUnitStudio.LegionDye.Palette)
+  commentId: M:PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette,PixelUnitStudio.LegionDye.Palette)
+  id: Set(UnityEngine.GameObject,UnityEngine.Color32[],PixelUnitStudio.LegionDye.Palette,PixelUnitStudio.LegionDye.Palette)
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: Set(GameObject, Color32[], Palette, Palette)
+  nameWithType: LegionDye.Set(GameObject, Color32[], LegionDye.Palette, LegionDye.Palette)
+  fullName: PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject, UnityEngine.Color32[], PixelUnitStudio.LegionDye.Palette,
+    PixelUnitStudio.LegionDye.Palette)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Dyes the target renderer. No dye or no main color group gives the original color; no skin restores the default
+    skin.
+  example: []
+  syntax:
+    content: public static void Set(GameObject target, Color32[] ramp, LegionDye.Palette palette, LegionDye.Palette skin =
+      null)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    - id: ramp
+      type: UnityEngine.Color32[]
+    - id: palette
+      type: PixelUnitStudio.LegionDye.Palette
+    - id: skin
+      type: PixelUnitStudio.LegionDye.Palette
+    content.vb: Public Shared Sub [Set](target As GameObject, ramp As Color32(), palette As LegionDye.Palette, skin As LegionDye.Palette
+      = Nothing)
+  overload: PixelUnitStudio.LegionDye.Set*
+  nameWithType.vb: LegionDye.Set(GameObject, Color32(), LegionDye.Palette, LegionDye.Palette)
+  fullName.vb: PixelUnitStudio.LegionDye.Set(UnityEngine.GameObject, UnityEngine.Color32(), PixelUnitStudio.LegionDye.Palette,
+    PixelUnitStudio.LegionDye.Palette)
+  name.vb: Set(GameObject, Color32(), Palette, Palette)
+- uid: PixelUnitStudio.LegionDye.#ctor
+  commentId: M:PixelUnitStudio.LegionDye.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionDye
+  langs:
+  - csharp
+  - vb
+  name: LegionDye()
+  nameWithType: LegionDye.LegionDye()
+  fullName: PixelUnitStudio.LegionDye.LegionDye()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionDye()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionDye.#ctor*
+  nameWithType.vb: LegionDye.New()
+  fullName.vb: PixelUnitStudio.LegionDye.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IReadOnlyList{PixelUnitStudio.LegionDye.Palette}
+  commentId: T:System.Collections.Generic.IReadOnlyList{PixelUnitStudio.LegionDye.Palette}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<LegionDye.Palette>
+  nameWithType: IReadOnlyList<LegionDye.Palette>
+  fullName: System.Collections.Generic.IReadOnlyList<PixelUnitStudio.LegionDye.Palette>
+  nameWithType.vb: IReadOnlyList(Of LegionDye.Palette)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of PixelUnitStudio.LegionDye.Palette)
+  name.vb: IReadOnlyList(Of LegionDye.Palette)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.Color32[]
+  isExternal: true
+  name: Color32[]
+  nameWithType: Color32[]
+  fullName: UnityEngine.Color32[]
+  nameWithType.vb: Color32()
+  fullName.vb: UnityEngine.Color32()
+  name.vb: Color32()
+  spec.csharp:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: (
+  - name: )
+- uid: PixelUnitStudio.LegionDye.Find*
+  commentId: Overload:PixelUnitStudio.LegionDye.Find
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Find_System_String_
+  name: Find
+  nameWithType: LegionDye.Find
+  fullName: PixelUnitStudio.LegionDye.Find
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio.LegionDye.Palette
+  commentId: T:PixelUnitStudio.LegionDye.Palette
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html
+  name: LegionDye.Palette
+  nameWithType: LegionDye.Palette
+  fullName: PixelUnitStudio.LegionDye.Palette
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+- uid: PixelUnitStudio.LegionDye.Custom*
+  commentId: Overload:PixelUnitStudio.LegionDye.Custom
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Custom_System_String_
+  name: Custom
+  nameWithType: LegionDye.Custom
+  fullName: PixelUnitStudio.LegionDye.Custom
+- uid: PixelUnitStudio.LegionDye.HexOf*
+  commentId: Overload:PixelUnitStudio.LegionDye.HexOf
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_HexOf_UnityEngine_Color_
+  name: HexOf
+  nameWithType: LegionDye.HexOf
+  fullName: PixelUnitStudio.LegionDye.HexOf
+- uid: UnityEngine.Color
+  commentId: '!:UnityEngine.Color'
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: PixelUnitStudio.LegionDye.FindSkin*
+  commentId: Overload:PixelUnitStudio.LegionDye.FindSkin
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_FindSkin_System_String_
+  name: FindSkin
+  nameWithType: LegionDye.FindSkin
+  fullName: PixelUnitStudio.LegionDye.FindSkin
+- uid: PixelUnitStudio.LegionDye.Apply*
+  commentId: Overload:PixelUnitStudio.LegionDye.Apply
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Apply
+  name: Apply
+  nameWithType: LegionDye.Apply
+  fullName: PixelUnitStudio.LegionDye.Apply
+- uid: PixelUnitStudio.LegionDye.Map*
+  commentId: Overload:PixelUnitStudio.LegionDye.Map
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Map_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_
+  name: Map
+  nameWithType: LegionDye.Map
+  fullName: PixelUnitStudio.LegionDye.Map
+- uid: PixelUnitStudio.LegionDye.Icon*
+  commentId: Overload:PixelUnitStudio.LegionDye.Icon
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Icon_UnityEngine_Sprite_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_
+  name: Icon
+  nameWithType: LegionDye.Icon
+  fullName: PixelUnitStudio.LegionDye.Icon
+- uid: UnityEngine.Sprite
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: PixelUnitStudio.LegionDye.Set*
+  commentId: Overload:PixelUnitStudio.LegionDye.Set
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye_Set_UnityEngine_GameObject_UnityEngine_Color32___PixelUnitStudio_LegionDye_Palette_PixelUnitStudio_LegionDye_Palette_
+  name: Set
+  nameWithType: LegionDye.Set
+  fullName: PixelUnitStudio.LegionDye.Set
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: PixelUnitStudio.LegionDye.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionDye.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html#PixelUnitStudio_LegionDye__ctor
+  name: LegionDye
+  nameWithType: LegionDye.LegionDye
+  fullName: PixelUnitStudio.LegionDye.LegionDye
+  nameWithType.vb: LegionDye.New
+  fullName.vb: PixelUnitStudio.LegionDye.New
+  name.vb: New

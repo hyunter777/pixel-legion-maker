@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  id: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionAction
+  - PixelUnitStudio.LegionAction.Step
+  - PixelUnitStudio.LegionActionLibrary
+  - PixelUnitStudio.LegionActionPlayer
+  - PixelUnitStudio.LegionBuilder
+  - PixelUnitStudio.LegionCatalog
+  - PixelUnitStudio.LegionCatalog.Motion
+  - PixelUnitStudio.LegionCatalog.Option
+  - PixelUnitStudio.LegionCatalog.Piece
+  - PixelUnitStudio.LegionCatalog.Projectile
+  - PixelUnitStudio.LegionCatalog.Slot
+  - PixelUnitStudio.LegionContentPack
+  - PixelUnitStudio.LegionContentPack.Title
+  - PixelUnitStudio.LegionDye
+  - PixelUnitStudio.LegionDye.Palette
+  - PixelUnitStudio.LegionEditor
+  - PixelUnitStudio.LegionEvents
+  - PixelUnitStudio.LegionPixelCamera
+  - PixelUnitStudio.LegionProjectile
+  - PixelUnitStudio.LegionRecipe
+  - PixelUnitStudio.LegionStore
+  - PixelUnitStudio.LegionTurns
+  - PixelUnitStudio.LegionUnit
+  - PixelUnitStudio.LegionUnit.Choice
+  - PixelUnitStudio.PixelUnitStudioInfo
+  langs:
+  - csharp
+  - vb
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+  type: Namespace
+  assemblies:
+  - PixelUnitStudio.Runtime
+references:
+- uid: PixelUnitStudio.LegionAction
+  commentId: T:PixelUnitStudio.LegionAction
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html
+  name: LegionAction
+  nameWithType: LegionAction
+  fullName: PixelUnitStudio.LegionAction
+- uid: PixelUnitStudio.LegionAction.Step
+  commentId: T:PixelUnitStudio.LegionAction.Step
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html
+  name: LegionAction.Step
+  nameWithType: LegionAction.Step
+  fullName: PixelUnitStudio.LegionAction.Step
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: .
+  - uid: PixelUnitStudio.LegionAction.Step
+    name: Step
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.Step.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: .
+  - uid: PixelUnitStudio.LegionAction.Step
+    name: Step
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.Step.html
+- uid: PixelUnitStudio.LegionActionLibrary
+  commentId: T:PixelUnitStudio.LegionActionLibrary
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionActionLibrary.html
+  name: LegionActionLibrary
+  nameWithType: LegionActionLibrary
+  fullName: PixelUnitStudio.LegionActionLibrary
+- uid: PixelUnitStudio.LegionActionPlayer
+  commentId: T:PixelUnitStudio.LegionActionPlayer
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionActionPlayer.html
+  name: LegionActionPlayer
+  nameWithType: LegionActionPlayer
+  fullName: PixelUnitStudio.LegionActionPlayer
+- uid: PixelUnitStudio.LegionBuilder
+  commentId: T:PixelUnitStudio.LegionBuilder
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionBuilder.html
+  name: LegionBuilder
+  nameWithType: LegionBuilder
+  fullName: PixelUnitStudio.LegionBuilder
+- uid: PixelUnitStudio.LegionStore
+  commentId: T:PixelUnitStudio.LegionStore
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html
+  name: LegionStore
+  nameWithType: LegionStore
+  fullName: PixelUnitStudio.LegionStore
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+- uid: PixelUnitStudio.LegionCatalog.Piece
+  commentId: T:PixelUnitStudio.LegionCatalog.Piece
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Piece
+  nameWithType: LegionCatalog.Piece
+  fullName: PixelUnitStudio.LegionCatalog.Piece
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Piece
+    name: Piece
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Piece.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Piece
+    name: Piece
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Piece.html
+- uid: PixelUnitStudio.LegionCatalog.Option
+  commentId: T:PixelUnitStudio.LegionCatalog.Option
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Option
+  nameWithType: LegionCatalog.Option
+  fullName: PixelUnitStudio.LegionCatalog.Option
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Option
+    name: Option
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Option.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Option
+    name: Option
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Option.html
+- uid: PixelUnitStudio.LegionCatalog.Slot
+  commentId: T:PixelUnitStudio.LegionCatalog.Slot
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Slot
+  nameWithType: LegionCatalog.Slot
+  fullName: PixelUnitStudio.LegionCatalog.Slot
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Slot
+    name: Slot
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Slot.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Slot
+    name: Slot
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Slot.html
+- uid: PixelUnitStudio.LegionCatalog.Motion
+  commentId: T:PixelUnitStudio.LegionCatalog.Motion
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Motion
+  nameWithType: LegionCatalog.Motion
+  fullName: PixelUnitStudio.LegionCatalog.Motion
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+- uid: PixelUnitStudio.LegionCatalog.Projectile
+  commentId: T:PixelUnitStudio.LegionCatalog.Projectile
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Projectile
+  nameWithType: LegionCatalog.Projectile
+  fullName: PixelUnitStudio.LegionCatalog.Projectile
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Projectile
+    name: Projectile
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Projectile.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Projectile
+    name: Projectile
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Projectile.html
+- uid: PixelUnitStudio.LegionContentPack
+  commentId: T:PixelUnitStudio.LegionContentPack
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionContentPack.html
+  name: LegionContentPack
+  nameWithType: LegionContentPack
+  fullName: PixelUnitStudio.LegionContentPack
+- uid: PixelUnitStudio.LegionContentPack.Title
+  commentId: T:PixelUnitStudio.LegionContentPack.Title
+  isExternal: true
+  href: PixelUnitStudio.LegionContentPack.html
+  name: LegionContentPack.Title
+  nameWithType: LegionContentPack.Title
+  fullName: PixelUnitStudio.LegionContentPack.Title
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.html
+  - name: .
+  - uid: PixelUnitStudio.LegionContentPack.Title
+    name: Title
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.Title.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.html
+  - name: .
+  - uid: PixelUnitStudio.LegionContentPack.Title
+    name: Title
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.Title.html
+- uid: PixelUnitStudio.LegionDye
+  commentId: T:PixelUnitStudio.LegionDye
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html
+  name: LegionDye
+  nameWithType: LegionDye
+  fullName: PixelUnitStudio.LegionDye
+- uid: PixelUnitStudio.LegionDye.Palette
+  commentId: T:PixelUnitStudio.LegionDye.Palette
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionDye.html
+  name: LegionDye.Palette
+  nameWithType: LegionDye.Palette
+  fullName: PixelUnitStudio.LegionDye.Palette
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionDye
+    name: LegionDye
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.html
+  - name: .
+  - uid: PixelUnitStudio.LegionDye.Palette
+    name: Palette
+    isExternal: true
+    href: PixelUnitStudio.LegionDye.Palette.html
+- uid: PixelUnitStudio.LegionEditor
+  commentId: T:PixelUnitStudio.LegionEditor
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html
+  name: LegionEditor
+  nameWithType: LegionEditor
+  fullName: PixelUnitStudio.LegionEditor
+- uid: PixelUnitStudio.LegionEvents
+  commentId: T:PixelUnitStudio.LegionEvents
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionEvents.html
+  name: LegionEvents
+  nameWithType: LegionEvents
+  fullName: PixelUnitStudio.LegionEvents
+- uid: PixelUnitStudio.LegionPixelCamera
+  commentId: T:PixelUnitStudio.LegionPixelCamera
+  isExternal: true
+  href: PixelUnitStudio.LegionPixelCamera.html
+  name: LegionPixelCamera
+  nameWithType: LegionPixelCamera
+  fullName: PixelUnitStudio.LegionPixelCamera
+- uid: PixelUnitStudio.LegionProjectile
+  commentId: T:PixelUnitStudio.LegionProjectile
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionProjectile.html
+  name: LegionProjectile
+  nameWithType: LegionProjectile
+  fullName: PixelUnitStudio.LegionProjectile
+- uid: PixelUnitStudio.LegionRecipe
+  commentId: T:PixelUnitStudio.LegionRecipe
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionRecipe.html
+  name: LegionRecipe
+  nameWithType: LegionRecipe
+  fullName: PixelUnitStudio.LegionRecipe
+- uid: PixelUnitStudio.LegionTurns
+  commentId: T:PixelUnitStudio.LegionTurns
+  isExternal: true
+  href: PixelUnitStudio.LegionTurns.html
+  name: LegionTurns
+  nameWithType: LegionTurns
+  fullName: PixelUnitStudio.LegionTurns
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio.LegionUnit.Choice
+  commentId: T:PixelUnitStudio.LegionUnit.Choice
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit.Choice
+  nameWithType: LegionUnit.Choice
+  fullName: PixelUnitStudio.LegionUnit.Choice
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: .
+  - uid: PixelUnitStudio.LegionUnit.Choice
+    name: Choice
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.Choice.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: .
+  - uid: PixelUnitStudio.LegionUnit.Choice
+    name: Choice
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.Choice.html
+- uid: PixelUnitStudio.PixelUnitStudioInfo
+  commentId: T:PixelUnitStudio.PixelUnitStudioInfo
+  isExternal: true
+  href: PixelUnitStudio.PixelUnitStudioInfo.html
+  name: PixelUnitStudioInfo
+  nameWithType: PixelUnitStudioInfo
+  fullName: PixelUnitStudio.PixelUnitStudioInfo
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio

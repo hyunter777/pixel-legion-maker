@@ -1,0 +1,19 @@
+{
+  "build": {
+    "content": [
+      { "files": ["index.md", "toc.yml"] },
+      { "src": "../api-metadata", "files": ["**/*.yml"], "dest": "reference" }
+    ],
+    "template": ["default", "modern"],
+    "disableGitFeatures": true,
+    "globalMetadata": {
+      "_appName": "Pixel Legion Maker API",
+      "_appTitle": "Pixel Legion Maker API",
+      "_appFooter": "Pixel Legion Maker",
+      "_appLogoUrl": "../index.html",
+      "_enableSearch": true,
+      "_disableContribution": true
+    },
+    "xref": ["https://learn.microsoft.com/dotnet/.xrefmap.json"]
+  }
+}

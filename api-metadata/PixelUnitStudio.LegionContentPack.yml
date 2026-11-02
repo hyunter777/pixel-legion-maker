@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionContentPack
+  commentId: T:PixelUnitStudio.LegionContentPack
+  id: LegionContentPack
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionContentPack.#ctor
+  - PixelUnitStudio.LegionContentPack.generatedFolder
+  - PixelUnitStudio.LegionContentPack.heroesFolder
+  - PixelUnitStudio.LegionContentPack.order
+  - PixelUnitStudio.LegionContentPack.partsFolder
+  - PixelUnitStudio.LegionContentPack.projectilesFolder
+  - PixelUnitStudio.LegionContentPack.title
+  - PixelUnitStudio.LegionContentPack.titles
+  - PixelUnitStudio.LegionContentPack.weaponTurnsFolder
+  - PixelUnitStudio.LegionContentPack.weaponsFolder
+  langs:
+  - csharp
+  - vb
+  name: LegionContentPack
+  nameWithType: LegionContentPack
+  fullName: PixelUnitStudio.LegionContentPack
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "A content pack: a folder of parts, weapons, projectiles and heroes that the catalog takes in (LegionCatalogBuilder).\n
+    \           The base product is one pack (LegionBasePack.asset); an add-on is another pack asset in its own folder, so
+    it holds only art and heroes and needs the base product to work.\n            Name add-on art with the type first, as
+    the base product does (axe_frost, helmet_raider), because weapon motions and filters come from the first word.\n            Folders
+    are relative to the folder that holds this asset. When packs are added, removed or their art changes, the catalog rebuilds
+    itself in the editor."
+  example: []
+  syntax:
+    content: 'public sealed class LegionContentPack : ScriptableObject'
+    content.vb: Public NotInheritable Class LegionContentPack Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionContentPack.title
+  commentId: F:PixelUnitStudio.LegionContentPack.title
+  id: title
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: title
+  nameWithType: LegionContentPack.title
+  fullName: PixelUnitStudio.LegionContentPack.title
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string title
+    return:
+      type: System.String
+    content.vb: Public title As String
+- uid: PixelUnitStudio.LegionContentPack.order
+  commentId: F:PixelUnitStudio.LegionContentPack.order
+  id: order
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: order
+  nameWithType: LegionContentPack.order
+  fullName: PixelUnitStudio.LegionContentPack.order
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public int order
+    return:
+      type: System.Int32
+    content.vb: Public order As Integer
+- uid: PixelUnitStudio.LegionContentPack.partsFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.partsFolder
+  id: partsFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: partsFolder
+  nameWithType: LegionContentPack.partsFolder
+  fullName: PixelUnitStudio.LegionContentPack.partsFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string partsFolder
+    return:
+      type: System.String
+    content.vb: Public partsFolder As String
+- uid: PixelUnitStudio.LegionContentPack.weaponsFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.weaponsFolder
+  id: weaponsFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: weaponsFolder
+  nameWithType: LegionContentPack.weaponsFolder
+  fullName: PixelUnitStudio.LegionContentPack.weaponsFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string weaponsFolder
+    return:
+      type: System.String
+    content.vb: Public weaponsFolder As String
+- uid: PixelUnitStudio.LegionContentPack.weaponTurnsFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.weaponTurnsFolder
+  id: weaponTurnsFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: weaponTurnsFolder
+  nameWithType: LegionContentPack.weaponTurnsFolder
+  fullName: PixelUnitStudio.LegionContentPack.weaponTurnsFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string weaponTurnsFolder
+    return:
+      type: System.String
+    content.vb: Public weaponTurnsFolder As String
+- uid: PixelUnitStudio.LegionContentPack.projectilesFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.projectilesFolder
+  id: projectilesFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: projectilesFolder
+  nameWithType: LegionContentPack.projectilesFolder
+  fullName: PixelUnitStudio.LegionContentPack.projectilesFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string projectilesFolder
+    return:
+      type: System.String
+    content.vb: Public projectilesFolder As String
+- uid: PixelUnitStudio.LegionContentPack.heroesFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.heroesFolder
+  id: heroesFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: heroesFolder
+  nameWithType: LegionContentPack.heroesFolder
+  fullName: PixelUnitStudio.LegionContentPack.heroesFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string heroesFolder
+    return:
+      type: System.String
+    content.vb: Public heroesFolder As String
+- uid: PixelUnitStudio.LegionContentPack.generatedFolder
+  commentId: F:PixelUnitStudio.LegionContentPack.generatedFolder
+  id: generatedFolder
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: generatedFolder
+  nameWithType: LegionContentPack.generatedFolder
+  fullName: PixelUnitStudio.LegionContentPack.generatedFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string generatedFolder
+    return:
+      type: System.String
+    content.vb: Public generatedFolder As String
+- uid: PixelUnitStudio.LegionContentPack.titles
+  commentId: F:PixelUnitStudio.LegionContentPack.titles
+  id: titles
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: titles
+  nameWithType: LegionContentPack.titles
+  fullName: PixelUnitStudio.LegionContentPack.titles
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionContentPack.Title> titles
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionContentPack.Title}
+    content.vb: Public titles As List(Of LegionContentPack.Title)
+- uid: PixelUnitStudio.LegionContentPack.#ctor
+  commentId: M:PixelUnitStudio.LegionContentPack.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionContentPack
+  langs:
+  - csharp
+  - vb
+  name: LegionContentPack()
+  nameWithType: LegionContentPack.LegionContentPack()
+  fullName: PixelUnitStudio.LegionContentPack.LegionContentPack()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionContentPack()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionContentPack.#ctor*
+  nameWithType.vb: LegionContentPack.New()
+  fullName.vb: PixelUnitStudio.LegionContentPack.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionContentPack.Title}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionContentPack.Title}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionContentPack.Title>
+  nameWithType: List<LegionContentPack.Title>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionContentPack.Title>
+  nameWithType.vb: List(Of LegionContentPack.Title)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionContentPack.Title)
+  name.vb: List(Of LegionContentPack.Title)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.html
+  - name: .
+  - uid: PixelUnitStudio.LegionContentPack.Title
+    name: Title
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.Title.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionContentPack
+    name: LegionContentPack
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.html
+  - name: .
+  - uid: PixelUnitStudio.LegionContentPack.Title
+    name: Title
+    isExternal: true
+    href: PixelUnitStudio.LegionContentPack.Title.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.LegionContentPack.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionContentPack.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionContentPack.html#PixelUnitStudio_LegionContentPack__ctor
+  name: LegionContentPack
+  nameWithType: LegionContentPack.LegionContentPack
+  fullName: PixelUnitStudio.LegionContentPack.LegionContentPack
+  nameWithType.vb: LegionContentPack.New
+  fullName.vb: PixelUnitStudio.LegionContentPack.New
+  name.vb: New

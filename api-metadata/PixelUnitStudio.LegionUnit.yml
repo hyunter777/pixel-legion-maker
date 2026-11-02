@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  id: LegionUnit
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionUnit.#ctor
+  - PixelUnitStudio.LegionUnit.CurrentVersion
+  - PixelUnitStudio.LegionUnit.DyeFor(System.String)
+  - PixelUnitStudio.LegionUnit.OptionFor(System.String)
+  - PixelUnitStudio.LegionUnit.Play(System.String,System.Single)
+  - PixelUnitStudio.LegionUnit.StateFor(UnityEngine.Animator,System.String,System.String)
+  - PixelUnitStudio.LegionUnit.choices
+  - PixelUnitStudio.LegionUnit.code
+  - PixelUnitStudio.LegionUnit.motionSet
+  - PixelUnitStudio.LegionUnit.version
+  langs:
+  - csharp
+  - vb
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Record attached to the root of a saved hero prefab. Keeps the option name and dye chosen per slot so it can be
+    loaded again.\n            Stored by name, so it is found correctly even if the catalog is rebuilt and the order changes."
+  example: []
+  syntax:
+    content: 'public sealed class LegionUnit : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionUnit Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionUnit.CurrentVersion
+  commentId: F:PixelUnitStudio.LegionUnit.CurrentVersion
+  id: CurrentVersion
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: CurrentVersion
+  nameWithType: LegionUnit.CurrentVersion
+  fullName: PixelUnitStudio.LegionUnit.CurrentVersion
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const int CurrentVersion = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const CurrentVersion As Integer = 1
+- uid: PixelUnitStudio.LegionUnit.version
+  commentId: F:PixelUnitStudio.LegionUnit.version
+  id: version
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: version
+  nameWithType: LegionUnit.version
+  fullName: PixelUnitStudio.LegionUnit.version
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public int version
+    return:
+      type: System.Int32
+    content.vb: Public version As Integer
+- uid: PixelUnitStudio.LegionUnit.code
+  commentId: F:PixelUnitStudio.LegionUnit.code
+  id: code
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: code
+  nameWithType: LegionUnit.code
+  fullName: PixelUnitStudio.LegionUnit.code
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string code
+    return:
+      type: System.String
+    content.vb: Public code As String
+- uid: PixelUnitStudio.LegionUnit.motionSet
+  commentId: F:PixelUnitStudio.LegionUnit.motionSet
+  id: motionSet
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: motionSet
+  nameWithType: LegionUnit.motionSet
+  fullName: PixelUnitStudio.LegionUnit.motionSet
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string motionSet
+    return:
+      type: System.String
+    content.vb: Public motionSet As String
+- uid: PixelUnitStudio.LegionUnit.choices
+  commentId: F:PixelUnitStudio.LegionUnit.choices
+  id: choices
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: choices
+  nameWithType: LegionUnit.choices
+  fullName: PixelUnitStudio.LegionUnit.choices
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public List<LegionUnit.Choice> choices
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionUnit.Choice}
+    content.vb: Public choices As List(Of LegionUnit.Choice)
+- uid: PixelUnitStudio.LegionUnit.OptionFor(System.String)
+  commentId: M:PixelUnitStudio.LegionUnit.OptionFor(System.String)
+  id: OptionFor(System.String)
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: OptionFor(string)
+  nameWithType: LegionUnit.OptionFor(string)
+  fullName: PixelUnitStudio.LegionUnit.OptionFor(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string OptionFor(string slot)
+    parameters:
+    - id: slot
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function OptionFor(slot As String) As String
+  overload: PixelUnitStudio.LegionUnit.OptionFor*
+  nameWithType.vb: LegionUnit.OptionFor(String)
+  fullName.vb: PixelUnitStudio.LegionUnit.OptionFor(String)
+  name.vb: OptionFor(String)
+- uid: PixelUnitStudio.LegionUnit.DyeFor(System.String)
+  commentId: M:PixelUnitStudio.LegionUnit.DyeFor(System.String)
+  id: DyeFor(System.String)
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: DyeFor(string)
+  nameWithType: LegionUnit.DyeFor(string)
+  fullName: PixelUnitStudio.LegionUnit.DyeFor(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string DyeFor(string slot)
+    parameters:
+    - id: slot
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function DyeFor(slot As String) As String
+  overload: PixelUnitStudio.LegionUnit.DyeFor*
+  nameWithType.vb: LegionUnit.DyeFor(String)
+  fullName.vb: PixelUnitStudio.LegionUnit.DyeFor(String)
+  name.vb: DyeFor(String)
+- uid: PixelUnitStudio.LegionUnit.Play(System.String,System.Single)
+  commentId: M:PixelUnitStudio.LegionUnit.Play(System.String,System.Single)
+  id: Play(System.String,System.Single)
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: Play(string, float)
+  nameWithType: LegionUnit.Play(string, float)
+  fullName: PixelUnitStudio.LegionUnit.Play(string, float)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Plays a motion in game. motion is one of idle, running, attack, damaged, death, cast, stun.\n            For a
+    long skill, playing cast_start ends and moves on to cast_loop by itself and repeats; play cast_end when the skill ends.\n
+    \           If a state matching the weapon type (motion@motionSet) exists, it is played; otherwise the default motion."
+  example: []
+  syntax:
+    content: public void Play(string motion, float normalizedTime = 0)
+    parameters:
+    - id: motion
+      type: System.String
+    - id: normalizedTime
+      type: System.Single
+    content.vb: Public Sub Play(motion As String, normalizedTime As Single = 0)
+  overload: PixelUnitStudio.LegionUnit.Play*
+  nameWithType.vb: LegionUnit.Play(String, Single)
+  fullName.vb: PixelUnitStudio.LegionUnit.Play(String, Single)
+  name.vb: Play(String, Single)
+- uid: PixelUnitStudio.LegionUnit.StateFor(UnityEngine.Animator,System.String,System.String)
+  commentId: M:PixelUnitStudio.LegionUnit.StateFor(UnityEngine.Animator,System.String,System.String)
+  id: StateFor(UnityEngine.Animator,System.String,System.String)
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: StateFor(Animator, string, string)
+  nameWithType: LegionUnit.StateFor(Animator, string, string)
+  fullName: PixelUnitStudio.LegionUnit.StateFor(UnityEngine.Animator, string, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: 'Animator state for a motion with a weapon type''s pose set: motion@motionSet if the controller has it, otherwise
+    the default motion.'
+  example: []
+  syntax:
+    content: public static string StateFor(Animator animator, string motion, string motionSet)
+    parameters:
+    - id: animator
+      type: UnityEngine.Animator
+    - id: motion
+      type: System.String
+    - id: motionSet
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function StateFor(animator As Animator, motion As String, motionSet As String) As String
+  overload: PixelUnitStudio.LegionUnit.StateFor*
+  nameWithType.vb: LegionUnit.StateFor(Animator, String, String)
+  fullName.vb: PixelUnitStudio.LegionUnit.StateFor(UnityEngine.Animator, String, String)
+  name.vb: StateFor(Animator, String, String)
+- uid: PixelUnitStudio.LegionUnit.#ctor
+  commentId: M:PixelUnitStudio.LegionUnit.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionUnit
+  langs:
+  - csharp
+  - vb
+  name: LegionUnit()
+  nameWithType: LegionUnit.LegionUnit()
+  fullName: PixelUnitStudio.LegionUnit.LegionUnit()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionUnit()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionUnit.#ctor*
+  nameWithType.vb: LegionUnit.New()
+  fullName.vb: PixelUnitStudio.LegionUnit.New()
+  name.vb: New()
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionUnit.Choice}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionUnit.Choice}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionUnit.Choice>
+  nameWithType: List<LegionUnit.Choice>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionUnit.Choice>
+  nameWithType.vb: List(Of LegionUnit.Choice)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionUnit.Choice)
+  name.vb: List(Of LegionUnit.Choice)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: .
+  - uid: PixelUnitStudio.LegionUnit.Choice
+    name: Choice
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.Choice.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: .
+  - uid: PixelUnitStudio.LegionUnit.Choice
+    name: Choice
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.Choice.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.LegionUnit.OptionFor*
+  commentId: Overload:PixelUnitStudio.LegionUnit.OptionFor
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html#PixelUnitStudio_LegionUnit_OptionFor_System_String_
+  name: OptionFor
+  nameWithType: LegionUnit.OptionFor
+  fullName: PixelUnitStudio.LegionUnit.OptionFor
+- uid: PixelUnitStudio.LegionUnit.DyeFor*
+  commentId: Overload:PixelUnitStudio.LegionUnit.DyeFor
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html#PixelUnitStudio_LegionUnit_DyeFor_System_String_
+  name: DyeFor
+  nameWithType: LegionUnit.DyeFor
+  fullName: PixelUnitStudio.LegionUnit.DyeFor
+- uid: PixelUnitStudio.LegionUnit.Play*
+  commentId: Overload:PixelUnitStudio.LegionUnit.Play
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html#PixelUnitStudio_LegionUnit_Play_System_String_System_Single_
+  name: Play
+  nameWithType: LegionUnit.Play
+  fullName: PixelUnitStudio.LegionUnit.Play
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: PixelUnitStudio.LegionUnit.StateFor*
+  commentId: Overload:PixelUnitStudio.LegionUnit.StateFor
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html#PixelUnitStudio_LegionUnit_StateFor_UnityEngine_Animator_System_String_System_String_
+  name: StateFor
+  nameWithType: LegionUnit.StateFor
+  fullName: PixelUnitStudio.LegionUnit.StateFor
+- uid: UnityEngine.Animator
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: PixelUnitStudio.LegionUnit.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionUnit.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html#PixelUnitStudio_LegionUnit__ctor
+  name: LegionUnit
+  nameWithType: LegionUnit.LegionUnit
+  fullName: PixelUnitStudio.LegionUnit.LegionUnit
+  nameWithType.vb: LegionUnit.New
+  fullName.vb: PixelUnitStudio.LegionUnit.New
+  name.vb: New

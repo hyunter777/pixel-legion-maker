@@ -1,0 +1,1716 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionEditor
+  commentId: T:PixelUnitStudio.LegionEditor
+  id: LegionEditor
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionEditor.#ctor
+  - PixelUnitStudio.LegionEditor.ActionLibrary
+  - PixelUnitStudio.LegionEditor.ActionsOpen
+  - PixelUnitStudio.LegionEditor.AddStep(System.String)
+  - PixelUnitStudio.LegionEditor.Builder
+  - PixelUnitStudio.LegionEditor.Choose(System.String,System.Int32)
+  - PixelUnitStudio.LegionEditor.ClearDraft
+  - PixelUnitStudio.LegionEditor.CopyRecipe
+  - PixelUnitStudio.LegionEditor.CycleBackdrop
+  - PixelUnitStudio.LegionEditor.Delete(System.String)
+  - PixelUnitStudio.LegionEditor.DeleteAction(System.String)
+  - PixelUnitStudio.LegionEditor.Dirty
+  - PixelUnitStudio.LegionEditor.Draft
+  - PixelUnitStudio.LegionEditor.Dye(System.String,System.String)
+  - PixelUnitStudio.LegionEditor.EditAction(PixelUnitStudio.LegionAction)
+  - PixelUnitStudio.LegionEditor.EditAction(System.String)
+  - PixelUnitStudio.LegionEditor.Export
+  - PixelUnitStudio.LegionEditor.Flip
+  - PixelUnitStudio.LegionEditor.LibraryOpen
+  - PixelUnitStudio.LegionEditor.Load(PixelUnitStudio.LegionUnit)
+  - PixelUnitStudio.LegionEditor.LoadedCode
+  - PixelUnitStudio.LegionEditor.MotionTitle(System.String)
+  - PixelUnitStudio.LegionEditor.NewHero
+  - PixelUnitStudio.LegionEditor.OpenActions
+  - PixelUnitStudio.LegionEditor.OpenLibrary
+  - PixelUnitStudio.LegionEditor.OptionTitle(System.String)
+  - PixelUnitStudio.LegionEditor.PackActions
+  - PixelUnitStudio.LegionEditor.PasteRecipe(System.String)
+  - PixelUnitStudio.LegionEditor.Play(PixelUnitStudio.LegionCatalog.Motion)
+  - PixelUnitStudio.LegionEditor.PlayAction(PixelUnitStudio.LegionAction)
+  - PixelUnitStudio.LegionEditor.Randomize
+  - PixelUnitStudio.LegionEditor.RemoveStep(System.Int32)
+  - PixelUnitStudio.LegionEditor.Save
+  - PixelUnitStudio.LegionEditor.SaveAction
+  - PixelUnitStudio.LegionEditor.Seek(System.Single)
+  - PixelUnitStudio.LegionEditor.SelectSlot(System.String)
+  - PixelUnitStudio.LegionEditor.SelectedSlot
+  - PixelUnitStudio.LegionEditor.SetPaused(System.Boolean)
+  - PixelUnitStudio.LegionEditor.SetRepeat(System.Int32,System.Int32)
+  - PixelUnitStudio.LegionEditor.SetSkin(System.String)
+  - PixelUnitStudio.LegionEditor.SetZoom(System.Int32)
+  - PixelUnitStudio.LegionEditor.SlotTitle(System.String)
+  - PixelUnitStudio.LegionEditor.Undo
+  - PixelUnitStudio.LegionEditor.WeaponKind(System.String)
+  - PixelUnitStudio.LegionEditor.catalog
+  - PixelUnitStudio.LegionEditor.unitFolder
+  langs:
+  - csharp
+  - vb
+  name: LegionEditor
+  nameWithType: LegionEditor
+  fullName: PixelUnitStudio.LegionEditor
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Edit screen. It does not use the existing maker screen; the whole screen is built in code.\n            The left
+    is the slot list (current part art and name), the center is the preview and motions, and the right is the option grid
+    of the chosen slot.\n            UI text is in English. An option is applied with one click, and the first cell \"None\"
+    removes it. Randomize, undo, hero list and save are in the top bar.\n            For dyeable parts, a row of dye swatches
+    appears above the options (the first cell is the original color).\n            The preview is rendered 1:1 in pixels by
+    a separate camera and shown scaled up by an integer factor."
+  example: []
+  syntax:
+    content: 'public sealed class LegionEditor : MonoBehaviour'
+    content.vb: Public NotInheritable Class LegionEditor Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: PixelUnitStudio.LegionEditor.catalog
+  commentId: F:PixelUnitStudio.LegionEditor.catalog
+  id: catalog
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: catalog
+  nameWithType: LegionEditor.catalog
+  fullName: PixelUnitStudio.LegionEditor.catalog
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionCatalog catalog
+    return:
+      type: PixelUnitStudio.LegionCatalog
+    content.vb: Public catalog As LegionCatalog
+- uid: PixelUnitStudio.LegionEditor.unitFolder
+  commentId: F:PixelUnitStudio.LegionEditor.unitFolder
+  id: unitFolder
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: unitFolder
+  nameWithType: LegionEditor.unitFolder
+  fullName: PixelUnitStudio.LegionEditor.unitFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string unitFolder
+    return:
+      type: System.String
+    content.vb: Public unitFolder As String
+- uid: PixelUnitStudio.LegionEditor.Choose(System.String,System.Int32)
+  commentId: M:PixelUnitStudio.LegionEditor.Choose(System.String,System.Int32)
+  id: Choose(System.String,System.Int32)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Choose(string, int)
+  nameWithType: LegionEditor.Choose(string, int)
+  fullName: PixelUnitStudio.LegionEditor.Choose(string, int)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Applies a slot option (-1 clears it). Records an undo step.
+  example: []
+  syntax:
+    content: public void Choose(string slotName, int index)
+    parameters:
+    - id: slotName
+      type: System.String
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub Choose(slotName As String, index As Integer)
+  overload: PixelUnitStudio.LegionEditor.Choose*
+  nameWithType.vb: LegionEditor.Choose(String, Integer)
+  fullName.vb: PixelUnitStudio.LegionEditor.Choose(String, Integer)
+  name.vb: Choose(String, Integer)
+- uid: PixelUnitStudio.LegionEditor.Dye(System.String,System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.Dye(System.String,System.String)
+  id: Dye(System.String,System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Dye(string, string)
+  nameWithType: LegionEditor.Dye(string, string)
+  fullName: PixelUnitStudio.LegionEditor.Dye(string, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Dyes a slot (null restores the original color). Records an undo step.
+  example: []
+  syntax:
+    content: public void Dye(string slotName, string paletteName)
+    parameters:
+    - id: slotName
+      type: System.String
+    - id: paletteName
+      type: System.String
+    content.vb: Public Sub Dye(slotName As String, paletteName As String)
+  overload: PixelUnitStudio.LegionEditor.Dye*
+  nameWithType.vb: LegionEditor.Dye(String, String)
+  fullName.vb: PixelUnitStudio.LegionEditor.Dye(String, String)
+  name.vb: Dye(String, String)
+- uid: PixelUnitStudio.LegionEditor.SetSkin(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.SetSkin(System.String)
+  id: SetSkin(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SetSkin(string)
+  nameWithType: LegionEditor.SetSkin(string)
+  fullName: PixelUnitStudio.LegionEditor.SetSkin(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Changes the skin color (null for the default skin). Records an undo step.
+  example: []
+  syntax:
+    content: public void SetSkin(string skinName)
+    parameters:
+    - id: skinName
+      type: System.String
+    content.vb: Public Sub SetSkin(skinName As String)
+  overload: PixelUnitStudio.LegionEditor.SetSkin*
+  nameWithType.vb: LegionEditor.SetSkin(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.SetSkin(String)
+  name.vb: SetSkin(String)
+- uid: PixelUnitStudio.LegionEditor.SelectSlot(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.SelectSlot(System.String)
+  id: SelectSlot(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SelectSlot(string)
+  nameWithType: LegionEditor.SelectSlot(string)
+  fullName: PixelUnitStudio.LegionEditor.SelectSlot(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void SelectSlot(string slotName)
+    parameters:
+    - id: slotName
+      type: System.String
+    content.vb: Public Sub SelectSlot(slotName As String)
+  overload: PixelUnitStudio.LegionEditor.SelectSlot*
+  nameWithType.vb: LegionEditor.SelectSlot(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.SelectSlot(String)
+  name.vb: SelectSlot(String)
+- uid: PixelUnitStudio.LegionEditor.Undo
+  commentId: M:PixelUnitStudio.LegionEditor.Undo
+  id: Undo
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: LegionEditor.Undo()
+  fullName: PixelUnitStudio.LegionEditor.Undo()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo()
+  overload: PixelUnitStudio.LegionEditor.Undo*
+- uid: PixelUnitStudio.LegionEditor.Randomize
+  commentId: M:PixelUnitStudio.LegionEditor.Randomize
+  id: Randomize
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Randomize()
+  nameWithType: LegionEditor.Randomize()
+  fullName: PixelUnitStudio.LegionEditor.Randomize()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Shuffles all slots at once. Slots that can be cleared are sometimes cleared.
+  example: []
+  syntax:
+    content: public void Randomize()
+    content.vb: Public Sub Randomize()
+  overload: PixelUnitStudio.LegionEditor.Randomize*
+- uid: PixelUnitStudio.LegionEditor.CopyRecipe
+  commentId: M:PixelUnitStudio.LegionEditor.CopyRecipe
+  id: CopyRecipe
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: CopyRecipe()
+  nameWithType: LegionEditor.CopyRecipe()
+  fullName: PixelUnitStudio.LegionEditor.CopyRecipe()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Copies the current combination to the clipboard as text (LegionRecipe) and returns that text. Read it in game code
+    with LegionRecipe.Parse.
+  example: []
+  syntax:
+    content: public string CopyRecipe()
+    return:
+      type: System.String
+    content.vb: Public Function CopyRecipe() As String
+  overload: PixelUnitStudio.LegionEditor.CopyRecipe*
+- uid: PixelUnitStudio.LegionEditor.PasteRecipe(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.PasteRecipe(System.String)
+  id: PasteRecipe(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: PasteRecipe(string)
+  nameWithType: LegionEditor.PasteRecipe(string)
+  fullName: PixelUnitStudio.LegionEditor.PasteRecipe(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Applies a combination written as text (can be undone). False if unreadable. Names not in the catalog are shown
+    in the notice and skipped.
+  example: []
+  syntax:
+    content: public bool PasteRecipe(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function PasteRecipe(text As String) As Boolean
+  overload: PixelUnitStudio.LegionEditor.PasteRecipe*
+  nameWithType.vb: LegionEditor.PasteRecipe(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.PasteRecipe(String)
+  name.vb: PasteRecipe(String)
+- uid: PixelUnitStudio.LegionEditor.NewHero
+  commentId: M:PixelUnitStudio.LegionEditor.NewHero
+  id: NewHero
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: NewHero()
+  nameWithType: LegionEditor.NewHero()
+  fullName: PixelUnitStudio.LegionEditor.NewHero()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void NewHero()
+    content.vb: Public Sub NewHero()
+  overload: PixelUnitStudio.LegionEditor.NewHero*
+- uid: PixelUnitStudio.LegionEditor.Save
+  commentId: M:PixelUnitStudio.LegionEditor.Save
+  id: Save
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: LegionEditor.Save()
+  fullName: PixelUnitStudio.LegionEditor.Save()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string Save()
+    return:
+      type: System.String
+    content.vb: Public Function Save() As String
+  overload: PixelUnitStudio.LegionEditor.Save*
+- uid: PixelUnitStudio.LegionEditor.Export
+  commentId: M:PixelUnitStudio.LegionEditor.Export
+  id: Export
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Export()
+  nameWithType: LegionEditor.Export()
+  fullName: PixelUnitStudio.LegionEditor.Export()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Saves the current hero, then exports a frame sheet using the motions of its back-hand weapon type and returns the
+    PNG path.
+  example: []
+  syntax:
+    content: public string Export()
+    return:
+      type: System.String
+    content.vb: Public Function Export() As String
+  overload: PixelUnitStudio.LegionEditor.Export*
+- uid: PixelUnitStudio.LegionEditor.Delete(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.Delete(System.String)
+  id: Delete(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Delete(string)
+  nameWithType: LegionEditor.Delete(string)
+  fullName: PixelUnitStudio.LegionEditor.Delete(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Deletes a saved hero. If it is the currently open hero, it remains as an unsaved new hero.
+  example: []
+  syntax:
+    content: public void Delete(string code)
+    parameters:
+    - id: code
+      type: System.String
+    content.vb: Public Sub Delete(code As String)
+  overload: PixelUnitStudio.LegionEditor.Delete*
+  nameWithType.vb: LegionEditor.Delete(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.Delete(String)
+  name.vb: Delete(String)
+- uid: PixelUnitStudio.LegionEditor.Load(PixelUnitStudio.LegionUnit)
+  commentId: M:PixelUnitStudio.LegionEditor.Load(PixelUnitStudio.LegionUnit)
+  id: Load(PixelUnitStudio.LegionUnit)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Load(LegionUnit)
+  nameWithType: LegionEditor.Load(LegionUnit)
+  fullName: PixelUnitStudio.LegionEditor.Load(PixelUnitStudio.LegionUnit)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void Load(LegionUnit unit)
+    parameters:
+    - id: unit
+      type: PixelUnitStudio.LegionUnit
+    content.vb: Public Sub Load(unit As LegionUnit)
+  overload: PixelUnitStudio.LegionEditor.Load*
+- uid: PixelUnitStudio.LegionEditor.OpenLibrary
+  commentId: M:PixelUnitStudio.LegionEditor.OpenLibrary
+  id: OpenLibrary
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: OpenLibrary()
+  nameWithType: LegionEditor.OpenLibrary()
+  fullName: PixelUnitStudio.LegionEditor.OpenLibrary()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void OpenLibrary()
+    content.vb: Public Sub OpenLibrary()
+  overload: PixelUnitStudio.LegionEditor.OpenLibrary*
+- uid: PixelUnitStudio.LegionEditor.OpenActions
+  commentId: M:PixelUnitStudio.LegionEditor.OpenActions
+  id: OpenActions
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: OpenActions()
+  nameWithType: LegionEditor.OpenActions()
+  fullName: PixelUnitStudio.LegionEditor.OpenActions()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void OpenActions()
+    content.vb: Public Sub OpenActions()
+  overload: PixelUnitStudio.LegionEditor.OpenActions*
+- uid: PixelUnitStudio.LegionEditor.AddStep(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.AddStep(System.String)
+  id: AddStep(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: AddStep(string)
+  nameWithType: LegionEditor.AddStep(string)
+  fullName: PixelUnitStudio.LegionEditor.AddStep(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Adds a motion as the draft's last step. The same motion twice in a row counts up the repeat instead.
+  example: []
+  syntax:
+    content: public void AddStep(string motion)
+    parameters:
+    - id: motion
+      type: System.String
+    content.vb: Public Sub AddStep(motion As String)
+  overload: PixelUnitStudio.LegionEditor.AddStep*
+  nameWithType.vb: LegionEditor.AddStep(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.AddStep(String)
+  name.vb: AddStep(String)
+- uid: PixelUnitStudio.LegionEditor.SetRepeat(System.Int32,System.Int32)
+  commentId: M:PixelUnitStudio.LegionEditor.SetRepeat(System.Int32,System.Int32)
+  id: SetRepeat(System.Int32,System.Int32)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SetRepeat(int, int)
+  nameWithType: LegionEditor.SetRepeat(int, int)
+  fullName: PixelUnitStudio.LegionEditor.SetRepeat(int, int)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void SetRepeat(int index, int repeat)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: repeat
+      type: System.Int32
+    content.vb: Public Sub SetRepeat(index As Integer, repeat As Integer)
+  overload: PixelUnitStudio.LegionEditor.SetRepeat*
+  nameWithType.vb: LegionEditor.SetRepeat(Integer, Integer)
+  fullName.vb: PixelUnitStudio.LegionEditor.SetRepeat(Integer, Integer)
+  name.vb: SetRepeat(Integer, Integer)
+- uid: PixelUnitStudio.LegionEditor.RemoveStep(System.Int32)
+  commentId: M:PixelUnitStudio.LegionEditor.RemoveStep(System.Int32)
+  id: RemoveStep(System.Int32)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: RemoveStep(int)
+  nameWithType: LegionEditor.RemoveStep(int)
+  fullName: PixelUnitStudio.LegionEditor.RemoveStep(int)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void RemoveStep(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub RemoveStep(index As Integer)
+  overload: PixelUnitStudio.LegionEditor.RemoveStep*
+  nameWithType.vb: LegionEditor.RemoveStep(Integer)
+  fullName.vb: PixelUnitStudio.LegionEditor.RemoveStep(Integer)
+  name.vb: RemoveStep(Integer)
+- uid: PixelUnitStudio.LegionEditor.ClearDraft
+  commentId: M:PixelUnitStudio.LegionEditor.ClearDraft
+  id: ClearDraft
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: ClearDraft()
+  nameWithType: LegionEditor.ClearDraft()
+  fullName: PixelUnitStudio.LegionEditor.ClearDraft()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Starts a new, empty action.
+  example: []
+  syntax:
+    content: public void ClearDraft()
+    content.vb: Public Sub ClearDraft()
+  overload: PixelUnitStudio.LegionEditor.ClearDraft*
+- uid: PixelUnitStudio.LegionEditor.EditAction(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.EditAction(System.String)
+  id: EditAction(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: EditAction(string)
+  nameWithType: LegionEditor.EditAction(string)
+  fullName: PixelUnitStudio.LegionEditor.EditAction(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Loads a saved action into the draft to change it. Saving it under the same name replaces it.
+  example: []
+  syntax:
+    content: public void EditAction(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    content.vb: Public Sub EditAction(actionName As String)
+  overload: PixelUnitStudio.LegionEditor.EditAction*
+  nameWithType.vb: LegionEditor.EditAction(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.EditAction(String)
+  name.vb: EditAction(String)
+- uid: PixelUnitStudio.LegionEditor.EditAction(PixelUnitStudio.LegionAction)
+  commentId: M:PixelUnitStudio.LegionEditor.EditAction(PixelUnitStudio.LegionAction)
+  id: EditAction(PixelUnitStudio.LegionAction)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: EditAction(LegionAction)
+  nameWithType: LegionEditor.EditAction(LegionAction)
+  fullName: PixelUnitStudio.LegionEditor.EditAction(PixelUnitStudio.LegionAction)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Loads any action (such as one from a content pack) into the draft. Saving puts it in the save folder's library.
+  example: []
+  syntax:
+    content: public void EditAction(LegionAction action)
+    parameters:
+    - id: action
+      type: PixelUnitStudio.LegionAction
+    content.vb: Public Sub EditAction(action As LegionAction)
+  overload: PixelUnitStudio.LegionEditor.EditAction*
+- uid: PixelUnitStudio.LegionEditor.PackActions
+  commentId: M:PixelUnitStudio.LegionEditor.PackActions
+  id: PackActions
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: PackActions()
+  nameWithType: LegionEditor.PackActions()
+  fullName: PixelUnitStudio.LegionEditor.PackActions()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Actions of the content packs' hero folders, as (pack title, actions). Played and copied from the edit screen; they
+    are not changed here.
+  example: []
+  syntax:
+    content: public List<(string title, List<LegionAction> actions)> PackActions()
+    return:
+      type: System.Collections.Generic.List{System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}}
+    content.vb: Public Function PackActions() As List(Of (title As String, actions As List(Of LegionAction)))
+  overload: PixelUnitStudio.LegionEditor.PackActions*
+- uid: PixelUnitStudio.LegionEditor.PlayAction(PixelUnitStudio.LegionAction)
+  commentId: M:PixelUnitStudio.LegionEditor.PlayAction(PixelUnitStudio.LegionAction)
+  id: PlayAction(PixelUnitStudio.LegionAction)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: PlayAction(LegionAction)
+  nameWithType: LegionEditor.PlayAction(LegionAction)
+  fullName: PixelUnitStudio.LegionEditor.PlayAction(PixelUnitStudio.LegionAction)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Plays an action on the preview hero with its weapon type (the draft if none is given).
+  example: []
+  syntax:
+    content: public void PlayAction(LegionAction action = null)
+    parameters:
+    - id: action
+      type: PixelUnitStudio.LegionAction
+    content.vb: Public Sub PlayAction(action As LegionAction = Nothing)
+  overload: PixelUnitStudio.LegionEditor.PlayAction*
+- uid: PixelUnitStudio.LegionEditor.SaveAction
+  commentId: M:PixelUnitStudio.LegionEditor.SaveAction
+  id: SaveAction
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SaveAction()
+  nameWithType: LegionEditor.SaveAction()
+  fullName: PixelUnitStudio.LegionEditor.SaveAction()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Saves the draft into the folder's action library and returns the saved name. An empty name gets "Action N"; the
+    same name replaces.
+  example: []
+  syntax:
+    content: public string SaveAction()
+    return:
+      type: System.String
+    content.vb: Public Function SaveAction() As String
+  overload: PixelUnitStudio.LegionEditor.SaveAction*
+- uid: PixelUnitStudio.LegionEditor.DeleteAction(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.DeleteAction(System.String)
+  id: DeleteAction(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: DeleteAction(string)
+  nameWithType: LegionEditor.DeleteAction(string)
+  fullName: PixelUnitStudio.LegionEditor.DeleteAction(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void DeleteAction(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    content.vb: Public Sub DeleteAction(actionName As String)
+  overload: PixelUnitStudio.LegionEditor.DeleteAction*
+  nameWithType.vb: LegionEditor.DeleteAction(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.DeleteAction(String)
+  name.vb: DeleteAction(String)
+- uid: PixelUnitStudio.LegionEditor.Play(PixelUnitStudio.LegionCatalog.Motion)
+  commentId: M:PixelUnitStudio.LegionEditor.Play(PixelUnitStudio.LegionCatalog.Motion)
+  id: Play(PixelUnitStudio.LegionCatalog.Motion)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Play(Motion)
+  nameWithType: LegionEditor.Play(LegionCatalog.Motion)
+  fullName: PixelUnitStudio.LegionEditor.Play(PixelUnitStudio.LegionCatalog.Motion)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void Play(LegionCatalog.Motion motion)
+    parameters:
+    - id: motion
+      type: PixelUnitStudio.LegionCatalog.Motion
+    content.vb: Public Sub Play(motion As LegionCatalog.Motion)
+  overload: PixelUnitStudio.LegionEditor.Play*
+- uid: PixelUnitStudio.LegionEditor.SetPaused(System.Boolean)
+  commentId: M:PixelUnitStudio.LegionEditor.SetPaused(System.Boolean)
+  id: SetPaused(System.Boolean)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SetPaused(bool)
+  nameWithType: LegionEditor.SetPaused(bool)
+  fullName: PixelUnitStudio.LegionEditor.SetPaused(bool)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void SetPaused(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetPaused(value As Boolean)
+  overload: PixelUnitStudio.LegionEditor.SetPaused*
+  nameWithType.vb: LegionEditor.SetPaused(Boolean)
+  fullName.vb: PixelUnitStudio.LegionEditor.SetPaused(Boolean)
+  name.vb: SetPaused(Boolean)
+- uid: PixelUnitStudio.LegionEditor.Seek(System.Single)
+  commentId: M:PixelUnitStudio.LegionEditor.Seek(System.Single)
+  id: Seek(System.Single)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Seek(float)
+  nameWithType: LegionEditor.Seek(float)
+  fullName: PixelUnitStudio.LegionEditor.Seek(float)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Moves to a point (0 to 1) of the motion and pauses.
+  example: []
+  syntax:
+    content: public void Seek(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    content.vb: Public Sub Seek(t As Single)
+  overload: PixelUnitStudio.LegionEditor.Seek*
+  nameWithType.vb: LegionEditor.Seek(Single)
+  fullName.vb: PixelUnitStudio.LegionEditor.Seek(Single)
+  name.vb: Seek(Single)
+- uid: PixelUnitStudio.LegionEditor.SetZoom(System.Int32)
+  commentId: M:PixelUnitStudio.LegionEditor.SetZoom(System.Int32)
+  id: SetZoom(System.Int32)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SetZoom(int)
+  nameWithType: LegionEditor.SetZoom(int)
+  fullName: PixelUnitStudio.LegionEditor.SetZoom(int)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void SetZoom(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SetZoom(value As Integer)
+  overload: PixelUnitStudio.LegionEditor.SetZoom*
+  nameWithType.vb: LegionEditor.SetZoom(Integer)
+  fullName.vb: PixelUnitStudio.LegionEditor.SetZoom(Integer)
+  name.vb: SetZoom(Integer)
+- uid: PixelUnitStudio.LegionEditor.CycleBackdrop
+  commentId: M:PixelUnitStudio.LegionEditor.CycleBackdrop
+  id: CycleBackdrop
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: CycleBackdrop()
+  nameWithType: LegionEditor.CycleBackdrop()
+  fullName: PixelUnitStudio.LegionEditor.CycleBackdrop()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void CycleBackdrop()
+    content.vb: Public Sub CycleBackdrop()
+  overload: PixelUnitStudio.LegionEditor.CycleBackdrop*
+- uid: PixelUnitStudio.LegionEditor.Flip
+  commentId: M:PixelUnitStudio.LegionEditor.Flip
+  id: Flip
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Flip()
+  nameWithType: LegionEditor.Flip()
+  fullName: PixelUnitStudio.LegionEditor.Flip()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public void Flip()
+    content.vb: Public Sub Flip()
+  overload: PixelUnitStudio.LegionEditor.Flip*
+- uid: PixelUnitStudio.LegionEditor.SlotTitle(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.SlotTitle(System.String)
+  id: SlotTitle(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SlotTitle(string)
+  nameWithType: LegionEditor.SlotTitle(string)
+  fullName: PixelUnitStudio.LegionEditor.SlotTitle(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public static string SlotTitle(string slot)
+    parameters:
+    - id: slot
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function SlotTitle(slot As String) As String
+  overload: PixelUnitStudio.LegionEditor.SlotTitle*
+  nameWithType.vb: LegionEditor.SlotTitle(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.SlotTitle(String)
+  name.vb: SlotTitle(String)
+- uid: PixelUnitStudio.LegionEditor.OptionTitle(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.OptionTitle(System.String)
+  id: OptionTitle(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: OptionTitle(string)
+  nameWithType: LegionEditor.OptionTitle(string)
+  fullName: PixelUnitStudio.LegionEditor.OptionTitle(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Card name of an option. Options with no name given show the file name tidied (axe_frost → Axe frost).
+  example: []
+  syntax:
+    content: public static string OptionTitle(string option)
+    parameters:
+    - id: option
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function OptionTitle([option] As String) As String
+  overload: PixelUnitStudio.LegionEditor.OptionTitle*
+  nameWithType.vb: LegionEditor.OptionTitle(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.OptionTitle(String)
+  name.vb: OptionTitle(String)
+- uid: PixelUnitStudio.LegionEditor.WeaponKind(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.WeaponKind(System.String)
+  id: WeaponKind(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: WeaponKind(string)
+  nameWithType: LegionEditor.WeaponKind(string)
+  fullName: PixelUnitStudio.LegionEditor.WeaponKind(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public static string WeaponKind(string option)
+    parameters:
+    - id: option
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function WeaponKind([option] As String) As String
+  overload: PixelUnitStudio.LegionEditor.WeaponKind*
+  nameWithType.vb: LegionEditor.WeaponKind(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.WeaponKind(String)
+  name.vb: WeaponKind(String)
+- uid: PixelUnitStudio.LegionEditor.MotionTitle(System.String)
+  commentId: M:PixelUnitStudio.LegionEditor.MotionTitle(System.String)
+  id: MotionTitle(System.String)
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: MotionTitle(string)
+  nameWithType: LegionEditor.MotionTitle(string)
+  fullName: PixelUnitStudio.LegionEditor.MotionTitle(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public static string MotionTitle(string motion)
+    parameters:
+    - id: motion
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function MotionTitle(motion As String) As String
+  overload: PixelUnitStudio.LegionEditor.MotionTitle*
+  nameWithType.vb: LegionEditor.MotionTitle(String)
+  fullName.vb: PixelUnitStudio.LegionEditor.MotionTitle(String)
+  name.vb: MotionTitle(String)
+- uid: PixelUnitStudio.LegionEditor.#ctor
+  commentId: M:PixelUnitStudio.LegionEditor.#ctor
+  id: '#ctor'
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: LegionEditor()
+  nameWithType: LegionEditor.LegionEditor()
+  fullName: PixelUnitStudio.LegionEditor.LegionEditor()
+  type: Constructor
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionEditor()
+    content.vb: Public Sub New()
+  overload: PixelUnitStudio.LegionEditor.#ctor*
+  nameWithType.vb: LegionEditor.New()
+  fullName.vb: PixelUnitStudio.LegionEditor.New()
+  name.vb: New()
+- uid: PixelUnitStudio.LegionEditor.Builder
+  commentId: P:PixelUnitStudio.LegionEditor.Builder
+  id: Builder
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Builder
+  nameWithType: LegionEditor.Builder
+  fullName: PixelUnitStudio.LegionEditor.Builder
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public LegionBuilder Builder { get; }
+    parameters: []
+    return:
+      type: PixelUnitStudio.LegionBuilder
+    content.vb: Public ReadOnly Property Builder As LegionBuilder
+  overload: PixelUnitStudio.LegionEditor.Builder*
+- uid: PixelUnitStudio.LegionEditor.SelectedSlot
+  commentId: P:PixelUnitStudio.LegionEditor.SelectedSlot
+  id: SelectedSlot
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: SelectedSlot
+  nameWithType: LegionEditor.SelectedSlot
+  fullName: PixelUnitStudio.LegionEditor.SelectedSlot
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string SelectedSlot { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SelectedSlot As String
+  overload: PixelUnitStudio.LegionEditor.SelectedSlot*
+- uid: PixelUnitStudio.LegionEditor.LoadedCode
+  commentId: P:PixelUnitStudio.LegionEditor.LoadedCode
+  id: LoadedCode
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: LoadedCode
+  nameWithType: LegionEditor.LoadedCode
+  fullName: PixelUnitStudio.LegionEditor.LoadedCode
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public string LoadedCode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LoadedCode As String
+  overload: PixelUnitStudio.LegionEditor.LoadedCode*
+- uid: PixelUnitStudio.LegionEditor.Dirty
+  commentId: P:PixelUnitStudio.LegionEditor.Dirty
+  id: Dirty
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Dirty
+  nameWithType: LegionEditor.Dirty
+  fullName: PixelUnitStudio.LegionEditor.Dirty
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public bool Dirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Dirty As Boolean
+  overload: PixelUnitStudio.LegionEditor.Dirty*
+- uid: PixelUnitStudio.LegionEditor.LibraryOpen
+  commentId: P:PixelUnitStudio.LegionEditor.LibraryOpen
+  id: LibraryOpen
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: LibraryOpen
+  nameWithType: LegionEditor.LibraryOpen
+  fullName: PixelUnitStudio.LegionEditor.LibraryOpen
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public bool LibraryOpen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property LibraryOpen As Boolean
+  overload: PixelUnitStudio.LegionEditor.LibraryOpen*
+- uid: PixelUnitStudio.LegionEditor.ActionsOpen
+  commentId: P:PixelUnitStudio.LegionEditor.ActionsOpen
+  id: ActionsOpen
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: ActionsOpen
+  nameWithType: LegionEditor.ActionsOpen
+  fullName: PixelUnitStudio.LegionEditor.ActionsOpen
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public bool ActionsOpen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ActionsOpen As Boolean
+  overload: PixelUnitStudio.LegionEditor.ActionsOpen*
+- uid: PixelUnitStudio.LegionEditor.Draft
+  commentId: P:PixelUnitStudio.LegionEditor.Draft
+  id: Draft
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: Draft
+  nameWithType: LegionEditor.Draft
+  fullName: PixelUnitStudio.LegionEditor.Draft
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Action being built in the Actions panel.
+  example: []
+  syntax:
+    content: public LegionAction Draft { get; }
+    parameters: []
+    return:
+      type: PixelUnitStudio.LegionAction
+    content.vb: Public ReadOnly Property Draft As LegionAction
+  overload: PixelUnitStudio.LegionEditor.Draft*
+- uid: PixelUnitStudio.LegionEditor.ActionLibrary
+  commentId: P:PixelUnitStudio.LegionEditor.ActionLibrary
+  id: ActionLibrary
+  parent: PixelUnitStudio.LegionEditor
+  langs:
+  - csharp
+  - vb
+  name: ActionLibrary
+  nameWithType: LegionEditor.ActionLibrary
+  fullName: PixelUnitStudio.LegionEditor.ActionLibrary
+  type: Property
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Action library of the save folder. Created on the first saved action.
+  example: []
+  syntax:
+    content: public LegionActionLibrary ActionLibrary { get; }
+    parameters: []
+    return:
+      type: PixelUnitStudio.LegionActionLibrary
+    content.vb: Public ReadOnly Property ActionLibrary As LegionActionLibrary
+  overload: PixelUnitStudio.LegionEditor.ActionLibrary*
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PixelUnitStudio.LegionEditor.Choose*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Choose
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Choose_System_String_System_Int32_
+  name: Choose
+  nameWithType: LegionEditor.Choose
+  fullName: PixelUnitStudio.LegionEditor.Choose
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: PixelUnitStudio.LegionEditor.Dye*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Dye
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Dye_System_String_System_String_
+  name: Dye
+  nameWithType: LegionEditor.Dye
+  fullName: PixelUnitStudio.LegionEditor.Dye
+- uid: PixelUnitStudio.LegionEditor.SetSkin*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SetSkin
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SetSkin_System_String_
+  name: SetSkin
+  nameWithType: LegionEditor.SetSkin
+  fullName: PixelUnitStudio.LegionEditor.SetSkin
+- uid: PixelUnitStudio.LegionEditor.SelectSlot*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SelectSlot
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SelectSlot_System_String_
+  name: SelectSlot
+  nameWithType: LegionEditor.SelectSlot
+  fullName: PixelUnitStudio.LegionEditor.SelectSlot
+- uid: PixelUnitStudio.LegionEditor.Undo*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Undo
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Undo
+  name: Undo
+  nameWithType: LegionEditor.Undo
+  fullName: PixelUnitStudio.LegionEditor.Undo
+- uid: PixelUnitStudio.LegionEditor.Randomize*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Randomize
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Randomize
+  name: Randomize
+  nameWithType: LegionEditor.Randomize
+  fullName: PixelUnitStudio.LegionEditor.Randomize
+- uid: PixelUnitStudio.LegionEditor.CopyRecipe*
+  commentId: Overload:PixelUnitStudio.LegionEditor.CopyRecipe
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_CopyRecipe
+  name: CopyRecipe
+  nameWithType: LegionEditor.CopyRecipe
+  fullName: PixelUnitStudio.LegionEditor.CopyRecipe
+- uid: PixelUnitStudio.LegionEditor.PasteRecipe*
+  commentId: Overload:PixelUnitStudio.LegionEditor.PasteRecipe
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_PasteRecipe_System_String_
+  name: PasteRecipe
+  nameWithType: LegionEditor.PasteRecipe
+  fullName: PixelUnitStudio.LegionEditor.PasteRecipe
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PixelUnitStudio.LegionEditor.NewHero*
+  commentId: Overload:PixelUnitStudio.LegionEditor.NewHero
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_NewHero
+  name: NewHero
+  nameWithType: LegionEditor.NewHero
+  fullName: PixelUnitStudio.LegionEditor.NewHero
+- uid: PixelUnitStudio.LegionEditor.Save*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Save
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Save
+  name: Save
+  nameWithType: LegionEditor.Save
+  fullName: PixelUnitStudio.LegionEditor.Save
+- uid: PixelUnitStudio.LegionEditor.Export*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Export
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Export
+  name: Export
+  nameWithType: LegionEditor.Export
+  fullName: PixelUnitStudio.LegionEditor.Export
+- uid: PixelUnitStudio.LegionEditor.Delete*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Delete
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Delete_System_String_
+  name: Delete
+  nameWithType: LegionEditor.Delete
+  fullName: PixelUnitStudio.LegionEditor.Delete
+- uid: PixelUnitStudio.LegionEditor.Load*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Load
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Load_PixelUnitStudio_LegionUnit_
+  name: Load
+  nameWithType: LegionEditor.Load
+  fullName: PixelUnitStudio.LegionEditor.Load
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio.LegionEditor.OpenLibrary*
+  commentId: Overload:PixelUnitStudio.LegionEditor.OpenLibrary
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_OpenLibrary
+  name: OpenLibrary
+  nameWithType: LegionEditor.OpenLibrary
+  fullName: PixelUnitStudio.LegionEditor.OpenLibrary
+- uid: PixelUnitStudio.LegionEditor.OpenActions*
+  commentId: Overload:PixelUnitStudio.LegionEditor.OpenActions
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_OpenActions
+  name: OpenActions
+  nameWithType: LegionEditor.OpenActions
+  fullName: PixelUnitStudio.LegionEditor.OpenActions
+- uid: PixelUnitStudio.LegionEditor.AddStep*
+  commentId: Overload:PixelUnitStudio.LegionEditor.AddStep
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_AddStep_System_String_
+  name: AddStep
+  nameWithType: LegionEditor.AddStep
+  fullName: PixelUnitStudio.LegionEditor.AddStep
+- uid: PixelUnitStudio.LegionEditor.SetRepeat*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SetRepeat
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SetRepeat_System_Int32_System_Int32_
+  name: SetRepeat
+  nameWithType: LegionEditor.SetRepeat
+  fullName: PixelUnitStudio.LegionEditor.SetRepeat
+- uid: PixelUnitStudio.LegionEditor.RemoveStep*
+  commentId: Overload:PixelUnitStudio.LegionEditor.RemoveStep
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_RemoveStep_System_Int32_
+  name: RemoveStep
+  nameWithType: LegionEditor.RemoveStep
+  fullName: PixelUnitStudio.LegionEditor.RemoveStep
+- uid: PixelUnitStudio.LegionEditor.ClearDraft*
+  commentId: Overload:PixelUnitStudio.LegionEditor.ClearDraft
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_ClearDraft
+  name: ClearDraft
+  nameWithType: LegionEditor.ClearDraft
+  fullName: PixelUnitStudio.LegionEditor.ClearDraft
+- uid: PixelUnitStudio.LegionEditor.EditAction*
+  commentId: Overload:PixelUnitStudio.LegionEditor.EditAction
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_EditAction_System_String_
+  name: EditAction
+  nameWithType: LegionEditor.EditAction
+  fullName: PixelUnitStudio.LegionEditor.EditAction
+- uid: PixelUnitStudio.LegionAction
+  commentId: T:PixelUnitStudio.LegionAction
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionAction.html
+  name: LegionAction
+  nameWithType: LegionAction
+  fullName: PixelUnitStudio.LegionAction
+- uid: PixelUnitStudio.LegionEditor.PackActions*
+  commentId: Overload:PixelUnitStudio.LegionEditor.PackActions
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_PackActions
+  name: PackActions
+  nameWithType: LegionEditor.PackActions
+  fullName: PixelUnitStudio.LegionEditor.PackActions
+- uid: System.Collections.Generic.List{System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}}
+  commentId: T:System.Collections.Generic.List{System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<(string title, List<LegionAction> actions)>
+  nameWithType: List<(string title, List<LegionAction> actions)>
+  fullName: System.Collections.Generic.List<(string title, System.Collections.Generic.List<PixelUnitStudio.LegionAction> actions)>
+  nameWithType.vb: List(Of (title As String, actions As List(Of LegionAction)))
+  fullName.vb: System.Collections.Generic.List(Of (title As String, actions As System.Collections.Generic.List(Of PixelUnitStudio.LegionAction)))
+  name.vb: List(Of (title As String, actions As List(Of LegionAction)))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.title
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: '>'
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}.actions
+    name: actions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.actions
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.title
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.List{PixelUnitStudio.LegionAction}}.actions
+    name: actions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.list-pixelunitstudio.legionaction--.actions
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionAction
+    name: LegionAction
+    isExternal: true
+    href: PixelUnitStudio.LegionAction.html
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.LegionEditor.PlayAction*
+  commentId: Overload:PixelUnitStudio.LegionEditor.PlayAction
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_PlayAction_PixelUnitStudio_LegionAction_
+  name: PlayAction
+  nameWithType: LegionEditor.PlayAction
+  fullName: PixelUnitStudio.LegionEditor.PlayAction
+- uid: PixelUnitStudio.LegionEditor.SaveAction*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SaveAction
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SaveAction
+  name: SaveAction
+  nameWithType: LegionEditor.SaveAction
+  fullName: PixelUnitStudio.LegionEditor.SaveAction
+- uid: PixelUnitStudio.LegionEditor.DeleteAction*
+  commentId: Overload:PixelUnitStudio.LegionEditor.DeleteAction
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_DeleteAction_System_String_
+  name: DeleteAction
+  nameWithType: LegionEditor.DeleteAction
+  fullName: PixelUnitStudio.LegionEditor.DeleteAction
+- uid: PixelUnitStudio.LegionEditor.Play*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Play
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Play_PixelUnitStudio_LegionCatalog_Motion_
+  name: Play
+  nameWithType: LegionEditor.Play
+  fullName: PixelUnitStudio.LegionEditor.Play
+- uid: PixelUnitStudio.LegionCatalog.Motion
+  commentId: T:PixelUnitStudio.LegionCatalog.Motion
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog.Motion
+  nameWithType: LegionCatalog.Motion
+  fullName: PixelUnitStudio.LegionCatalog.Motion
+  spec.csharp:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+  spec.vb:
+  - uid: PixelUnitStudio.LegionCatalog
+    name: LegionCatalog
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.html
+  - name: .
+  - uid: PixelUnitStudio.LegionCatalog.Motion
+    name: Motion
+    isExternal: true
+    href: PixelUnitStudio.LegionCatalog.Motion.html
+- uid: PixelUnitStudio.LegionEditor.SetPaused*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SetPaused
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SetPaused_System_Boolean_
+  name: SetPaused
+  nameWithType: LegionEditor.SetPaused
+  fullName: PixelUnitStudio.LegionEditor.SetPaused
+- uid: PixelUnitStudio.LegionEditor.Seek*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Seek
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Seek_System_Single_
+  name: Seek
+  nameWithType: LegionEditor.Seek
+  fullName: PixelUnitStudio.LegionEditor.Seek
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: PixelUnitStudio.LegionEditor.SetZoom*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SetZoom
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SetZoom_System_Int32_
+  name: SetZoom
+  nameWithType: LegionEditor.SetZoom
+  fullName: PixelUnitStudio.LegionEditor.SetZoom
+- uid: PixelUnitStudio.LegionEditor.CycleBackdrop*
+  commentId: Overload:PixelUnitStudio.LegionEditor.CycleBackdrop
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_CycleBackdrop
+  name: CycleBackdrop
+  nameWithType: LegionEditor.CycleBackdrop
+  fullName: PixelUnitStudio.LegionEditor.CycleBackdrop
+- uid: PixelUnitStudio.LegionEditor.Flip*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Flip
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Flip
+  name: Flip
+  nameWithType: LegionEditor.Flip
+  fullName: PixelUnitStudio.LegionEditor.Flip
+- uid: PixelUnitStudio.LegionEditor.SlotTitle*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SlotTitle
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SlotTitle_System_String_
+  name: SlotTitle
+  nameWithType: LegionEditor.SlotTitle
+  fullName: PixelUnitStudio.LegionEditor.SlotTitle
+- uid: PixelUnitStudio.LegionEditor.OptionTitle*
+  commentId: Overload:PixelUnitStudio.LegionEditor.OptionTitle
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_OptionTitle_System_String_
+  name: OptionTitle
+  nameWithType: LegionEditor.OptionTitle
+  fullName: PixelUnitStudio.LegionEditor.OptionTitle
+- uid: PixelUnitStudio.LegionEditor.WeaponKind*
+  commentId: Overload:PixelUnitStudio.LegionEditor.WeaponKind
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_WeaponKind_System_String_
+  name: WeaponKind
+  nameWithType: LegionEditor.WeaponKind
+  fullName: PixelUnitStudio.LegionEditor.WeaponKind
+- uid: PixelUnitStudio.LegionEditor.MotionTitle*
+  commentId: Overload:PixelUnitStudio.LegionEditor.MotionTitle
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_MotionTitle_System_String_
+  name: MotionTitle
+  nameWithType: LegionEditor.MotionTitle
+  fullName: PixelUnitStudio.LegionEditor.MotionTitle
+- uid: PixelUnitStudio.LegionEditor.#ctor*
+  commentId: Overload:PixelUnitStudio.LegionEditor.#ctor
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor__ctor
+  name: LegionEditor
+  nameWithType: LegionEditor.LegionEditor
+  fullName: PixelUnitStudio.LegionEditor.LegionEditor
+  nameWithType.vb: LegionEditor.New
+  fullName.vb: PixelUnitStudio.LegionEditor.New
+  name.vb: New
+- uid: PixelUnitStudio.LegionEditor.Builder*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Builder
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Builder
+  name: Builder
+  nameWithType: LegionEditor.Builder
+  fullName: PixelUnitStudio.LegionEditor.Builder
+- uid: PixelUnitStudio.LegionBuilder
+  commentId: T:PixelUnitStudio.LegionBuilder
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionBuilder.html
+  name: LegionBuilder
+  nameWithType: LegionBuilder
+  fullName: PixelUnitStudio.LegionBuilder
+- uid: PixelUnitStudio.LegionEditor.SelectedSlot*
+  commentId: Overload:PixelUnitStudio.LegionEditor.SelectedSlot
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_SelectedSlot
+  name: SelectedSlot
+  nameWithType: LegionEditor.SelectedSlot
+  fullName: PixelUnitStudio.LegionEditor.SelectedSlot
+- uid: PixelUnitStudio.LegionEditor.LoadedCode*
+  commentId: Overload:PixelUnitStudio.LegionEditor.LoadedCode
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_LoadedCode
+  name: LoadedCode
+  nameWithType: LegionEditor.LoadedCode
+  fullName: PixelUnitStudio.LegionEditor.LoadedCode
+- uid: PixelUnitStudio.LegionEditor.Dirty*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Dirty
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Dirty
+  name: Dirty
+  nameWithType: LegionEditor.Dirty
+  fullName: PixelUnitStudio.LegionEditor.Dirty
+- uid: PixelUnitStudio.LegionEditor.LibraryOpen*
+  commentId: Overload:PixelUnitStudio.LegionEditor.LibraryOpen
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_LibraryOpen
+  name: LibraryOpen
+  nameWithType: LegionEditor.LibraryOpen
+  fullName: PixelUnitStudio.LegionEditor.LibraryOpen
+- uid: PixelUnitStudio.LegionEditor.ActionsOpen*
+  commentId: Overload:PixelUnitStudio.LegionEditor.ActionsOpen
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_ActionsOpen
+  name: ActionsOpen
+  nameWithType: LegionEditor.ActionsOpen
+  fullName: PixelUnitStudio.LegionEditor.ActionsOpen
+- uid: PixelUnitStudio.LegionEditor.Draft*
+  commentId: Overload:PixelUnitStudio.LegionEditor.Draft
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_Draft
+  name: Draft
+  nameWithType: LegionEditor.Draft
+  fullName: PixelUnitStudio.LegionEditor.Draft
+- uid: PixelUnitStudio.LegionEditor.ActionLibrary*
+  commentId: Overload:PixelUnitStudio.LegionEditor.ActionLibrary
+  isExternal: true
+  href: PixelUnitStudio.LegionEditor.html#PixelUnitStudio_LegionEditor_ActionLibrary
+  name: ActionLibrary
+  nameWithType: LegionEditor.ActionLibrary
+  fullName: PixelUnitStudio.LegionEditor.ActionLibrary
+- uid: PixelUnitStudio.LegionActionLibrary
+  commentId: T:PixelUnitStudio.LegionActionLibrary
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionActionLibrary.html
+  name: LegionActionLibrary
+  nameWithType: LegionActionLibrary
+  fullName: PixelUnitStudio.LegionActionLibrary

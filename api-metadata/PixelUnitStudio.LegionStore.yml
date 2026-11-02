@@ -1,0 +1,1220 @@
+### YamlMime:ManagedReference
+items:
+- uid: PixelUnitStudio.LegionStore
+  commentId: T:PixelUnitStudio.LegionStore
+  id: LegionStore
+  parent: PixelUnitStudio
+  children:
+  - PixelUnitStudio.LegionStore.Actions(System.String,System.Boolean)
+  - PixelUnitStudio.LegionStore.ActionsPath(System.String)
+  - PixelUnitStudio.LegionStore.DefaultFolder
+  - PixelUnitStudio.LegionStore.Delete(System.String,System.String)
+  - PixelUnitStudio.LegionStore.Export(PixelUnitStudio.LegionUnit)
+  - PixelUnitStudio.LegionStore.Exporter
+  - PixelUnitStudio.LegionStore.NewCode
+  - PixelUnitStudio.LegionStore.OtherPackFolders(System.String)
+  - PixelUnitStudio.LegionStore.PackFolders
+  - PixelUnitStudio.LegionStore.Save(PixelUnitStudio.LegionCatalog,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32},System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)
+  - PixelUnitStudio.LegionStore.SaveActions(PixelUnitStudio.LegionActionLibrary)
+  - PixelUnitStudio.LegionStore.Saved(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LegionStore
+  nameWithType: LegionStore
+  fullName: PixelUnitStudio.LegionStore
+  type: Class
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Saves a hero as a prefab and reads the saved list. Saving works only in the Unity Editor.
+  example: []
+  syntax:
+    content: public static class LegionStore
+    content.vb: Public Module LegionStore
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: PixelUnitStudio.LegionStore.DefaultFolder
+  commentId: F:PixelUnitStudio.LegionStore.DefaultFolder
+  id: DefaultFolder
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: DefaultFolder
+  nameWithType: LegionStore.DefaultFolder
+  fullName: PixelUnitStudio.LegionStore.DefaultFolder
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public const string DefaultFolder = "Assets/PixelUnitStudio/Units/"
+    return:
+      type: System.String
+    content.vb: Public Const DefaultFolder As String = "Assets/PixelUnitStudio/Units/"
+- uid: PixelUnitStudio.LegionStore.Exporter
+  commentId: F:PixelUnitStudio.LegionStore.Exporter
+  id: Exporter
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Exporter
+  nameWithType: LegionStore.Exporter
+  fullName: PixelUnitStudio.LegionStore.Exporter
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Function that exports a saved hero as a frame sheet (hero, path → written PNG path). The sheet render is editor
+    code, so\n            Editor/LegionAnimation fills it in when the editor loads. If empty, nothing can be exported."
+  example: []
+  syntax:
+    content: public static Func<LegionUnit, string> Exporter
+    return:
+      type: System.Func{PixelUnitStudio.LegionUnit,System.String}
+    content.vb: Public Shared Exporter As Func(Of LegionUnit, String)
+- uid: PixelUnitStudio.LegionStore.PackFolders
+  commentId: F:PixelUnitStudio.LegionStore.PackFolders
+  id: PackFolders
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: PackFolders
+  nameWithType: LegionStore.PackFolders
+  fullName: PixelUnitStudio.LegionStore.PackFolders
+  type: Field
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Hero folders of the content packs as (pack title, folder), for the edit screen's hero and action lists. Set by
+    editor code (LegionPacks); empty in builds.
+  example: []
+  syntax:
+    content: public static Func<List<(string title, string folder)>> PackFolders
+    return:
+      type: System.Func{System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}}
+    content.vb: Public Shared PackFolders As Func(Of List(Of (title As String, folder As String)))
+- uid: PixelUnitStudio.LegionStore.NewCode
+  commentId: M:PixelUnitStudio.LegionStore.NewCode
+  id: NewCode
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: NewCode()
+  nameWithType: LegionStore.NewCode()
+  fullName: PixelUnitStudio.LegionStore.NewCode()
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  syntax:
+    content: public static string NewCode()
+    return:
+      type: System.String
+    content.vb: Public Shared Function NewCode() As String
+  overload: PixelUnitStudio.LegionStore.NewCode*
+- uid: PixelUnitStudio.LegionStore.Save(PixelUnitStudio.LegionCatalog,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32},System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)
+  commentId: M:PixelUnitStudio.LegionStore.Save(PixelUnitStudio.LegionCatalog,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32},System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)
+  id: Save(PixelUnitStudio.LegionCatalog,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32},System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Save(LegionCatalog, IReadOnlyDictionary<string, int>, string, string, IReadOnlyDictionary<string, string>, string)
+  nameWithType: LegionStore.Save(LegionCatalog, IReadOnlyDictionary<string, int>, string, string, IReadOnlyDictionary<string,
+    string>, string)
+  fullName: PixelUnitStudio.LegionStore.Save(PixelUnitStudio.LegionCatalog, System.Collections.Generic.IReadOnlyDictionary<string,
+    int>, string, string, System.Collections.Generic.IReadOnlyDictionary<string, string>, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: "Saves the option combination as folder/code.prefab and returns the path. Overwrites if the code is the same.\n
+    \           The preview may be in a mid-motion pose, so it is reassembled fresh from the rig original and saved in the
+    default pose."
+  example: []
+  syntax:
+    content: public static string Save(LegionCatalog catalog, IReadOnlyDictionary<string, int> choice, string folder, string
+      code, IReadOnlyDictionary<string, string> dyes = null, string skin = null)
+    parameters:
+    - id: catalog
+      type: PixelUnitStudio.LegionCatalog
+    - id: choice
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32}
+    - id: folder
+      type: System.String
+    - id: code
+      type: System.String
+    - id: dyes
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    - id: skin
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Save(catalog As LegionCatalog, choice As IReadOnlyDictionary(Of String, Integer), folder
+      As String, code As String, dyes As IReadOnlyDictionary(Of String, String) = Nothing, skin As String = Nothing) As String
+  overload: PixelUnitStudio.LegionStore.Save*
+  nameWithType.vb: LegionStore.Save(LegionCatalog, IReadOnlyDictionary(Of String, Integer), String, String, IReadOnlyDictionary(Of
+    String, String), String)
+  fullName.vb: PixelUnitStudio.LegionStore.Save(PixelUnitStudio.LegionCatalog, System.Collections.Generic.IReadOnlyDictionary(Of
+    String, Integer), String, String, System.Collections.Generic.IReadOnlyDictionary(Of String, String), String)
+  name.vb: Save(LegionCatalog, IReadOnlyDictionary(Of String, Integer), String, String, IReadOnlyDictionary(Of String, String),
+    String)
+- uid: PixelUnitStudio.LegionStore.ActionsPath(System.String)
+  commentId: M:PixelUnitStudio.LegionStore.ActionsPath(System.String)
+  id: ActionsPath(System.String)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: ActionsPath(string)
+  nameWithType: LegionStore.ActionsPath(string)
+  fullName: PixelUnitStudio.LegionStore.ActionsPath(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Custom action library of a save folder (folder/LegionActions.asset). Saved heroes in the folder reference it.
+  example: []
+  syntax:
+    content: public static string ActionsPath(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ActionsPath(folder As String) As String
+  overload: PixelUnitStudio.LegionStore.ActionsPath*
+  nameWithType.vb: LegionStore.ActionsPath(String)
+  fullName.vb: PixelUnitStudio.LegionStore.ActionsPath(String)
+  name.vb: ActionsPath(String)
+- uid: PixelUnitStudio.LegionStore.Actions(System.String,System.Boolean)
+  commentId: M:PixelUnitStudio.LegionStore.Actions(System.String,System.Boolean)
+  id: Actions(System.String,System.Boolean)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Actions(string, bool)
+  nameWithType: LegionStore.Actions(string, bool)
+  fullName: PixelUnitStudio.LegionStore.Actions(string, bool)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Loads the folder's action library, creating it if create is true. Null if there is none (or outside the Unity Editor).
+  example: []
+  syntax:
+    content: public static LegionActionLibrary Actions(string folder, bool create)
+    parameters:
+    - id: folder
+      type: System.String
+    - id: create
+      type: System.Boolean
+    return:
+      type: PixelUnitStudio.LegionActionLibrary
+    content.vb: Public Shared Function Actions(folder As String, create As Boolean) As LegionActionLibrary
+  overload: PixelUnitStudio.LegionStore.Actions*
+  nameWithType.vb: LegionStore.Actions(String, Boolean)
+  fullName.vb: PixelUnitStudio.LegionStore.Actions(String, Boolean)
+  name.vb: Actions(String, Boolean)
+- uid: PixelUnitStudio.LegionStore.SaveActions(PixelUnitStudio.LegionActionLibrary)
+  commentId: M:PixelUnitStudio.LegionStore.SaveActions(PixelUnitStudio.LegionActionLibrary)
+  id: SaveActions(PixelUnitStudio.LegionActionLibrary)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: SaveActions(LegionActionLibrary)
+  nameWithType: LegionStore.SaveActions(LegionActionLibrary)
+  fullName: PixelUnitStudio.LegionStore.SaveActions(PixelUnitStudio.LegionActionLibrary)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Writes changes to an action library to disk (Unity Editor only).
+  example: []
+  syntax:
+    content: public static void SaveActions(LegionActionLibrary library)
+    parameters:
+    - id: library
+      type: PixelUnitStudio.LegionActionLibrary
+    content.vb: Public Shared Sub SaveActions(library As LegionActionLibrary)
+  overload: PixelUnitStudio.LegionStore.SaveActions*
+- uid: PixelUnitStudio.LegionStore.OtherPackFolders(System.String)
+  commentId: M:PixelUnitStudio.LegionStore.OtherPackFolders(System.String)
+  id: OtherPackFolders(System.String)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: OtherPackFolders(string)
+  nameWithType: LegionStore.OtherPackFolders(string)
+  fullName: PixelUnitStudio.LegionStore.OtherPackFolders(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Pack hero folders other than the given save folder.
+  example: []
+  syntax:
+    content: public static List<(string title, string folder)> OtherPackFolders(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+    content.vb: Public Shared Function OtherPackFolders(folder As String) As List(Of (title As String, folder As String))
+  overload: PixelUnitStudio.LegionStore.OtherPackFolders*
+  nameWithType.vb: LegionStore.OtherPackFolders(String)
+  fullName.vb: PixelUnitStudio.LegionStore.OtherPackFolders(String)
+  name.vb: OtherPackFolders(String)
+- uid: PixelUnitStudio.LegionStore.Export(PixelUnitStudio.LegionUnit)
+  commentId: M:PixelUnitStudio.LegionStore.Export(PixelUnitStudio.LegionUnit)
+  id: Export(PixelUnitStudio.LegionUnit)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Export(LegionUnit)
+  nameWithType: LegionStore.Export(LegionUnit)
+  fullName: PixelUnitStudio.LegionStore.Export(PixelUnitStudio.LegionUnit)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Exports a saved hero using the motions of its back-hand weapon type and returns the PNG path.
+  example: []
+  syntax:
+    content: public static string Export(LegionUnit unit)
+    parameters:
+    - id: unit
+      type: PixelUnitStudio.LegionUnit
+    return:
+      type: System.String
+    content.vb: Public Shared Function Export(unit As LegionUnit) As String
+  overload: PixelUnitStudio.LegionStore.Export*
+- uid: PixelUnitStudio.LegionStore.Delete(System.String,System.String)
+  commentId: M:PixelUnitStudio.LegionStore.Delete(System.String,System.String)
+  id: Delete(System.String,System.String)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Delete(string, string)
+  nameWithType: LegionStore.Delete(string, string)
+  fullName: PixelUnitStudio.LegionStore.Delete(string, string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Deletes folder/code.prefab. True if deleted.
+  example: []
+  syntax:
+    content: public static bool Delete(string folder, string code)
+    parameters:
+    - id: folder
+      type: System.String
+    - id: code
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Delete(folder As String, code As String) As Boolean
+  overload: PixelUnitStudio.LegionStore.Delete*
+  nameWithType.vb: LegionStore.Delete(String, String)
+  fullName.vb: PixelUnitStudio.LegionStore.Delete(String, String)
+  name.vb: Delete(String, String)
+- uid: PixelUnitStudio.LegionStore.Saved(System.String)
+  commentId: M:PixelUnitStudio.LegionStore.Saved(System.String)
+  id: Saved(System.String)
+  parent: PixelUnitStudio.LegionStore
+  langs:
+  - csharp
+  - vb
+  name: Saved(string)
+  nameWithType: LegionStore.Saved(string)
+  fullName: PixelUnitStudio.LegionStore.Saved(string)
+  type: Method
+  assemblies:
+  - PixelUnitStudio.Runtime
+  namespace: PixelUnitStudio
+  summary: Hero prefabs in the save folder. Returned in code order (creation order).
+  example: []
+  syntax:
+    content: public static List<LegionUnit> Saved(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{PixelUnitStudio.LegionUnit}
+    content.vb: Public Shared Function Saved(folder As String) As List(Of LegionUnit)
+  overload: PixelUnitStudio.LegionStore.Saved*
+  nameWithType.vb: LegionStore.Saved(String)
+  fullName.vb: PixelUnitStudio.LegionStore.Saved(String)
+  name.vb: Saved(String)
+references:
+- uid: PixelUnitStudio
+  commentId: N:PixelUnitStudio
+  isExternal: true
+  name: PixelUnitStudio
+  nameWithType: PixelUnitStudio
+  fullName: PixelUnitStudio
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{PixelUnitStudio.LegionUnit,System.String}
+  commentId: T:System.Func{PixelUnitStudio.LegionUnit,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<LegionUnit, string>
+  nameWithType: Func<LegionUnit, string>
+  fullName: System.Func<PixelUnitStudio.LegionUnit, string>
+  nameWithType.vb: Func(Of LegionUnit, String)
+  fullName.vb: System.Func(Of PixelUnitStudio.LegionUnit, String)
+  name.vb: Func(Of LegionUnit, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: System.Func{System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}}
+  commentId: T:System.Func{System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<List<(string title, string folder)>>
+  nameWithType: Func<List<(string title, string folder)>>
+  fullName: System.Func<System.Collections.Generic.List<(string title, string folder)>>
+  nameWithType.vb: Func(Of List(Of (title As String, folder As String)))
+  fullName.vb: System.Func(Of System.Collections.Generic.List(Of (title As String, folder As String)))
+  name.vb: Func(Of List(Of (title As String, folder As String)))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: )
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: PixelUnitStudio.LegionStore.NewCode*
+  commentId: Overload:PixelUnitStudio.LegionStore.NewCode
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_NewCode
+  name: NewCode
+  nameWithType: LegionStore.NewCode
+  fullName: PixelUnitStudio.LegionStore.NewCode
+- uid: PixelUnitStudio.LegionStore.Save*
+  commentId: Overload:PixelUnitStudio.LegionStore.Save
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_Save_PixelUnitStudio_LegionCatalog_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Int32__System_String_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_String__System_String_
+  name: Save
+  nameWithType: LegionStore.Save
+  fullName: PixelUnitStudio.LegionStore.Save
+- uid: PixelUnitStudio.LegionCatalog
+  commentId: T:PixelUnitStudio.LegionCatalog
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionCatalog.html
+  name: LegionCatalog
+  nameWithType: LegionCatalog
+  fullName: PixelUnitStudio.LegionCatalog
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, int>
+  nameWithType: IReadOnlyDictionary<string, int>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, int>
+  nameWithType.vb: IReadOnlyDictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Integer)
+  name.vb: IReadOnlyDictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PixelUnitStudio.LegionStore.ActionsPath*
+  commentId: Overload:PixelUnitStudio.LegionStore.ActionsPath
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_ActionsPath_System_String_
+  name: ActionsPath
+  nameWithType: LegionStore.ActionsPath
+  fullName: PixelUnitStudio.LegionStore.ActionsPath
+- uid: PixelUnitStudio.LegionStore.Actions*
+  commentId: Overload:PixelUnitStudio.LegionStore.Actions
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_Actions_System_String_System_Boolean_
+  name: Actions
+  nameWithType: LegionStore.Actions
+  fullName: PixelUnitStudio.LegionStore.Actions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: PixelUnitStudio.LegionActionLibrary
+  commentId: T:PixelUnitStudio.LegionActionLibrary
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionActionLibrary.html
+  name: LegionActionLibrary
+  nameWithType: LegionActionLibrary
+  fullName: PixelUnitStudio.LegionActionLibrary
+- uid: PixelUnitStudio.LegionStore.SaveActions*
+  commentId: Overload:PixelUnitStudio.LegionStore.SaveActions
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_SaveActions_PixelUnitStudio_LegionActionLibrary_
+  name: SaveActions
+  nameWithType: LegionStore.SaveActions
+  fullName: PixelUnitStudio.LegionStore.SaveActions
+- uid: PixelUnitStudio.LegionStore.OtherPackFolders*
+  commentId: Overload:PixelUnitStudio.LegionStore.OtherPackFolders
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_OtherPackFolders_System_String_
+  name: OtherPackFolders
+  nameWithType: LegionStore.OtherPackFolders
+  fullName: PixelUnitStudio.LegionStore.OtherPackFolders
+- uid: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  commentId: T:System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<(string title, string folder)>
+  nameWithType: List<(string title, string folder)>
+  fullName: System.Collections.Generic.List<(string title, string folder)>
+  nameWithType.vb: List(Of (title As String, folder As String))
+  fullName.vb: System.Collections.Generic.List(Of (title As String, folder As String))
+  name.vb: List(Of (title As String, folder As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.title
+    name: title
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.title
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.ValueTuple{System.String,System.String}.folder
+    name: folder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.folder
+  - name: ' '
+  - name: As
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: PixelUnitStudio.LegionStore.Export*
+  commentId: Overload:PixelUnitStudio.LegionStore.Export
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_Export_PixelUnitStudio_LegionUnit_
+  name: Export
+  nameWithType: LegionStore.Export
+  fullName: PixelUnitStudio.LegionStore.Export
+- uid: PixelUnitStudio.LegionUnit
+  commentId: T:PixelUnitStudio.LegionUnit
+  parent: PixelUnitStudio
+  isExternal: true
+  href: PixelUnitStudio.LegionUnit.html
+  name: LegionUnit
+  nameWithType: LegionUnit
+  fullName: PixelUnitStudio.LegionUnit
+- uid: PixelUnitStudio.LegionStore.Delete*
+  commentId: Overload:PixelUnitStudio.LegionStore.Delete
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_Delete_System_String_System_String_
+  name: Delete
+  nameWithType: LegionStore.Delete
+  fullName: PixelUnitStudio.LegionStore.Delete
+- uid: PixelUnitStudio.LegionStore.Saved*
+  commentId: Overload:PixelUnitStudio.LegionStore.Saved
+  isExternal: true
+  href: PixelUnitStudio.LegionStore.html#PixelUnitStudio_LegionStore_Saved_System_String_
+  name: Saved
+  nameWithType: LegionStore.Saved
+  fullName: PixelUnitStudio.LegionStore.Saved
+- uid: System.Collections.Generic.List{PixelUnitStudio.LegionUnit}
+  commentId: T:System.Collections.Generic.List{PixelUnitStudio.LegionUnit}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LegionUnit>
+  nameWithType: List<LegionUnit>
+  fullName: System.Collections.Generic.List<PixelUnitStudio.LegionUnit>
+  nameWithType.vb: List(Of LegionUnit)
+  fullName.vb: System.Collections.Generic.List(Of PixelUnitStudio.LegionUnit)
+  name.vb: List(Of LegionUnit)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: PixelUnitStudio.LegionUnit
+    name: LegionUnit
+    isExternal: true
+    href: PixelUnitStudio.LegionUnit.html
+  - name: )
